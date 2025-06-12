@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF Product details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<span class="headerusername pull-right">
+<strong>Pashakhanloo, Farhad </strong>&nbsp;&nbsp;&nbsp;
+<a href="/VcfLogout.cfm" class="btn"><i class="icon icon-off"></i> logout</a>
+</span>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">My Info</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfAccount.cfm"><i class="icon-chevron-right icon-white"></i> My account</a></li>
+<li><a href="/VcfCompany.cfm"><i class="icon-chevron-right icon-white"></i> My company</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfProdSelection.cfm">Search product</a> <span class="divider">/</span></li>
+<li><a href="/VcfProdDetails.17.cfm?prodkey=5759">Product details</a> <span class="divider">/</span></li>
+<li class="active">Compounds table</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<span class="nopageprint">
+<form action="/VcfProdDetails.17.cfm?prodkey=5759" method="post" class="form">
+Select a product in this category:
+<select name="ProdkeySel" size="1" onChange="this.form.submit()">
+<option value="5759">CHICKEN (cooked)</option>
+<option value="5759">CHICKEN (fried)</option>
+<option value="5759">CHICKEN (raw)</option>
+<option value="5759">CHICKEN (roasted)</option>
+<option value="5759">CHICKEN BREAST (baked)</option>
+<option value="5759" selected="selected">CHICKEN BREAST (cooked) (Hubbard Red JA breed)</option>
+<option value="5759">CHICKEN BREAST (cooked) (Leghorn breed)</option>
+<option value="5759">CHICKEN BREAST (cooked) (Naked Neck breed)</option>
+<option value="5759">CHICKEN BREAST (cooked) (Ross 308 breed)</option>
+<option value="5759">CHICKEN BREAST (raw)</option>
+<option value="5759">CHICKEN BREAST (raw) (Hubbard Red JA breed)</option>
+<option value="5759">CHICKEN BREAST (raw) (Leghorn breed)</option>
+<option value="5759">CHICKEN BREAST (raw) (Naked Neck breed)</option>
+<option value="5759">CHICKEN BREAST (raw) (Ross 308 breed)</option>
+<option value="5759">CHICKEN BREAST (sugar-smoked)</option>
+<option value="5759">CHICKEN FAT</option>
+<option value="5759">CHICKEN SKIN (baked)</option>
+<option value="5759">CHICKEN SKIN (raw)</option>
+<option value="5759">CHICKEN SKIN (sugar-smoked)</option>
+</select>
+<input type="hidden" name="Prodlit" value="5700" />
+</form>
+</span>
+</div>
+</div>
+/app//graphics/product/5759.jpg<br />
+<div class="row-fluid">
+<div class="span11 offset1">
+<div class="span8">
+<table class="table table-striped table-bordered table-condensed datatable">
+<tr><td>Product</td><td>CHICKEN BREAST (cooked) (Hubbard Red JA breed)</td></tr>
+<tr>
+<td>Product category</td>
+<td>
+<a href="/VcfProdDetails.17.cfm?prodkey=5700&prodlit=5700">CHICKEN</a>
+</td>
+</tr>
+<tr>
+<td>Product group</td><td>Meat & Poultry</td>
+</tr>
+<tr><td><p>Additional info</p></td><td><p>The Hubbard Red JA chicken breed is considered as a medium-growing chicken. Feed is converted into muscle tissue in an efficient way but stands in between the slow-growing and fast-growing chicken breeds.</p></td></tr>
+</table>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span9 offset1">
+<p>
+1 literature reference for <em>CHICKEN BREAST (cooked) (Hubbard Red JA breed)</em>
+<br>
+37 compounds
+in <em>CHICKEN BREAST (cooked) (Hubbard Red JA breed)</em>
+<br />
+Quantities in ppm
+</p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span5"><h2>Select any of the detail tabs:</h2></div>
+<div class="span4">
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#dA"><strong>Quantity range in products</strong></a></li>
+<li ><a data-toggle="tab" href="#dB"><strong>Literature references</strong></a></li>
+</ul>
+<div class="tab-content">
+<div id="dA" class="tab-pane active">
+<table class="table-striped table-bordered table-condensed">
+<tr>
+<th>&nbsp;</th>
+<th>Quantity range<br />
+this product</th>
+<th>&nbsp;</th>
+<th><br />Compound</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Hydrocarbons</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.1223&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=00046051&ProdkeySel=5759">1,2-butadiene</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0247&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=00450200&ProdkeySel=5759">1-butene</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0061&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=01035231&ProdkeySel=5759">norbornane</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.1147&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=01730050&ProdkeySel=5759">1,4-hexadiene</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0015&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=07560100&ProdkeySel=5759">1,3-cyclohexadiene</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0105&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=15700500&ProdkeySel=5759">dimethylbenzene (unkn.str.) (=xylene (unkn.str.))</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Alcohols</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0238&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=01250300&ProdkeySel=5759">1-butanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Carbonyls, aldehydes</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;5.3592&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=00100200&ProdkeySel=5759">acetaldehyde</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0792&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01000900&ProdkeySel=5759">butanal (=butyraldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0065&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01050900&ProdkeySel=5759">2-butenal (=crotonaldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0105&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01752100&ProdkeySel=5759">pentanal (=valeraldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0127&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=02601700&ProdkeySel=5759">hexanal</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0012&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=03251200&ProdkeySel=5759">heptanal</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0014&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=03551600&ProdkeySel=5759">octanal (=caprylaldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0033&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=03851100&ProdkeySel=5759">nonanal (=pelargonaldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Acids</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;31.338&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=02000285&ProdkeySel=5759">docosahexaenoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;83.568&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=06850500&ProdkeySel=5759">tetradecanoic acid (=myristic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;2183.214&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=07350200&ProdkeySel=5759">hexadecanoic acid (=palmitic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;560.602&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=07600700&ProdkeySel=5759">(Z)-9-hexadecenoic acid (=palmitoleic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;856.572&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=08000200&ProdkeySel=5759">octadecanoic acid (=stearic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;1866.352&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=08100200&ProdkeySel=5759">(Z)-9-octadecenoic acid (=oleic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;1455.476&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=08300400&ProdkeySel=5759">(Z,Z)-9,12-octadecadienoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;111.424&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=08450200&ProdkeySel=5759">(Z,Z,Z)-9,12,15-octadecatrienoic acid (=linolenic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;104.46&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=09020300&ProdkeySel=5759">5,8,11,14,17-eicosapentaenoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;121.87&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=09051101&ProdkeySel=5759">(Z)-13-docosenoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;27.856&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=09051401&ProdkeySel=5759">(Z,Z,Z,Z,Z)-7,10,13,16,19-docosapentaenoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Esters</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;417.84&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=08300401&ProdkeySel=5759">arachidonic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Nitriles and amides</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0043&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=13&volatnr=00005011&ProdkeySel=5759">methacrylamide</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0132&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=13&volatnr=00160101&ProdkeySel=5759">3-cyanopropanal</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0001&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=13&volatnr=01850800&ProdkeySel=5759">butanamide</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Furans</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0011&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=15&volatnr=01353300&ProdkeySel=5759">2-pentylfuran</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">(Ep)oxides, pyrans, coumarins</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;1.469404&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034211&ProdkeySel=5759">&alpha;-tocopherol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.428286&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034212&ProdkeySel=5759">&alpha;-tocotrienol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.01741&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034214&ProdkeySel=5759">&gamma;-tocopherol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.080086&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034215&ProdkeySel=5759">&delta;-tocopherol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.010446&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034216&ProdkeySel=5759">&delta;-tocotrienol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.010446&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=16&volatnr=02034217&ProdkeySel=5759">&gamma;-tocotrienol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+</table>
+</div>
+<div id="dB" class="tab-pane ">
+<table class="table-striped table-bordered table-condensed datatable">
+<tr>
+<td class="rechts">1. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=5759&Litnr=48">Poult. Sci. 100 (2021) 1273-1282; A. Cartoni Mancinelli, E. Silletti, S. Mattioli, A. Dal Bosco, B. Sebastiani, L. Menchetti, A. Koot, S. van Ruth, C. Castellini (raw and cooked chicken breast of various chicken breeds)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Fatty acid profile, oxidative status, and content of volatile organic compounds in raw and cooked meat of different chicken strains</em></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2024&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VCF Product details</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+<link href="/css/vcf.css" rel="stylesheet">
+<link href="/css/print.css" rel="stylesheet" media="print">
+<link type="image/x-icon" href="/favicon.ico" rel="shortcut icon" />
+<meta name="format-detection" content="telephone=no"/>
+<!-- Sentry -->
+<script src="https://browser.sentry-cdn.com/5.2.1/bundle.min.js" crossorigin="anonymous"></script>
+<script>
+Sentry.init({ dsn: 'https://45e14bb33e854eea83d8f079840a908b@o57497.ingest.sentry.io/1457420' });
+</script>
+</head>
+<body>
+<script> 
+<!-- 
+//Configuration parameters for the pop-up window. 
+var config = 
+{x:50,y:100,height:400,width:450,modal:false,closable:true,modal:false,
+draggable:true,resizable:true,initshow:true,minheight:200,minwidth:200 
+} 
+--> 
+</script>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="header">
+<div class="span3" style="margin-bottom:8px">
+<a href="/index.cfm" class="brand"><img src="/graphics/logo_bewido.png" alt="VCF home" id="bewido_logo" width="220"></a><!-- VCF logo -->
+</div>
+<div class="span9">
+<div class="row-fluid">
+<div class="span6 loggedin pull-right" id="fltrt">
+<span class="headerusername pull-right">
+<strong>Pashakhanloo, Farhad </strong>&nbsp;&nbsp;&nbsp;
+<a href="/VcfLogout.cfm" class="btn"><i class="icon icon-off"></i> logout</a>
+</span>
+</div>
+<div class="span3">
+<span class="welcome">
+<a href="index.cfm"><span class="websitename">VCF <span class="superonline">online</span></span></a>
+Volatile Compounds in Food 16.10
+<span class="demoversionstring">
+</span>
+</span>
+</div>
+</div>
+<div class="row-fluid">
+<div class="navbar span9 offset3">
+<!-- Navbar ================================================== -->
+<div class="navbar-inner">
+<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div class="nav-collapse collapse">
+<ul id="navMain" class="nav pull-right">
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Search</a>
+<ul class="dropdown-menu">
+<li><a>Search</a></li>
+<li><a href="/VcfProdSelection.cfm"><i class="icon-chevron-right icon-white"></i> Products</a></li>
+<li><a href="/VcfProdSetSelection.cfm"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a href="/VcfCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Compounds</a></li>
+<li><a href="/VcfRetentionIndexSearch.cfm"><i class="icon-chevron-right icon-white"></i> Retention Index</a></li>
+<li><a href="/VcfLiteratureSearch.cfm"><i class="icon-chevron-right icon-white"></i> Literature</a></li>
+<li><a href="OFTVCompoundSearch.cfm"><i class="icon-chevron-right icon-white"></i> Odour/Flavour threshold</a></li>
+<li><a>History</a></li>
+<li><a href="/VcfSearchhistory.cfm"><i class="icon-chevron-right icon-white"></i> Search history</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Lists</a>
+<ul class="dropdown-menu">
+<li><a>Products</a></li>
+<li><a href="/VcfProducts.cfm"><i class="icon-chevron-right icon-white"></i> Product list</a></li>
+<li><a>Compounds</a></li>
+<li><a href="/VcfCompounds.cfm"><i class="icon-chevron-right icon-white"></i> VCF compounds</a></li>
+<li><a href="/VcfCompounds.cfm?FEMAGRAS"><i class="icon-chevron-right icon-white"></i> FEMA(GRAS 30)</a></li>
+<li><a href="/VcfCompounds.cfm?Flavis"><i class="icon-chevron-right icon-white"></i> Flavis(EU-Flavis database)</a></li>
+<li><a>Odour/flavour compounds</a></li>
+<li><a href="OFTVCompounds.cfm"><i class="icon-chevron-right icon-white"></i> Odour/flavour lists</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Usage guide</a>
+<ul class="dropdown-menu">
+<li><a>Search options</a></li>
+<li><a href="/VcfGuide.cfm?title=What information"><i class="icon-chevron-right icon-white"></i> What information can be found?</a></li>
+<li><a href="/VcfGuide.cfm?title=Guide to searches"><i class="icon-chevron-right icon-white"></i> Guide to searches</a></li>
+<li><a href="/VcfGuide.cfm?title=Search within"><i class="icon-chevron-right icon-white"></i> Search within results</a></li>
+<li><a href="/VcfGuide.cfm?title=Product compare"><i class="icon-chevron-right icon-white"></i> Product compare</a></li>
+<li><a>VCF version</a></li>
+<li><a href="/VcfGuide.cfm?title=What is new"><i class="icon-chevron-right icon-white"></i> What is new in VCF 16.10?</a></li>
+<li><a href="/VcfGuide.cfm?title=Overview of VCF"><i class="icon-chevron-right icon-white"></i> Overview VCF releases</a></li>
+<li><a href="/VcfGuide.cfm?title=Explanation of terms"><i class="icon-chevron-right icon-white"></i> Explanation of terms</a></li>
+<li><a href="/VcfExamples.cfm"><i class="icon-chevron-right icon-white"></i> Examples</a></li>
+<li><a>References</a></li>
+<li><a href="/VcfGuide.cfm?title=preface"><i class="icon-chevron-right icon-white"></i> Preface</a></li>
+<li><a href="/VcfGuide.cfm?title=Bibliographic"><i class="icon-chevron-right icon-white"></i> Bibliographic reference</a></li>
+<li><a href="/VcfGuide.cfm?title=Privacy policy"><i class="icon-chevron-right icon-white"></i> Privacy policy</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">Contact</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfSelectSubscription.cfm"><i class="icon-chevron-right icon-white"></i> Subscribe</a></li>
+<li><a href="/VcfMailform.cfm"><i class="icon-chevron-right icon-white"></i> Mail us</a></li>
+<li><a href="/VcfLinks.cfm"><i class="icon-chevron-right icon-white"></i> Links</a></li>
+<li><a href="/VcfPromo.cfm"><i class="icon-chevron-right icon-white"></i> Promo</a></li>
+</ul>
+</li>
+<li class="dropdown"><a href="##" class="dropdown-toggle" data-toggle="dropdown">My Info</a>
+<ul class="dropdown-menu">
+<li><a href="/VcfAccount.cfm"><i class="icon-chevron-right icon-white"></i> My account</a></li>
+<li><a href="/VcfCompany.cfm"><i class="icon-chevron-right icon-white"></i> My company</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- end .header -->
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<ul class="breadcrumb">
+<li><a href="/VcfHome.cfm">Home</a> <span class="divider">/</span></li>
+<li><a href="/VcfProdSelection.cfm">Search product</a> <span class="divider">/</span></li>
+<li><a href="/VcfProdDetails.17.cfm?prodkey=1310">Product details</a> <span class="divider">/</span></li>
+<li class="active">Compounds table</li>
+</ul>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span10 offset1">
+<span class="nopageprint">
+<form action="/VcfProdDetails.17.cfm?prodkey=1310" method="post" class="form">
+Select a product in this category:
+<select name="ProdkeySel" size="1" onChange="this.form.submit()">
+<option value="1310" selected="selected">BARTLETT PEAR (Williams pear, Bon Chretien)</option>
+<option value="1310">PEAR, OTHER TYPES</option>
+</select>
+<input type="hidden" name="Prodlit" value="1300" />
+</form>
+</span>
+</div>
+</div>
+/app//graphics/product/1310.jpg<br />
+<div class="row-fluid">
+<div class="span11 offset1">
+<div class="span8">
+<table class="table table-striped table-bordered table-condensed datatable">
+<tr><td>Product</td><td>BARTLETT PEAR (Williams pear, Bon Chretien)</td></tr>
+<tr>
+<td>Product category</td>
+<td>
+<a href="/VcfProdDetails.17.cfm?prodkey=1300&prodlit=1300">PEAR (Pyrus communis L.)</a>
+</td>
+</tr>
+<tr>
+<td>Product group</td><td>Fruits</td>
+</tr>
+</table>
+</div>
+<div class="span2">
+<img src="/graphics/product/1310.jpg" width="151" height="200" border="0" align="bottom" />
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span9 offset1">
+<p>
+11 literature references for <em>BARTLETT PEAR (Williams pear, Bon Chretien)</em>
+<br>
+103 compounds
+in <em>BARTLETT PEAR (Williams pear, Bon Chretien)</em>
+<br />
+Quantities in ppm
+</p>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="span5"><h2>Select any of the detail tabs:</h2></div>
+<div class="span4">
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a data-toggle="tab" href="#dA"><strong>Quantity range in products</strong></a></li>
+<li ><a data-toggle="tab" href="#dB"><strong>Literature references</strong></a></li>
+</ul>
+<div class="tab-content">
+<div id="dA" class="tab-pane active">
+<table class="table-striped table-bordered table-condensed">
+<tr>
+<th>&nbsp;</th>
+<th>Quantity range<br />
+this product</th>
+<th>&nbsp;</th>
+<th><br />Compound</th>
+<th>
+<button name="SearchTips" type="button" value="Flags" class="btn"
+onClick="window.open('VcfGuideContent.cfm?title=Compound flags', 'VCFguide',
+'resizable=yes,scrollbars=yes,menubar=no,status=no,titlebar=no,toolbar=no,width=450,height=400');
+return false" >
+<i class="icon icon-flag"></i> Compound<br>flags </button>
+</th>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Hydrocarbons</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=00150100&ProdkeySel=1310">ethene (=ethylene)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;E&nbsp;S&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=03605200&ProdkeySel=1310">(E,Z)-1,3,5-undecatriene (=cystophorene)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.04&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=06828100&ProdkeySel=1310">(E,E)-&alpha;-farnesene (=&alpha;-farnesene)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.035&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=08601600&ProdkeySel=1310">limonene</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.02&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=01&volatnr=14350100&ProdkeySel=1310">methylbenzene (=toluene)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Alcohols</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=00100100&ProdkeySel=1310">ethanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=00400200&ProdkeySel=1310">1-propanol (=propyl alcohol)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.011&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=01250300&ProdkeySel=1310">1-butanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.014&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=01500200&ProdkeySel=1310">2-methyl-1-butanol (=active amyl alcohol)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=02350600&ProdkeySel=1310">1-pentanol (=amyl alcohol)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.06&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=03351000&ProdkeySel=1310">1-hexanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.009&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=04200100&ProdkeySel=1310">2-ethyl-1-hexanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=04301100&ProdkeySel=1310">1-heptanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=02&volatnr=04900300&ProdkeySel=1310">1-octanol</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Carbonyls, aldehydes</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01000900&ProdkeySel=1310">butanal (=butyraldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.011&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01151700&ProdkeySel=1310">2-methylbutanal (=&alpha;-methylbutanal)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.036&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=01201800&ProdkeySel=1310">3-methylbutanal (=isopentanal, isovaleraldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">0.02&nbsp;&mdash;&nbsp;0.486&nbsp;</td>
+<td class="rechts">(n=2)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=02601700&ProdkeySel=1310">hexanal</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.014&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=02712900&ProdkeySel=1310">(E)-2-hexenal (=leaf aldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0021&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=04627800&ProdkeySel=1310">(E,E)-2,4-decadienal</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.05&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=03&volatnr=07952400&ProdkeySel=1310">vanillin (=4-hydroxy-3-methoxybenzaldehyde)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Carbonyls, ketones</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=04&volatnr=03501000&ProdkeySel=1310">6-methyl-5-hepten-2-one</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0031&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=04&volatnr=04401500&ProdkeySel=1310">1-octen-3-one</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0017&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=04&volatnr=12200400&ProdkeySel=1310">&beta;-damascenone</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Acids</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;6.41&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=00100400&ProdkeySel=1310">acetic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;1.24&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=00951500&ProdkeySel=1310">butanoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=01152000&ProdkeySel=1310">(S)-2-methylbutanoic acid</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;1.46&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=05351600&ProdkeySel=1310">decanoic acid (=capric acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=05663300&ProdkeySel=1310">(E,Z)-2,4-decadienoic acid</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;trace&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=05&volatnr=07350200&ProdkeySel=1310">hexadecanoic acid (=palmitic acid)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Esters</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=01401000&ProdkeySel=1310">methyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.06&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=01451800&ProdkeySel=1310">ethyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.1&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=01903000&ProdkeySel=1310">propyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.16&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=02202900&ProdkeySel=1310">butyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.016&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=02852400&ProdkeySel=1310">pentyl acetate (=amyl acetate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0082&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=02902500&ProdkeySel=1310">isopentyl acetate (=3-methylbutyl acetate, isoamyl acetate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">0.09&nbsp;&mdash;&nbsp;10.9&nbsp;</td>
+<td class="rechts">(n=2)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=03151300&ProdkeySel=1310">hexyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=03326100&ProdkeySel=1310">(Z)-2-hexenyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=03453400&ProdkeySel=1310">(Z)-hexenyl acetate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=03551700&ProdkeySel=1310">heptyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=03751800&ProdkeySel=1310">octyl acetate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.078&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=09903800&ProdkeySel=1310">ethyl butanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.014&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=11353500&ProdkeySel=1310">ethyl 2-methylbutanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.038&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=12153600&ProdkeySel=1310">ethyl 3-methylbutanoate (=ethyl isovalerate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=13315300&ProdkeySel=1310">methyl (E)-4-hydroxy-2-butenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=13365200&ProdkeySel=1310">ethyl (E)-4-hydroxy-2-butenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.137&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=15053000&ProdkeySel=1310">ethyl hexanoate (=ethyl caproate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=17604100&ProdkeySel=1310">methyl octanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=17653700&ProdkeySel=1310">ethyl octanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=18565200&ProdkeySel=1310">methyl (E)-2-octenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=18602200&ProdkeySel=1310">ethyl (E)-2-octenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=18900800&ProdkeySel=1310">methyl 2-hydroxyoctanoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=18950200&ProdkeySel=1310">ethyl 2-hydroxyoctanoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.015&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=19000900&ProdkeySel=1310">methyl 3-hydroxyoctanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.022&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=19050300&ProdkeySel=1310">ethyl 3-hydroxyoctanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=19903400&ProdkeySel=1310">methyl decanoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=19952900&ProdkeySel=1310">ethyl decanoate (=ethyl caprate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=20712900&ProdkeySel=1310">methyl (E)-2-decenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=20762800&ProdkeySel=1310">ethyl (E)-2-decenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=20813000&ProdkeySel=1310">methyl (Z)-4-decenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=20912900&ProdkeySel=1310">ethyl (Z)-4-decenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;trace&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21001600&ProdkeySel=1310">methyl 2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21013400&ProdkeySel=1310">methyl (Z,E)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.05&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21023500&ProdkeySel=1310">methyl (E,Z)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.035&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21033600&ProdkeySel=1310">methyl (E,E)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.004&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21051900&ProdkeySel=1310">ethyl 2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">0.04&nbsp;&mdash;&nbsp;14.5&nbsp;</td>
+<td class="rechts">(n=2)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21063400&ProdkeySel=1310">ethyl (E,Z)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">0.004&nbsp;&mdash;&nbsp;3.3&nbsp;</td>
+<td class="rechts">(n=2)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21073500&ProdkeySel=1310">ethyl (E,E)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21111800&ProdkeySel=1310">propyl (E,Z)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21121900&ProdkeySel=1310">propyl (E,E)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21161500&ProdkeySel=1310">butyl (E,Z)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21210800&ProdkeySel=1310">hexyl (E,Z)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21220900&ProdkeySel=1310">hexyl (E,E)-2,4-decadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21363000&ProdkeySel=1310">ethyl (E,Z,Z)-2,4,7-decatrienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21373100&ProdkeySel=1310">ethyl (E,E,Z)-2,4,7-decatrienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=21751400&ProdkeySel=1310">ethyl dodecanoate (=ethyl laurate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22162500&ProdkeySel=1310">methyl (E)-2-dodecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22211600&ProdkeySel=1310">ethyl (E)-2-dodecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;E&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22261700&ProdkeySel=1310">ethyl (Z)-6-dodecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22462000&ProdkeySel=1310">methyl (E,Z)-2,6-dodecadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22511600&ProdkeySel=1310">ethyl (E,Z)-2,6-dodecadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22601300&ProdkeySel=1310">ethyl dodecadienoate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22663200&ProdkeySel=1310">ethyl (E,Z,Z)-2,6,9-dodecatrienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=22900900&ProdkeySel=1310">ethyl tetradecanoate (=ethyl myristate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23261200&ProdkeySel=1310">methyl (Z)-5-tetradecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23311300&ProdkeySel=1310">ethyl (Z)-5-tetradecenoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23361300&ProdkeySel=1310">methyl (Z)-8-tetradecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23411400&ProdkeySel=1310">ethyl (Z)-8-tetradecenoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23451000&ProdkeySel=1310">ethyl tetradecenoate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23511300&ProdkeySel=1310">methyl (Z,Z)-5,8-tetradecadienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23561000&ProdkeySel=1310">ethyl (Z,Z)-5,8-tetradecadienoate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23610400&ProdkeySel=1310">methyl (E,E,Z)-2,4,8-tetradecatrienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23660300&ProdkeySel=1310">ethyl (E,E,Z)-2,4,8-tetradecatrienoate</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;S&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=23851200&ProdkeySel=1310">methyl hexadecanoate (=methyl palmitate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=24400800&ProdkeySel=1310">methyl hexadecenoate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=24450700&ProdkeySel=1310">ethyl hexadecenoate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=24550700&ProdkeySel=1310">ethyl hexadecadienoate (unkn.str.)</a></td>
+<td class="nowrap">
+&nbsp;P&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=24700700&ProdkeySel=1310">methyl octadecanoate (=methyl stearate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;&nbsp;</td>
+<td class="rechts"></td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=24860500&ProdkeySel=1310">methyl (Z)-9-octadecenoate (=methyl oleate)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.017&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=06&volatnr=30550300&ProdkeySel=1310">dibutyl phthalate</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Lactones</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0029&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=07&volatnr=02254300&ProdkeySel=1310">4-hydroxynonanoic acid lactone</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0022&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=07&volatnr=02502600&ProdkeySel=1310">4-hydroxydecanoic acid lactone (=4-decanolide, &gamma;-decalactone)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+<tr>
+<th colspan="4" class="sterk">Phenols</th>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td class="rechts">&nbsp;&nbsp;0.0024&nbsp;</td>
+<td class="rechts">(n=1)</td>
+<td><a href="/VcfCompoundDetails.cfm?volatgrp=14&volatnr=03751500&ProdkeySel=1310">2-methoxyphenol (=guaiacol)</a></td>
+<td class="nowrap">
+&nbsp;Q&nbsp;E&nbsp;S&nbsp;R&nbsp;O&nbsp;T&nbsp;</td>
+</tr>
+</table>
+</div>
+<div id="dB" class="tab-pane ">
+<table class="table-striped table-bordered table-condensed datatable">
+<tr>
+<td class="rechts">1. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=24">Chem. Mikrobiol. Technol. Lebensm. 3 (1974) 52-55; W.G. Jennings, R. Tressl (and review) (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Production of volatile compounds in the ripening Bartlett pear</em></td>
+</tr>
+<tr>
+<td class="rechts">2. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=29">Ind. Conserve 64 (1989) 199-206; S. Gherardi, M. Careri, L. Bolzoni, R. Aldini, A. Trifirò (Williams=Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Influenza dei processi di ultrafiltrazione e di osmosi inversa sulla composizione aromatica di puree di pera e di pesca</em></td>
+</tr>
+<tr>
+<td class="rechts">3. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=12">Intern. Fruchtsaftunion. Symp. Madrid (1965) 277-287; W.G. Jennings (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>New fruit esters and the flavor of Bartlett pears</em></td>
+</tr>
+<tr>
+<td class="rechts">4. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=21">J. Agric. Food Chem. 18 (1970) 19-24; R.K. Creveling, W.G. Jennings (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Volatile components of Bartlett pear</em></td>
+</tr>
+<tr>
+<td class="rechts">5. </td>
+<td>*</td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=36">J. Agric. Food Chem. 64 (2016) 9515-9522; B. Zierer, P. Schieberle, M. Granvogl</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Aroma-active compounds in Bartlett pears and their changes during manufacturing process of Bartlett pear brandy</em></td>
+</tr>
+<tr>
+<td class="rechts">6. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=8">J. Food Sci. 29 (1964) 158-163; W.G. Jennings, M.R. Sevenants (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Volatile esters of Bartlett pear. III</em></td>
+</tr>
+<tr>
+<td class="rechts">7. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=11">J. Food Sci. 30 (1965) 641-643; D.E. Heinz, R.K. Creveling, W.G. Jennings (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Direct determination of aroma compounds as an index of pear maturity</em></td>
+</tr>
+<tr>
+<td class="rechts">8. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=13">J. Food Sci. 31 (1966) 69-80; D.E. Heinz, W.G. Jennings (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Volatile components of Bartlett pear. V</em></td>
+</tr>
+<tr>
+<td class="rechts">9. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=28">J. Food Sci. 50 (1985) 1655-1656 and 1667; R.G. Berger, F. Drawert, H. Kolmannsberger, S. Nitz (Bartlett pear)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Natural occurrence of undecaenes in some fruits and vegetables</em></td>
+</tr>
+<tr>
+<td class="rechts">10. </td>
+<td>*</td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=32">J. Sci. Food Agric. 52 (1990) 421-429; H. Shiota (La France, Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Changes in the volatile composition of La France pear during maturation</em></td>
+</tr>
+<tr>
+<td class="rechts">11. </td>
+<td></td>
+<td>
+<a href="/VcfLitDetails.cfm?Prodkey=1310&Litnr=27">Symp. Foods: Chem. Physiol. Flavors, Proc. 1965 (1967) 419-430; W.G. Jennings (Bartlett)</a>
+</td>
+</tr>
+<tr>
+<td colspan="2">&nbsp;</td>
+<td><em>Peaches and pears</em></td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row-fluid">
+<div class="span10 offset1">
+<hr />
+</div>
+<div class="span1">
+<a href="#top" class="btn btn-info to-page-top btn-small" title="top of page"><i class="icon-white icon-chevron-up"></i></a>
+</div>
+</div>
+<!-- end .container -->
+</div>
+<!-- Footer
+================================================== -->
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="footer-content">
+&copy; 1992&mdash;2024&nbsp;BeWiDo BV
+</div>
+</div>
+</div>
+</footer>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="/js/vcf.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-39233400-1', 'auto');
+ga('send', 'pageview');
+</script>
+</body>
+</html>

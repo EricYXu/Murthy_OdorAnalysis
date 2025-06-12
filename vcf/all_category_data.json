@@ -1,0 +1,2195 @@
+{
+    "ALCOHOLIC1": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "BANTU BEER": [
+            "BANTU BEER"
+        ],
+        "BEER": [
+            "AMERICAN BEER",
+            "AMERICAN BEER (premium)",
+            "AUSTRIAN BEER",
+            "CHERRY BEER (Belgian)",
+            "FINNISH LAGER BEER",
+            "LAGER BEER (Belgian)",
+            "PALE ALE CRAFT BEER",
+            "PALE ALE CRAFT BEER (low alcoholic)",
+            "TRAPIST BEER (Belgian)",
+            "WHEAT BEER (Belgian)"
+        ],
+        "BEER (non-categorised)": [
+            "BEER (non-categorised)"
+        ],
+        "BILBERRY WINE": [
+            "BILBERRY WINE"
+        ],
+        "CASHEW APPLE WINE": [
+            "CASHEW APPLE WINE"
+        ],
+        "CIDER (APPLE WINE)": [
+            "CIDER (APPLE WINE)"
+        ],
+        "GUAVA WINE": [
+            "GUAVA WINE"
+        ],
+        "KIWI WINE": [
+            "KIWI WINE (S. cerevisiae and W. anomalus)",
+            "KIWI WINE (S. cerevisiae)",
+            "KIWI WINE (W. anomalus)"
+        ],
+        "KOREAN RICE WINE": [
+            "GUGIJAJU (KOREAN RICE WINE)",
+            "KUKWHAJU (KOREAN RICE WINE)",
+            "MEASILJU (KOREAN RICE WINE)"
+        ],
+        "LITCHI WINE": [
+            "LITCHI WINE"
+        ],
+        "PASSION FRUIT WINE": [
+            "PASSION FRUIT WINE"
+        ],
+        "PLUM WINE": [
+            "PLUM WINE"
+        ],
+        "POMEGRANATE wine (Punica granatum L.)": [
+            "POMEGRANATE wine (Punica granatum L.)"
+        ],
+        "SAKE (non-categorised)": [
+            "CHINESE RICE WINE (Guyelongshan Huadiao)",
+            "CHINESE RICE WINE QU",
+            "SAKE (Sokujo-brewed)",
+            "SAKE (Yamahai-brewed)"
+        ],
+        "SHERRY": [
+            "AMONTILLADO SHERRY WINE",
+            "FINO SHERRY WINE",
+            "OLOROSO SHERRY WINE"
+        ],
+        "SHERRY (non-categorised)": [
+            "SHERRY (non-categorised)"
+        ],
+        "STRAWBERRY WINE": [
+            "STRAWBERRY WINE"
+        ],
+        "WINE": [
+            "BOTRYTISED WINE",
+            "DRY WHITE WINE (BLENDED)",
+            "DRY WHITE WINE (Chardonnay w/o malolactic ferment)",
+            "DRY WHITE WINE (Chardonnay)",
+            "DRY WHITE WINE (Chenin blanc)",
+            "DRY WHITE WINE (Muscat of Alexandria)",
+            "DRY WHITE WINE (Sauvignon Blanc)",
+            "DRY WHITE WINE (Thompson Seedless)",
+            "DRY WHITE WINE (Verdehlo)",
+            "DRY WHITE WINE (Viognier)",
+            "MUST (Chardonnay)",
+            "MUST (Leon Millot)",
+            "MUST (M\u00fcller-Thurgau)",
+            "MUST (Riesling)",
+            "MUST (Ulugbey Karasi)",
+            "PORT WINE",
+            "RED WINE (Aglianico del Vulture)",
+            "RED WINE (Barbera + Croatina)",
+            "RED WINE (Barbera)",
+            "RED WINE (Bordeaux)",
+            "RED WINE (Cabernet Sauvignon)",
+            "RED WINE (Cabernet Sauvignon, NF concentrated)",
+            "RED WINE (Cabernet Sauvignon, RO concentrated)",
+            "RED WINE (Cabernet Sauvignon-based)",
+            "RED WINE (Dornfelder)",
+            "RED WINE (Grenache)",
+            "RED WINE (Leon Millot, M. pulcherrima fermented)",
+            "RED WINE (Leon Millot, S. cerevic.+M. pulcherrimo)",
+            "RED WINE (Leon Millot, S. cerevisiae fermented)",
+            "RED WINE (Leon Millot, S. cerevisiae+Z. bailii)",
+            "RED WINE (Leon Millot, Z. bailii fermented)",
+            "RED WINE (Merlot)",
+            "RED WINE (Monastrell)",
+            "RED WINE (Monastrell, ultrasound treated)",
+            "RED WINE (Nebbiolo)",
+            "RED WINE (Noble muscadine)",
+            "RED WINE (non-categorised)",
+            "RED WINE (Pinot noir)",
+            "RED WINE (Sagrantino di Montefalco)",
+            "RED WINE (Sangiovese)",
+            "RED WINE (Shiraz)",
+            "RED WINE (Tannat)",
+            "RED WINE (Tinta Negra Mole)",
+            "RED WINE (Ulugbey Karasi)",
+            "RED WINE (Vidadillo)",
+            "ROS\u00c9 WINE",
+            "SPARKLING WINE",
+            "SPECIAL WINE",
+            "WHITE WINE (Albari\u00f1o - O Condado)",
+            "WHITE WINE (Albari\u00f1o - O Rosal)",
+            "WHITE WINE (Albillo, H. vineae+S. cerevisiae)",
+            "WHITE WINE (Albillo, S. cerevisiae fermented)",
+            "WHITE WINE (Bacchus)",
+            "WHITE WINE (Ehrenfelser)",
+            "WHITE WINE (Gew\u00fcrtztraminer)",
+            "WHITE WINE (Kerner)",
+            "WHITE WINE (Lugana)",
+            "WHITE WINE (M\u00fcller-Thurgau)",
+            "WHITE WINE (non-categorised)",
+            "WHITE WINE (Pinot blanc)",
+            "WHITE WINE (Riesling)",
+            "WHITE WINE (Rul\u00e4nder)",
+            "WHITE WINE (Scheurebe)",
+            "WHITE WINE (Semillon)",
+            "WHITE WINE (Silvaner)",
+            "WHITE WINE (Verdejo, before bottling)",
+            "WHITE WINE (Verdejo, cellar stored)",
+            "WHITE WINE (Verdejo, retail stored)",
+            "WHITE WINE (Verdicchio)",
+            "YOUNG DRY WHITE WINE",
+            "YOUNG RED WINE"
+        ]
+    },
+    "ALCOHOLIC 2": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "ANISE BRANDY": [
+            "OUZO",
+            "PASTIS",
+            "RAKI"
+        ],
+        "APPLE BRANDY (non-categorised)": [
+            "APPLE BRANDY (''Alquitara'' distilled)",
+            "APPLE BRANDY (unkn. type)"
+        ],
+        "APRICOT BRANDY": [
+            "APRICOT BRANDY"
+        ],
+        "ARBUTUS DISTILLATE (Portuguese brandy)": [
+            "ARBUTUS DISTILLATE (Portuguese brandy)"
+        ],
+        "ARRACK": [
+            "ARRACK"
+        ],
+        "AWAMORI (Japanese liquor)": [
+            "AWAMORI (Japanese liquor)"
+        ],
+        "BAIJIU (CHINESE LIQUOR)": [
+            "BAIJIU (Chixiang Aroma)",
+            "BAIJIU (Fenjui)",
+            "BAIJIU (Guotai)",
+            "BAIJIU (Wuliangye)",
+            "GUOJING BAIJIU (sesame-flavor, aged)",
+            "GUOJING BAIJIU (sesame-flavor, non-aged)"
+        ],
+        "BLACKBERRY BRANDY": [
+            "BLACKBERRY BRANDY"
+        ],
+        "BLUEBERRY BRANDY": [
+            "BLUEBERRY BRANDY"
+        ],
+        "CELERY BRANDY": [
+            "CELERY BRANDY"
+        ],
+        "CHERRY BRANDY": [
+            "CHERRY BRANDY"
+        ],
+        "EAU DE VIE DE CIDRE (Apple Brandy)": [
+            "EAU DE VIE DE CIDRE (Apple Brandy)"
+        ],
+        "EAU DE VIE DE COING": [
+            "EAU DE VIE DE COING"
+        ],
+        "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)": [
+            "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)"
+        ],
+        "GIN": [
+            "GIN"
+        ],
+        "GRAPE BRANDY": [
+            "ARMAGNAC (French brandy)",
+            "BRANDY (by-product from Spanish Holandas brandy)",
+            "BRANDY (unknown type)",
+            "BRANDY DE JEREZ (Solera Reserva, Spanish brandy)",
+            "BRANDY DE JEREZ (Solera, Spanish brandy)",
+            "BRANDY DE JEREZ (Spanish brandy)",
+            "BRANDY DE JEREZ(Sol. Gran Reserva, Spanish brandy)",
+            "COGNAC (French brandy)",
+            "EAU DE VIE",
+            "GERMAN BRANDY",
+            "GRAPE BRANDY, OTHER TYPES",
+            "GRAPPA",
+            "HOLANDAS (Spanish brandy)",
+            "PISCO (Chilean brandy)",
+            "PISCO (Peruvian brandy, aromatic)",
+            "PISCO (Peruvian brandy, non-aromatic)",
+            "WEINBRAND (German brandy)"
+        ],
+        "MEZCAL (Agave salmiana)": [
+            "MEZCAL (Agave salmiana)"
+        ],
+        "MULBERRY SPIRIT (Mouro)": [
+            "MULBERRY SPIRIT (Mouro)"
+        ],
+        "PEAR BRANDY": [
+            "PEAR BRANDY"
+        ],
+        "PLUM BRANDY": [
+            "PLUM BRANDY"
+        ],
+        "RASPBERRY BRANDY": [
+            "RASPBERRY BRANDY"
+        ],
+        "RUM": [
+            "RUM Category I (total volatiles > 3600 ppm)",
+            "RUM Category II (total volatiles 1100-3600 ppm)",
+            "RUM Category III (total volatiles 240-1100 ppm)",
+            "RUM Category unknown"
+        ],
+        "TEQUILA (Agave tequilana)": [
+            "TEQUILA (Agave tequilana)"
+        ],
+        "WHISKY": [
+            "BOURBON WHISKY",
+            "CANADIAN WHISKY",
+            "FINNISH WHISKY",
+            "IRISH WHISKY",
+            "JAPANESE WHISKY",
+            "MALT WHISKY",
+            "SCOTCH BLENDED WHISKY",
+            "SCOTCH WHISKY"
+        ]
+    },
+    "DAIRY": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "BLUE CHEESES": [
+            "BLUE CHEESES"
+        ],
+        "CASEIN HYDROLYSATE": [
+            "CASEIN HYDROLYSATE (Bacillus subtitles)"
+        ],
+        "CHEDDAR CHEESE": [
+            "CHEDDAR CHEESE",
+            "CHEDDAR CHEESE (age 1 month)",
+            "CHEDDAR CHEESE (age 11 months)",
+            "CHEDDAR CHEESE (age 12 months)",
+            "CHEDDAR CHEESE (age 13 months)",
+            "CHEDDAR CHEESE (age 15 months)",
+            "CHEDDAR CHEESE (age 18 months)",
+            "CHEDDAR CHEESE (age 2 months)",
+            "CHEDDAR CHEESE (age 2 weeks)",
+            "CHEDDAR CHEESE (age 27 months)",
+            "CHEDDAR CHEESE (age 3 months)",
+            "CHEDDAR CHEESE (age 30 months)",
+            "CHEDDAR CHEESE (age 4 months)",
+            "CHEDDAR CHEESE (age 6 months)",
+            "CHEDDAR CHEESE (age 8 months)"
+        ],
+        "CHEESE, VARIOUS TYPES": [
+            "BRIE",
+            "CAMEMBERT",
+            "CHEESES, OTHER",
+            "COTTAGE CHEESE",
+            "CREAM CHEESE (4 weeks old)",
+            "CREAM CHEESE (cholesterol-removed, 4 weeks old)",
+            "CREAM CHEESE (cholesterol-removed, fresh)",
+            "CREAM CHEESE (fresh)",
+            "DOMIATI CHEESE",
+            "EDAM CHEESE",
+            "EMMENTAL CHEESE (half-ripe)",
+            "EMMENTAL CHEESE (ripe)",
+            "FETA",
+            "GOAT CHEESE",
+            "GOUDA CHEESE",
+            "GRUYERE CHEESE",
+            "GRUYERE de COMTE CHEESE",
+            "HOLSTEIN CHEESE",
+            "LIMBURGER CHEESE",
+            "MAASDAM CHEESE",
+            "MANCHEGO CHEESE",
+            "MONTBELIARDE CHEESE",
+            "MOZZARELLA CHEESE",
+            "OSCYPEK (smoked sheep cheese)",
+            "PARMESAN CHEESE",
+            "PARMIGIANO REGGIANO CHEESE",
+            "PROOSDIJ CHEESE",
+            "PROVOLONE CHEESE",
+            "ROMANO CHEESE",
+            "RUSSIAN CHEESES",
+            "SHEEP CHEESE",
+            "TILSIT CHEESE"
+        ],
+        "MILK and MILK PRODUCTS": [
+            "BUTTER",
+            "BUTTER (heated)",
+            "BUTTERMILK",
+            "CHHANA",
+            "CREAM",
+            "GHEE",
+            "GOAT'S MILK",
+            "KEFIR",
+            "MILK (cow)",
+            "MILK EHP TREATED (cow)",
+            "MILK PASTEURIZED (cow)",
+            "MILK RAW (cow)",
+            "MILK RETORT STERILIZED (cow)",
+            "MILK UHT TREATED (cow)",
+            "SHEEP'S MILK",
+            "SKIM MILK POWDER (cow)",
+            "SOUR CREAM (fat free)",
+            "SOUR CREAM (full fat)",
+            "SOUR CREAM (light)",
+            "SOUR CREAM (reduced fat)",
+            "WATER BUFFALO MILK",
+            "YOGURT"
+        ],
+        "SPANISH CHEESES": [
+            "AFUEGA'l PITU"
+        ],
+        "SWISS CHEESES": [
+            "SWISS CHEESES"
+        ]
+    },
+    "COFFEE TEA COCOA": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "COCOA category": [
+            "COCOA BEANS (ferment. w. 2 yeast strains + dried)",
+            "COCOA BEANS (fermented w/o inoculum and dried)",
+            "COCOA BEANS (P. kudriavzevii fermented and dried)",
+            "COCOA BEANS (S. cerevisiae fermented and dried)",
+            "COCOA BUTTER",
+            "COCOA LIQUOR",
+            "COCOA POWDER",
+            "DARK CHOCOLATE",
+            "FERMENTED COCOA BEANS",
+            "MILK CHOCOLATE",
+            "ROASTED COCOA BEANS"
+        ],
+        "COFFEE": [
+            "COFFEE",
+            "COLOMBIAN COFFEE (green)"
+        ],
+        "KOMBUCHA": [
+            "BLACK TEA KOMBUCHA (fermented for 6 days)",
+            "CHRYSANTHEMUM KOMBUCHA (fermented for 6 days)",
+            "GREEN TEA KOMBUCHA (fermented for 6 days)",
+            "HONEYSUCKLE KOMBUCHA (fermented for 6 days)",
+            "MINT KOMBUCHA (fermented for 6 days)",
+            "WHITE TEA KOMBUCHA (fermented for 6 days)"
+        ],
+        "MATE (Ilex paraguayensis)": [
+            "GREEN MATE",
+            "MATE (roasted)"
+        ],
+        "ROOIBOS TEA (Aspalathus linearis)": [
+            "ROOIBOS TEA (Aspalathus linearis)"
+        ],
+        "TEA": [
+            "BLACK TEA",
+            "BLACK TEA (brewed)",
+            "CHAMOMILE TEA (Matricaria chamomilla)",
+            "DARJEELING TEA (BLACK TEA)",
+            "DARJEELING TEA (BLACK TEA) (brewed)",
+            "GREEN TEA",
+            "GREEN TEA (powder)",
+            "GREEN TEA (roasted)",
+            "GYOKURO TEA (GREEN TEA)",
+            "KUROMOJI TEA (Lindera umbellata branches)",
+            "KUROMOJI TEA (Lindera umbellata leaves)",
+            "MATCHA (GREEN TEA)",
+            "MICROBIAL FERMENTED (DARK) TEA",
+            "OOLONG TEA",
+            "OOLONG TEA (brewed)",
+            "PARTIALLY FERMENTED TEA",
+            "PEPPERMINT TEA (Mentha x piperita)",
+            "PURPLE BLACK TEA",
+            "PURPLE GREEN TEA",
+            "QIMEN BLACK TEA",
+            "RED OOLONG TEA (brewed)",
+            "SENCHA TEA (GREEN TEA)",
+            "WHITE TEA"
+        ]
+    },
+    "SEAFOOD": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "BLUE-GREEN ALGAE": [
+            "BLUE-GREEN ALGAE (aoko)"
+        ],
+        "BROWN ALGAE": [
+            "BROWN ALGAE (ascophyllum nodosum)",
+            "BROWN ALGAE (colpomenia sinuosa)",
+            "BROWN ALGAE (cutleria multifida)",
+            "BROWN ALGAE (dictyopteris divaricata)",
+            "BROWN ALGAE (ectocarpus siliculosus)",
+            "BROWN ALGAE (eisenia bicyclus)",
+            "BROWN ALGAE (hydroclathrus clathratus)",
+            "BROWN ALGAE (ishige okamura)",
+            "BROWN ALGAE (sargassum nigrifolium)",
+            "BROWN ALGAE (sargassum sagamianum)",
+            "BROWN ALGAE (sargassum thunbergii)",
+            "BROWN ALGAE (scytosiphon lomentaria)",
+            "KELP (Laminaria angustata, brown algae)",
+            "KELP (Laminaria diabolica)",
+            "KELP (Laminaria japonica, brown algae)",
+            "KELP (Laminaria ochotensis)"
+        ],
+        "CAVIAR": [
+            "CAVIAR"
+        ],
+        "CLAM": [
+            "CLAM"
+        ],
+        "CRAB": [
+            "BLUE CRAB (by-products, C. sapidus)",
+            "BLUE CRAB (fresh meat, C. sapidus)",
+            "CRUCIFIX CRAB (body meat, C. feriatus)",
+            "CRUCIFIX CRAB (carapace soft meat, C. feriatus)",
+            "CRUCIFIX CRAB (leg meat, C. feriatus)"
+        ],
+        "CRAYFISH": [
+            "CRAYFISH BYPRODUCT (hydrolysate, P. clarkii)",
+            "CRAYFISH BYPRODUCT (P. clarkii)"
+        ],
+        "CUTTLEFISH": [
+            "CUTTLEFISH"
+        ],
+        "FISH": [
+            "ALBACORE (canned)",
+            "ALBACORE (cooked)",
+            "ALBACORE (raw)",
+            "ANCHOITA (Engraulis anchoita) (raw, frozen)",
+            "ANCHOVY (canned)",
+            "ANCHOVY (colatura di alici) (fermented fish sauce)",
+            "ANCHOVY (dried)",
+            "AYU (raw)",
+            "BARRAMUNDI (lates calcarifer) (grilled, farmed)",
+            "BARRAMUNDI (lates calcarifer) (wild, grilled)",
+            "BASS (raw)",
+            "BREAM (raw)",
+            "CARP (raw)",
+            "COD (raw)",
+            "COD (smoked)",
+            "EEL (roasted)",
+            "EMEREAL SHINER (raw)",
+            "FATTY FISH (cooked)",
+            "FATTY FISH (raw)",
+            "FATTY FISH (smoked)",
+            "FISH OIL",
+            "GREYLING (raw)",
+            "HADDOCK (raw)",
+            "HADDOCK (stored)",
+            "HERRING (cooked)",
+            "HERRING (raw)",
+            "HERRING (salted)",
+            "HERRING (smoked)",
+            "KUSAYA (dried)",
+            "LEAN FISH (processed)",
+            "LEAN FISH (raw)",
+            "MACKEREL (raw)",
+            "MACKEREL (smoked)",
+            "MARLIN (raw)",
+            "MULLET (raw)",
+            "MULLET (salted)",
+            "PANGASIUS",
+            "SALMON (cooked)",
+            "SALMON (raw)",
+            "SALMON (smoked)",
+            "SARDINE (dried)",
+            "SARDINE (raw)",
+            "SARDINE (Sardinops melanostica) (Fresh)",
+            "SARDINE (smoked)",
+            "SIBERIAN WHITE FISH (raw)",
+            "SKIPJACK TUNA (katsuwonus pelamus) (fermented)",
+            "SMELT (raw)",
+            "SWORDFISH (smoked)",
+            "TILAPA",
+            "TROUT (raw)",
+            "TROUT (smoked)",
+            "TUNA (canned)",
+            "TUNA (raw)",
+            "WHITE FISH (oxidized)",
+            "WHITE FISH (raw)"
+        ],
+        "GREEN ALGAE": [
+            "GREEN ALGAE (acetabularia ryukyuensis)",
+            "GREEN ALGAE (bryopsis maxima)",
+            "GREEN ALGAE (caulerpa racemosa)",
+            "GREEN ALGAE (cladophora rudolphiana)",
+            "GREEN ALGAE (cladophoropsis vaucheriaeformis)",
+            "GREEN ALGAE (enteromorpha clathrata)",
+            "GREEN ALGAE (enteromorpha linza)",
+            "GREEN ALGAE (halicornye wrightii)",
+            "GREEN ALGAE (halimeda opuntia)",
+            "GREEN ALGAE (monostroma nitidum)",
+            "GREEN ALGAE OIL (ulva pertusa)",
+            "GREEN ALGEA (boodlea coacta)",
+            "GREEN ALGEA (codium intricatum)",
+            "GREEN ALGEA (ulva linza)",
+            "GREEN ALGEA (ulva pertusa)",
+            "GREEN ALGEA (ulva prolifera)"
+        ],
+        "KRILL": [
+            "KRILL"
+        ],
+        "LOBSTER": [
+            "LOBSTER (Balmain bug, Ibacus peronii)",
+            "LOBSTER (Moreton Bay bug, Thenus orientalis)"
+        ],
+        "MUSSEL": [
+            "MUSSEL"
+        ],
+        "OYSTERS": [
+            "OYSTERS"
+        ],
+        "RED ALGAE": [
+            "RED ALGAE (ahnfeltia paradoxa)",
+            "RED ALGAE (asparagopsis taxiformis)",
+            "RED ALGAE (beckerella subrostata)",
+            "RED ALGAE (carpopeltis angusta)",
+            "RED ALGAE (carpopeltis cornea)",
+            "RED ALGAE (ceratodictyon spongiosum)",
+            "RED ALGAE (chondria californica)",
+            "RED ALGAE (chondrus elatus)",
+            "RED ALGAE (chondrus verrucosa)",
+            "RED ALGAE (coeloseira pacifica)",
+            "RED ALGAE (corallina officinalis)",
+            "RED ALGAE (gigartha mamillosa)",
+            "RED ALGAE (gracilaria verrucosa)",
+            "RED ALGAE (hyena nidulans)",
+            "RED ALGAE (hypnea charoides)",
+            "RED ALGAE (hypnea roman)",
+            "RED ALGAE (laurencia subopposita)",
+            "RED ALGAE (liagora caenomyce)",
+            "RED ALGAE (spyridia filamentosa)",
+            "RED ALGAE (vidalia obtusiloba)",
+            "RED ALGEA (porphyra tenera)"
+        ],
+        "SCALLOP": [
+            "SCALLOP"
+        ],
+        "SEA URCHIN (echinus)": [
+            "PURPLE SEA URCHIN GONADS (Paracentrotus Lividus)"
+        ],
+        "SHRIMPS (PRAWN)": [
+            "SHRIMPS, PRAWN (Carid, Plesionika sp.)",
+            "SHRIMPS, PRAWN (cooked fermented)",
+            "SHRIMPS, PRAWN (cooked)",
+            "SHRIMPS, PRAWN (Endeavour, Metapenaeus endeavouri)",
+            "SHRIMPS, PRAWN (fermented)",
+            "SHRIMPS, PRAWN (Metapenaeus macleayi)",
+            "SHRIMPS, PRAWN (raw)",
+            "SHRIMPS, PRAWN (Red spot king,Penaeus longistylus)",
+            "SHRIMPS, PRAWN (Red, Aristeomorpha foliacea)",
+            "SHRIMPS, PRAWN (roasted)",
+            "SHRIMPS, PRAWN (Royal red, Hymenopenaeus sibogae)"
+        ],
+        "SQUID": [
+            "SQUID MANTLE FLESH (cooked)",
+            "SQUID MANTLE FLESH (raw)"
+        ],
+        "SQUID (non-categorised)": [
+            "SQUID (non-categorised)"
+        ],
+        "TRASSI (cooked)": [
+            "TRASSI (cooked)"
+        ]
+    },
+    "MEAT": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "ALLIGATOR": [
+            "ALLIGATOR MEAT - tail"
+        ],
+        "BEEF": [
+            "BEEF (boiled, cooked)",
+            "BEEF (canned)",
+            "BEEF (fried)",
+            "BEEF (grilled, roasted)",
+            "BEEF (raw)",
+            "BEEF BURGER (cooked, electrical grill)",
+            "BEEF BURGER (raw)",
+            "BEEF FAT (heated)",
+            "BEEF LIVER (fried)",
+            "STEWED BEEF JUICE"
+        ],
+        "CHICKEN": [
+            "CHICKEN (cooked)",
+            "CHICKEN (fried)",
+            "CHICKEN (raw)",
+            "CHICKEN (roasted)",
+            "CHICKEN BREAST (baked)",
+            "CHICKEN BREAST (cooked) (Hubbard Red JA breed)",
+            "CHICKEN BREAST (cooked) (Leghorn breed)",
+            "CHICKEN BREAST (cooked) (Naked Neck breed)",
+            "CHICKEN BREAST (cooked) (Ross 308 breed)",
+            "CHICKEN BREAST (raw)",
+            "CHICKEN BREAST (raw) (Hubbard Red JA breed)",
+            "CHICKEN BREAST (raw) (Leghorn breed)",
+            "CHICKEN BREAST (raw) (Naked Neck breed)",
+            "CHICKEN BREAST (raw) (Ross 308 breed)",
+            "CHICKEN BREAST (sugar-smoked)",
+            "CHICKEN FAT",
+            "CHICKEN SKIN (baked)",
+            "CHICKEN SKIN (raw)",
+            "CHICKEN SKIN (sugar-smoked)"
+        ],
+        "EGG": [
+            "CHICKEN EGG (boiled)",
+            "CHICKEN EGG (raw)",
+            "CHICKEN EGG (scrambled)",
+            "CHICKEN EGG WHITE (raw)",
+            "CHICKEN EGG YOLK (raw)"
+        ],
+        "GUINEA HEN": [
+            "GUINEA HEN"
+        ],
+        "HAM": [
+            "JINHUA HAM",
+            "XUANWEI HAM"
+        ],
+        "LAMB and MUTTON": [
+            "LAMB (raw)",
+            "LAMB (roasted)",
+            "LAMB and MUTTON FAT (heated)",
+            "LAMB and MUTTON LIVER",
+            "MUTTON (boiled)",
+            "MUTTON (cooked)",
+            "MUTTON (raw)"
+        ],
+        "MORTADELLA": [
+            "MORTADELLA (briefly cooked, fresh)",
+            "MORTADELLA (briefly cooked, stored 60 days )",
+            "MORTADELLA (traditionally cooked, fresh)",
+            "MORTADELLA (traditionally cooked, stored 60 days)"
+        ],
+        "PORK": [
+            "PORK FAT (bacon)",
+            "PORK LIVER",
+            "PORK RIB MEAT (raw, Duroc-Bamei hybrid breed)",
+            "PORK TENDERLOIN (raw, Duroc-Bamei hybrid breed)",
+            "PORK TENDON MEAT (raw, Duroc-Bamei hybrid breed)",
+            "PORK, CURED (boiled, cooked)",
+            "PORK, CURED (fried)",
+            "PORK, CURED (raw)",
+            "PORK, CURED (smoked)",
+            "PORK, UNCURED (boiled, cooked)",
+            "PORK, UNCURED (fried and seasoned)",
+            "PORK, UNCURED (grilled, roasted)",
+            "PORK, UNCURED (raw)",
+            "PORK, UNCURED (smoked)"
+        ],
+        "PORK LOIN": [
+            "PORK LOIN (dry aged for 20 days and grilled)",
+            "PORK LOIN (dry aged for 40 days and grilled)",
+            "PORK LOIN (grilled)"
+        ],
+        "SALAMI": [
+            "SALAMI"
+        ],
+        "TURKEY": [
+            "TURKEY (boiled)",
+            "TURKEY (raw)",
+            "TURKEY (roasted)"
+        ]
+    },
+    "SPICES": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "AGASTACHE SPECIES": [
+            "ANISE HYSSOP (Agastache foeniculum (Pursh) Kuntze)",
+            "CATNIP GIANT HYSSOP (Agastache nepetoides K.)",
+            "KOREAN MINT (Agastache rugosa Kuntze)"
+        ],
+        "ALPINIA SPECIES": [
+            "CHEKUR (Alpinia sessilis = Kaempferia galanga)",
+            "GREATER GALANGA (Laos) (Alpinia galanga Willd.)",
+            "SMALLER GALANGA (Alpinia officinarum Hance)"
+        ],
+        "ANGELICA (Angelica archangelica L.)": [
+            "ANGELICA ROOT OIL",
+            "ANGELICA SEED OIL"
+        ],
+        "ANISE": [
+            "ANISE (Pimpinella anisum L.)",
+            "ANISE FRUITS",
+            "ANISE OIL"
+        ],
+        "ARGAN OIL": [
+            "ROASTED ARGAN OIL (cold-pressed, fresh)",
+            "ROASTED ARGAN OIL (cold-pressed, old)",
+            "UNROASTED ARGAN OIL (cold-pressed, fresh)",
+            "UNROASTED ARGAN OIL (cold-pressed, old)"
+        ],
+        "ASAFOETIDA OIL": [
+            "ASAFOETIDA OIL"
+        ],
+        "ASHANTI PEPPER (Piper guineense Schum and Thom)": [
+            "ASHANTI PEPPER (Piper guineense Schum and Thom)"
+        ],
+        "CALABASH NUTMEG (Monodora myristica Dunal)": [
+            "CALABASH NUTMEG (Monodora myristica Dunal)"
+        ],
+        "CALAMINTHA NEPETA OIL": [
+            "CALAMINTHA NEPETA OIL"
+        ],
+        "CALAMUS (sweet flag) (Acorus calamus L.)": [
+            "CALAMUS (ASIAN ORIGIN)",
+            "CALAMUS (EUROPEAN ORIGIN)",
+            "CALAMUS (NORTH AMERICAN ORIGIN)"
+        ],
+        "CAMOMILE": [
+            "GERMAN CAMOMILE OIL (Matricaria chamomilla L.)",
+            "MOROCCAN CAMOMILE OIL (Chamaemelum mixtum L.)",
+            "ROMAN CAMOMILE OIL (Anthemis nobilis L.)"
+        ],
+        "CAPERS (Capparis spinoza)": [
+            "CAPERS (Capparis spinoza)"
+        ],
+        "CARAWAY (Carum carvi L.)": [
+            "CARAWAY HERB",
+            "CARAWAY ROOT",
+            "CARAWAY SEED"
+        ],
+        "CARDAMOM (Ellettaria cardamomum Maton.)": [
+            "CARDAMOM (Ellettaria cardamomum Maton.)"
+        ],
+        "CHERVIL (Anthriscus cerefolium L.)": [
+            "CHERVIL (Anthriscus cerefolium L.)"
+        ],
+        "CINNAMOMUM SPECIES": [
+            "CASSIA BARK (Cinnamomum cassia Blume)",
+            "CASSIA LEAF (Cinnamomum cassia Blume)",
+            "CINNAMOMUM, OTHER TYPES",
+            "CINNAMON BARK (Cinnamomum zeylanicum Blume)",
+            "CINNAMON LEAF (Cinnamomum zeylanicum Blume)",
+            "CINNAMON ROOT BARK (Cinnamomum zeylanicum Blume)"
+        ],
+        "CLOVES (Eugenia caryophyllata Thunberg)": [
+            "CLOVE BUD",
+            "CLOVE LEAF",
+            "CLOVE STEM"
+        ],
+        "CORIANDER LEAF (=CILANTRO) (Coriandrum sativum L.)": [
+            "CORIANDER LEAF (=CILANTRO) (Coriandrum sativum L.)"
+        ],
+        "CORIANDER SEED (Coriandrum sativum L.)": [
+            "CORIANDER SEED (Coriandrum sativum L.)"
+        ],
+        "CUMIN OIL": [
+            "BLACK CUMIN OIL (cold-pressed, fresh)",
+            "BLACK CUMIN OIL (cold-pressed, old)"
+        ],
+        "CUMIN SEED (Cuminum cyminum L.)": [
+            "CUMIN SEED (Cuminum cyminum L.)"
+        ],
+        "CURCUMA SPECIES": [
+            "CURCUMA AERUGINOSA ROXB.",
+            "CURCUMA AMADA ROBX.",
+            "CURCUMA CAESIA ROXB.",
+            "CURCUMA DOMESTICA L.",
+            "CURCUMA HEYNEANA VAL.",
+            "CURCUMA PIERREANA GAGNEP. (rhizome oil)",
+            "CURCUMA PIERREANA GAGNEP. (stem and leaf oil)",
+            "CURCUMA WENYUJIN",
+            "TEMOE LAWAK (Curcuma xanthorrhiza Roxb.)",
+            "TURMERIC (Curcuma longa L.= C. domestica Val.)",
+            "TURMERIC, WILD (Curcuma aromatica Salisb.)",
+            "ZEDOARY (Curcuma zedoaria Rosc.)"
+        ],
+        "CURRY (Bergera koenigii L.)": [
+            "CURRY FRUIT OIL (Bergera koenigii L)",
+            "CURRY LEAF OIL (Bergera koenigii L.)"
+        ],
+        "DILL (Anethum species)": [
+            "DILL BLOSSOM (Anethum graveolens L.)",
+            "DILL HERB (Anethum graveolens L.)",
+            "DILL ROOT (Anethum graveolens L.)",
+            "DILL SEED (Anethum graveolens L.)",
+            "INDIAN DILL HERB (Anethum sowa Roxb.)",
+            "INDIAN DILL ROOT (Anethum sowa Roxb.)",
+            "INDIAN DILL SEED (Anethum sowa Roxb.)"
+        ],
+        "DRAGONHEAD (Dracocephalum moldavica L.)": [
+            "DRAGONHEAD (Dracocephalum moldavica L.)"
+        ],
+        "EUCALYPTUS OIL (Eucalyptus globulus Labill)": [
+            "EUCALYPTUS OIL (Eucalyptus globulus Labill)"
+        ],
+        "FENNEL (Foeniculum vulg., ssp. capillaceum; var.)": [
+            "BITTER FENNEL FRUIT/SEED",
+            "BITTER FENNEL OIL (F. var. vulgare (Miller))",
+            "BITTER FENNEL TEA",
+            "FENNEL WASTE (Foeniculum vulgare Mill.)",
+            "SWEET FENNEL OIL (F. var. dulce (Miller))",
+            "VEGETABLE FENNEL OIL (F. var. azoricum (Miller))"
+        ],
+        "FENUGREEK (Trigonella foenum-graecum L.)": [
+            "FENUGREEK (Trigonella foenum-graecum L.)"
+        ],
+        "FLAXSEED OIL": [
+            "BROWN FLAXSEED OIL (cold-pressed, fresh)",
+            "BROWN FLAXSEED OIL (cold-pressed, old)",
+            "GOLD FLAXSEED OIL (cold-pressed, fresh)",
+            "GOLD FLAXSEED OIL (cold-pressed, old)"
+        ],
+        "GENTIAN ROOT": [
+            "GENTIAN ROOT"
+        ],
+        "GINGER (Zingiber species)": [
+            "GINGER (Zingiber cassumunar Roxb.)",
+            "GINGER (Zingiber officinale Roscoe)",
+            "GINGER, OTHER TYPES"
+        ],
+        "HEMP OIL": [
+            "HEMP OIL (cold-pressed, fresh)",
+            "HEMP OIL (cold-pressed, old)"
+        ],
+        "INDIAN CRESS ABSOLUTE (Tropaelum majus L.)": [
+            "INDIAN CRESS ABSOLUTE (Tropaelum majus L.)"
+        ],
+        "JUNIPERUS COMMUNIS": [
+            "JUNIPER BERRY",
+            "JUNIPER BERRY (alcoholic extract)"
+        ],
+        "LAUREL (Laurus nobilis L.)": [
+            "LAUREL (Laurus nobilis L.)"
+        ],
+        "LEMON BALM (Melissa officin. L subsp alt Arcang)": [
+            "LEMON BALM (Melissa officin. L subsp alt Arcang)"
+        ],
+        "LEMON BALM (Melissa officinalis L.)": [
+            "LEMON BALM (Melissa officinalis L.)"
+        ],
+        "LEMON GRASS OIL (Cymbopogon)": [
+            "CYMBOPOGOM NARDUS (citronella) OIL",
+            "CYMBOPOGON CITRATUS OIL",
+            "CYMBOPOGON FLEXUOSUS OIL"
+        ],
+        "LICORICE (Glycyrrhiza species)": [
+            "HEAT-PROCESSES LICORICE (Succus Liquiritiae)",
+            "Heated LICORICE (Glycyrrhiza echinata L.)",
+            "Heated LICORICE (Glycyrrhiza glabra L.)",
+            "Heated LICORICE (Glycyrrhiza inflata L.)",
+            "Heated LICORICE (Glycyrrhiza uralensis)",
+            "Raw LICORICE (Glycyrrhiza glabra L.)"
+        ],
+        "LONG PEPPER (Piper longum)": [
+            "LONG PEPPER OIL (Piper longum)"
+        ],
+        "LOVAGE (Levisticum officinale Koch)": [
+            "LOVAGE LEAF",
+            "LOVAGE ROOT",
+            "LOVAGE SEED"
+        ],
+        "MACE (Myristica fragrans Houttuyn)": [
+            "MACE (Myristica fragrans Houttuyn)"
+        ],
+        "MEADOWSWEET FLOWER OIL (Filip\u00e9ndula ulm\u00e1ria)": [
+            "MEADOWSWEET FLOWER OIL (Filip\u00e9ndula ulm\u00e1ria)"
+        ],
+        "MENTHA OILS": [
+            "APPLE MINT OIL (Mentha suaveolens)",
+            "ASIAN MINT OIL (Mentha asiatica Borriss.)",
+            "BERGAMOT MINT OIL (Mentha citrata Ehrh)",
+            "CHOCO MINT OIL (Mentha piperita f. citrate)",
+            "CORNMINT OIL (Mentha arvensis)",
+            "EAU DE COLOGNE MINT OIL (M. piperita var. citrate)",
+            "GINGER MINT (Mentha gentilis)",
+            "HORSE MINT OIL (Mentha longifolia)",
+            "MENTHA OILS, OTHER",
+            "PENNYROYAL OIL (Mentha pulegium L.)",
+            "PEPPERMINT OIL (Mentha piperita)",
+            "PINEAPPLE MINT OIL (Mentha suaveolens \"Variegata\"",
+            "SCOTCH SPEARMINT OIL (Mentha cardiaca Ger.)",
+            "SLENDER MINT OIL (Mentha diemenica)",
+            "SPEARMINT OIL (Mentha spicata L.)",
+            "WATER MINT OIL (Mentha aquatica)"
+        ],
+        "MILK THISTLE OIL": [
+            "MILK THISTLE OIL (cold-pressed, fresh)",
+            "MILK THISTLE OIL (cold-pressed, old)"
+        ],
+        "MUSTARD (Brassica species)": [
+            "BLACK MUSTARD (Brassica nigra)",
+            "BROWN MUSTARD OIL (Brassica juncea)",
+            "BROWN MUSTARD SEEDS (Brassica juncea)",
+            "BROWN MUSTARD SEEDS ROASTED (Brassica juncea)",
+            "BROWN MUSTARD VEGETABLE (Brassica juncea)",
+            "WHITE MUSTARD SEEDS (Sinapis alba L)",
+            "WHITE MUSTARD SEEDS ROASTED (Sinapis alba L.)"
+        ],
+        "MYRTLE (Myrtus communis L.)": [
+            "MYRTLE BERRY",
+            "MYRTLE LEAF"
+        ],
+        "NUTMEG (Myristica fragrans Houttuyn)": [
+            "NUTMEG (Myristica fragrans Houttuyn)"
+        ],
+        "OCIMUM SPECIES": [
+            "OCIMUM BASILICUM VARIETIES",
+            "OCIMUM SANCTUM L.",
+            "OCIMUM, OTHER TYPES"
+        ],
+        "ORIGANUM (Spanish) (Coridothymus cap.(L.) Rchb.)": [
+            "ORIGANUM (Spanish) (Coridothymus cap.(L.) Rchb.)"
+        ],
+        "PEPPER (Piper nigrum L.)": [
+            "BLACK PEPPER (Piper nigrum L.) (non-categorised)",
+            "BLACK PEPPER FRUIT (cv. Bragantina)",
+            "BLACK PEPPER FRUIT (cv. Cingapura)",
+            "BLACK PEPPER FRUIT (cv. Clonada)",
+            "BLACK PEPPER FRUIT (cv. Equador)",
+            "BLACK PEPPER FRUIT (cv. Guajarina)",
+            "BLACK PEPPER FRUIT (cv. Uthriankota)",
+            "BLACK PEPPER LEAF (cv. Bragantina)",
+            "BLACK PEPPER LEAF (cv. Cingapura)",
+            "BLACK PEPPER LEAF (cv. Clonada)",
+            "BLACK PEPPER LEAF (cv. Equador)",
+            "BLACK PEPPER LEAF (cv. Guajarina)",
+            "BLACK PEPPER LEAF (cv. Ia\u00e7ar\u00e1)",
+            "BLACK PEPPER LEAF (cv. Kottanadan)",
+            "BLACK PEPPER LEAF (cv. Uthirankota)",
+            "BLACK PEPPER OIL (Piper nigrum L.)",
+            "WHITE PEPPER (Piper nigrum L.)",
+            "WHITE PEPPER OIL (Piper nigrum L.)",
+            "WHITE PEPPER WHOLE CORNS (Piper nigrum L.)"
+        ],
+        "PIMENTO (ALLSPICE) (Pimenta dioica L. Merr.)": [
+            "PIMENTO BERRY",
+            "PIMENTO LEAF"
+        ],
+        "PIPER BETLE L. CULTIVARS": [
+            "PIPER BETLE L. CULTIVARS"
+        ],
+        "POPPY SEED OIL": [
+            "BLACK POPPY SEED OIL (cold-pressed, fresh)",
+            "BLACK POPPY SEED OIL (cold-pressed, old)",
+            "WHITE POPPY SEED OIL (cold-pressed, fresh)",
+            "WHITE POPPY SEED OIL (cold-pressed, old)"
+        ],
+        "QUASSIA AMARA": [
+            "QUASSIA AMARA"
+        ],
+        "ROSEMARY (Rosmarinus officinalis L.)": [
+            "ROSEMARY (Rosmarinus officinalis L.)"
+        ],
+        "SAFFRON (Crocus sativus L.)": [
+            "SAFFRON (Crocus sativus L.)"
+        ],
+        "SALVIA SPECIES": [
+            "CLARY SAGE (Salvia sclarea L.)",
+            "RED SAGE (Texas sage) (S. coccinea Juss. ex Murr.)",
+            "SAGE (Salvia officinalis L.)",
+            "SPANISH SAGE (Salvia lavandulaefolia Vahl.)"
+        ],
+        "SATUREJA SPECIES": [
+            "SATUREJA THYMBRA L.",
+            "SUMMER SAVORY (Satureja hortensis L.)",
+            "WINTER SAVORY (Satureja montana L.)"
+        ],
+        "SESAME SEED OIL": [
+            "BLACK SESAME SEED OIL (cold-pressed, fresh)",
+            "BLACK SESAME SEED OIL (cold-pressed, old)",
+            "WHITE SESAME SEED OIL (cold-pressed, fresh)",
+            "WHITE SESAME SEED OIL (cold-pressed, old)",
+            "WHITE SESAME SEED OIL (roasted)"
+        ],
+        "STAR ANISE": [
+            "STAR ANISE (Illicium anisatum)",
+            "STAR ANISE (Illicium verum)"
+        ],
+        "SWEET GRASS OIL (Hierochloe odorata)": [
+            "SWEET GRASS OIL (Hierochloe odorata)"
+        ],
+        "SWEET MARJORAM (Origanum majorana L.)": [
+            "SWEET MARJORAM (Origanum majorana L.)"
+        ],
+        "TARRAGON (Artemisia dracunculus L.)": [
+            "TARRAGON LEAVES",
+            "TARRAGON OIL"
+        ],
+        "THYME (Thymus species)": [
+            "THYMUS VULGARIS L.",
+            "THYMUS ZYGIS L.",
+            "THYMUS, OTHER TYPES"
+        ],
+        "VANILLA": [
+            "BOURBON VANILLA (Vanilla planifolia Andrews)",
+            "TAHITI VANILLA (Vanilla tahitensis Moore)"
+        ],
+        "VINEGAR (non-categorised)": [
+            "VINEGAR (aged in oak casks, from Brandy de Jerez)",
+            "VINEGAR (aged w/o wood cont, from Brandy de Jerez)",
+            "VINEGAR (industrial from Ulugbey Karasi red wine)",
+            "VINEGAR (traditional from Ulugbey Karasi red wine)"
+        ],
+        "WILD MARJORAM (origanum vulgare L ssp glandulosum)": [
+            "WILD MARJORAM (origanum vulgare L ssp glandulosum)"
+        ],
+        "WILD MARJORAM (origanum vulgare L. ssp. hirtum)": [
+            "WILD MARJORAM (origanum vulgare L. ssp. hirtum)"
+        ],
+        "WILD MARJORAM (origanum vulgare L. ssp. virens)": [
+            "WILD MARJORAM (origanum vulgare L. ssp. virens)"
+        ],
+        "WILD MARJORAM (origanum vulgare L. ssp. vulgare)": [
+            "WILD MARJORAM (origanum vulgare L. ssp. vulgare)"
+        ],
+        "WILD MARJORAM (Origanum vulgare L.)": [
+            "WILD MARJORAM (Origanum vulgare L.)"
+        ],
+        "WORMWOOD OIL (Artemisia absinthium L.)": [
+            "WORMWOOD OIL (Artemisia absinthium L.)"
+        ],
+        "XYLOPIA SPECIES": [
+            "ETHIOPIAN PEPPER, GUINEA PEPPER (X. aethiopica)",
+            "XYLOPIA PARVIFLORA (A. RICH) BENTH."
+        ]
+    },
+    "VEGETABLES": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "ALLIUM SPECIES": [
+            "CAUCAS (Allium victoralis L.)",
+            "CHIVE (Allium schoenoprasum L.)",
+            "GARLIC (Allium sativum L.)",
+            "GARLIC (BAKED, FRIED)",
+            "GARLIC ESSENTIAL OIL",
+            "LEEK (Allium porrum L.) (heated)",
+            "LEEK (Allium porrum L.) (raw)",
+            "NIRA (Allium tuberosum Rottl.)",
+            "NOBIRU (Allium grayi Regal)",
+            "ONION (Allium cepa L.)",
+            "ONION (Allium cepa L.) (cooked)",
+            "ONION (Allium cepa L.) (roasted)",
+            "SCALLION (Allium fistulosum L. var. caespitosum)",
+            "SHALLOT (Allium cepa L. aggregatum)",
+            "WELSH ONION (Allium fistulosum L. var. maichuon)"
+        ],
+        "ARTICHOKE": [
+            "GLOBE ARTICHOKE (Cynara scolymus L.)",
+            "JERUSALEM ARTICHOKE (Helianthus tuberosus)"
+        ],
+        "ASPARAGUS (Asparagus officinalis L.)": [
+            "ASPARAGUS (cooked)",
+            "ASPARAGUS (raw)"
+        ],
+        "AUBERGINE, EGGPLANT (Solanum melongena L.)": [
+            "AUBERGINE, EGGPLANT (Solanum melongena L.)"
+        ],
+        "BEANS": [
+            "BEANS (heated)",
+            "BEANS (raw)"
+        ],
+        "BEETROOT (Beta vulgaris L.)": [
+            "BEETROOT (cooked)",
+            "BEETROOT (raw)"
+        ],
+        "BRASSICA CAMPESTRIS": [
+            "CHINESE CABBAGE",
+            "TURNIP"
+        ],
+        "BRUSSELS SPROUTS (Brassica oleracea var gemmifera)": [
+            "BRUSSELS SPROUTS (Brassica oleracea var gemmifera)"
+        ],
+        "CABBAGE (Brassica oleracea)": [
+            "CABBAGE (cooked)",
+            "CABBAGE (raw)",
+            "KALE",
+            "KOHLRABI"
+        ],
+        "CAPSICUM SPECIES": [
+            "CAPSICUM CHINENSE",
+            "CHILI PEPPER (capsicum frutescens)",
+            "CHILI PEPPER PERICARP (C. annuum)",
+            "CHILI PEPPER PERICARP (C. baccatum)",
+            "CHILI PEPPER PERICARP (C. chinense)",
+            "CHILI PEPPER PERICARP (C. chinense\u00d7C. frutescens)",
+            "CHILI PEPPER PLACENTA (C. annuum)",
+            "CHILI PEPPER PLACENTA (C. baccatum)",
+            "CHILI PEPPER PLACENTA (C. chinense)",
+            "CHILI PEPPER PLACENTA (C. chinense\u00d7C. frutescens)",
+            "GREEN PAPRIKA, BELL/SWEET PEPPER (capsicum annuum)",
+            "PAPRIKA, BELL/SWEET PEPPER(capsicum annuum) uncat.",
+            "RED PAPRIKA, BELL/SWEET PEPPER (capsicum annuum)"
+        ],
+        "CARROT (Daucus carota L.)": [
+            "CARROT (Daucus carota L.)"
+        ],
+        "CASSAVA (Manihot esculenta Crantz)": [
+            "CASSAVA (Manihot esculenta Crantz)"
+        ],
+        "CAULIFLOWER and BROCCOLI": [
+            "BROCCOLI (cooked)",
+            "BROCCOLI (raw)",
+            "CAULIFLOWER (cooked)",
+            "CAULIFLOWER (raw)"
+        ],
+        "CELERY (Apium graveolens L.)": [
+            "CELERY LEAVES and/or STALKS",
+            "CELERY ROOT (Apium graveolens L. var. rapaceum)",
+            "CELERY SEED OIL"
+        ],
+        "CHAYOTE (Sechium edule L.)": [
+            "CHAYOTE (Sechium edule L.)"
+        ],
+        "CHICORY (Cichorium intrybus L.)": [
+            "CHICORY ROOT (roasted)"
+        ],
+        "CUCUMBER (Cucumis sativus L.)": [
+            "CUCUMBER (Cucumis sativus L.)"
+        ],
+        "ENDIVE (Cichorium endivia L.)": [
+            "ENDIVE (Cichorium endivia L.)"
+        ],
+        "GARDEN CRESS (Lepidium sativum L.)": [
+            "GARDEN CRESS (Lepidium sativum L.)"
+        ],
+        "HORSERADISH (Armoracia lapathifolia)": [
+            "HORSERADISH (Armoracia lapathifolia)"
+        ],
+        "LAMB'S LETTUCE (Valerianella locusta)": [
+            "LAMB'S LETTUCE (Valerianella locusta)"
+        ],
+        "LENTILS": [
+            "LENTILS"
+        ],
+        "LETTUCE (Lactuca sativa L.)": [
+            "LETTUCE (Lactuca sativa L.)"
+        ],
+        "OIL PALM": [
+            "PALM OIL (elaeis guineensis)",
+            "PALM OIL (elaeis oleifera)"
+        ],
+        "OKRA (Hibiscus esculentus L.)": [
+            "OKRA (Hibiscus esculentus L.)"
+        ],
+        "PARSLEY (Petroselium species)": [
+            "PARSLEY LEAVES",
+            "PARSLEY ROOT",
+            "PARSLEY SEED OIL"
+        ],
+        "PARSNIP ROOT (Pastinaca sativa L.)": [
+            "PARSNIP ROOT (cooked)",
+            "PARSNIP ROOT (raw)"
+        ],
+        "PEAS (Pisum sativum L.)": [
+            "PEAS (Pisum sativum L.)"
+        ],
+        "POTATO (Solanum tuberosum L.)": [
+            "POTATO (baked)",
+            "POTATO (cooked or boiled)",
+            "POTATO (French fried)",
+            "POTATO (raw)"
+        ],
+        "PUMPKIN (Cucurbita pepo L.)": [
+            "PUMPKIN (Cucurbita pepo L.)"
+        ],
+        "RADISH (Raphanus sativus L.)": [
+            "RADISH (fermented)",
+            "RADISH (raw)"
+        ],
+        "RHUBARB": [
+            "RHUBARB"
+        ],
+        "RUTABAGA, SWEDE (Brass. napus var. napobrass. L.)": [
+            "RUTABAGA, SWEDE (Brass. napus var. napobrass. L.)"
+        ],
+        "SAUERKRAUT": [
+            "SAUERKRAUT"
+        ],
+        "SHIBAZUKE (fermented sour vegetables)": [
+            "SHIBAZUKE (fermented sour vegetables)"
+        ],
+        "SOUTHERNPEA (Vinga unguiculata L.)": [
+            "SOUTHERNPEA (Vinga unguiculata L.)"
+        ],
+        "SOYBEAN (Glycine max. L. merr.)": [
+            "DEFATTED SOYBEAN",
+            "GREEN SOYBEAN (edamame)",
+            "SOY PROTEIN (hydrolyzed)",
+            "SOYA-BEAN OIL",
+            "SOYBEAN",
+            "SOYBEAN (heated)"
+        ],
+        "SPINACH (Spinacia oleracea L.)": [
+            "BABY SPINACH (Spinacia oleracea L.) (raw)",
+            "SPINACH (Spinacia oleracea L.) (cooked)",
+            "SPINACH (Spinacia oleracea L.) (dried)"
+        ],
+        "SWEET POTATO (Ipomoea batatas)": [
+            "SWEET POTATO (Ipomoea batatas) (heated)"
+        ],
+        "TOMATO (Lycopersicon esculentum Mill.)": [
+            "TOMATO FRESH",
+            "TOMATO JUICE",
+            "TOMATO PASTE"
+        ],
+        "UDO (Aralia cordata Thunb.)": [
+            "UDO (Aralia cordata Thunb.)"
+        ],
+        "WASABI (Wasabi japonica) (Japanese horseradish)": [
+            "WASABI (Wasabi japonica) (Japanese horseradish)"
+        ],
+        "WATER SPINACH (ipomoea aquatica Forsk.)": [
+            "WATER SPINACH LEAF (ipomoea aquatica Forsk.)",
+            "WATER SPINACH STEM (ipomoea aquatica Forsk.)"
+        ],
+        "WATER YAM (Dioscorea alata)": [
+            "WATER YAM (Dioscorea alata)"
+        ],
+        "WATERCRESS (Nasturtium officinale R.Br.)": [
+            "WATERCRESS (Nasturtium officinale R.Br.)"
+        ],
+        "WAX GOURD, WINTER MELON (Benincasa hispada Cogn)": [
+            "WAX GOURD, WINTER MELON (Benincasa hispada Cogn)"
+        ]
+    },
+    "FUNGI": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "DESERT TRUFFLE (Terfeziaceae)": [
+            "DESERT TRUFFLE (Terfeziaceae)"
+        ],
+        "MATSUTAKE (Tricholoma matsutake)": [
+            "MATSUTAKE (Tricholoma matsutake)"
+        ],
+        "MUSHROOM": [
+            "AGARICUS (= Psalliota) varieties",
+            "BOLETUS EDULIS (dried)",
+            "CHAMPIGNON (Agaricus bisporus)",
+            "HEBELOMA SACCHARIOLENS",
+            "MUSHROOM, OTHER VARIETIES",
+            "SHIITAKE (Lentinus edodes Sing.)"
+        ],
+        "TRUFFLE": [
+            "BAGNOLI or LORRAINE TRUFFLE (Tuber mesentericum)",
+            "BIANCHETTE TRUFFLE (Tuber borchii)",
+            "BLACK TRUFFLE (Tuber melanosporum)",
+            "BURGUNDY TRUFFLE (Tuber uncinatum)",
+            "KALAHARI TRUFFLE (Tuber oligospermum)",
+            "MUSCATEL TRUFFLE (Tuber brumale var. Moschatum)",
+            "SUMMER TRUFFLE (Tuber aestivum)",
+            "TUBER excavatum",
+            "TUBER panniferum",
+            "WHITE ALBA TRUFFLE (Tuber magnatum pico)",
+            "WINTER TRUFFLE (Tuber brumale)"
+        ]
+    },
+    "FRUITS": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "ACEROLA (Malpighia)": [
+            "ACEROLA (Malpighia)"
+        ],
+        "AMBARELLA FRUIT (Spondias cytherea S.)": [
+            "AMBARELLA FRUIT (ripe, Spondias cytherea S.)",
+            "AMBARELLA FRUIT (unripe, Spondias cytherea S.)"
+        ],
+        "APPLE FRESH (Malus species)": [
+            "APPLE FRESH (Braeburn)",
+            "APPLE FRESH (Cox's Orange Pippin)",
+            "APPLE FRESH (Cox's Orange)",
+            "APPLE FRESH (Elstar)",
+            "APPLE FRESH (Fuji)",
+            "APPLE FRESH (generic)",
+            "APPLE FRESH (Golden Delicious)",
+            "APPLE FRESH (Golden Reinders)",
+            "APPLE FRESH (Granny Smith)",
+            "APPLE FRESH (Jonagold)",
+            "APPLE FRESH (Jonathan)",
+            "APPLE FRESH (McIntosh)",
+            "APPLE FRESH (Pink Lady)",
+            "APPLE FRESH (Red Delicious)",
+            "APPLE FRESH (Royal Gala)",
+            "APPLE FRESH (Ruixue)",
+            "APPLE FRESH UNRIPE (Fuiji)",
+            "APPLE FRESH UNRIPE (Ruixue)"
+        ],
+        "APPLE PROCESSED (Malus species)": [
+            "APPLE JAM",
+            "APPLE PROCESSED (cooked)",
+            "APPLE PROCESSED (juice)"
+        ],
+        "ARCTIC BRAMBLE (Rubus arcticus L.)": [
+            "ARCTIC BRAMBLE (Rubus arcticus L.)"
+        ],
+        "ARTOCARPUS SPECIES": [
+            "CHEMPEDAK (Artocarpus polyphema Pers.)",
+            "JACKFRUIT (Artocarpus heterophyllus Lam.)"
+        ],
+        "ASIAN PEAR (Pyrus serotina, Pyrus pyrifolia)": [
+            "ASIAN PEAR (Pyrus serotina, Pyrus pyrifolia)"
+        ],
+        "AVOCADO (Persea americana Mill.)": [
+            "AVOCADO (Persea americana Mill.)"
+        ],
+        "BABACO FRUIT (Carica pentagona Heilborn)": [
+            "BABACO FRUIT (Carica pentagona Heilborn)"
+        ],
+        "BACURI (Platonia insignis)": [
+            "BACURI (Platonia insignis)"
+        ],
+        "BELI, BAEL (Aegle marmelos Correa)": [
+            "BELI, BAEL (Aegle marmelos Correa)"
+        ],
+        "BLACK CHOKE BERRY JUICE(Aronia melanocarpa Ell.)": [
+            "BLACK CHOKE BERRY JUICE(Aronia melanocarpa Ell.)"
+        ],
+        "BLACK CURRANTS (Ribes nigrum L.)": [
+            "BLACK CURRANTS - BERRIES",
+            "BLACK CURRANTS - BUDS"
+        ],
+        "BULLOCK'S HEART (Annona reticulata L.)": [
+            "BULLOCK'S HEART (Annona reticulata L.)"
+        ],
+        "CALIFORNIA PEPPER (Schinus molle L.)": [
+            "CALIFORNIA PEPPER (Schinus molle L.)"
+        ],
+        "CAPE GOOSEBERRY (Physalis peruviana L.)": [
+            "CAPE GOOSEBERRY (Physalis peruviana L.)"
+        ],
+        "CASHEW APPLE (Anacardium occidentale)": [
+            "CASHEW APPLE (fresh)",
+            "CASHEW APPLE JUICE"
+        ],
+        "CERIMAN, PINANONA (Monstera deliciosa Liebm.)": [
+            "CERIMAN, PINANONA (Monstera deliciosa Liebm.)"
+        ],
+        "CHERIMOYA (Annona cherimolia Mill.)": [
+            "CHERIMOYA (Annona cherimolia Mill.)"
+        ],
+        "CHERRY (Prunus avium (sweet), Pr. cerasus (sour))": [
+            "SOUR CHERRY (Prunus cerasus L.)",
+            "SWEET CHERRY (Prunus avium L.)"
+        ],
+        "CHINESE QUINCE (Pseudocydonia sinensis Schneid)": [
+            "CHINESE QUINCE FLESH",
+            "CHINESE QUINCE FRUIT",
+            "CHINESE QUINCE PEEL"
+        ],
+        "CITRUS FRUITS": [
+            "AUSTRALIAN FINGER LIME PEEL (cv. Alstonville)",
+            "AUSTRALIAN FINGER LIME PEEL (cv. Durham\u2019s Emerald)",
+            "AUSTRALIAN FINGER LIME PEEL (cv. Judy's Everb.)",
+            "BAIA ORANGE PEEL (C. sinensis L. Osbeck var. Baia)",
+            "BERGAMOT OIL (Citrus aurantium bergamia)",
+            "BITTER ORANGE JUICE (Citrus aurantium ssp. amara)",
+            "BITTER ORANGE PEEL OIL",
+            "BITTER ORANGE PEEL OIL (Daidai)",
+            "BITTER ORANGE PEEL OIL (Iyokan)",
+            "BITTER ORANGE PEEL OIL (Kabusu)",
+            "BITTER ORANGE PEEL OIL (Natsu-daidai)",
+            "BITTER ORANGE PEEL OIL (Sudachi)",
+            "BLOOD-OF-MOMBUCA ORANGE PEEL (C. sinensis var. S.)",
+            "BUDDHA HAND FRUIT (citrus medica v. sarcodactylis)",
+            "BUDDHA HAND HYDROLATE (citrus medica v. sarcod.)",
+            "BUDDHA HAND JUICE",
+            "BUDDHA HAND PEEL (citrus medica v. sarcodactylis)",
+            "BUDDHA HAND PEEL OIL (citrus medica v. s.)",
+            "CALAMANSI FRUIT TAIWAN (citrus x microcarpa)",
+            "CALAMANSI PHILIPPINE ESS OIL (citrus microcarpa B)",
+            "CALAMANSI PHILIPPINE FRUIT (citrus x microcarpa)",
+            "CALAMONDIN JUICE (Citrus mitis Blanco)",
+            "CAVONE LEMON PEEL OIL",
+            "DAIDAI PEEL OIL(C.aurantium L.cyathifera Y.Tanaka)",
+            "DANCY MANDARIN JUICE",
+            "DIAMANTE LEMON PEEL OIL (citrus medica L.)",
+            "FINGERED CITRON PEEL OIL (Citrus medica L.)",
+            "GRAPEFRUIT JUICE (Citrus paradisi)",
+            "GRAPEFRUIT OIL (Citrus paradisi)",
+            "ITALIAN TANGERINE PEEL (C. deliciosa Ten.)",
+            "IYO-KAN PEEL OIL (Citrus iyo Hort. ex Tanaka)",
+            "KABOSU OIL (Citrus spaerocarpa)",
+            "KABUSU PEEL OIL (Citrus aurantium f. kabusu)",
+            "KAFFIR LIME JUICE",
+            "KAFFIR LIME LEAF OIL (Citrus hystrix DC.)",
+            "KAFFIR LIME PEEL OIL",
+            "KINOKUNI MANDARIN JUICE (Citrus kinokuni)",
+            "KINOKUNI MANDARIN OIL (Citrus kinokuni)",
+            "KUMQUAT OIL (Citrus/Fortunella species)",
+            "KUMQUAT PEEL OIL",
+            "LEMON JUICE (Citrus limon Burm. f.)",
+            "LEMON PEEL OIL (Citrus limon Burm. f.)",
+            "LIMA ORANGE PEEL (C. sinensis L. Osbeck var. Lima)",
+            "LIME JUICE (Citrus aurantifolia, Citrus latifolia)",
+            "LIME OIL (coldpressed)",
+            "LIME OIL (distilled)",
+            "MANDARIN JUICE (Citrus reticulata)",
+            "MANDARIN OIL (Citrus deliciosa Tenore)",
+            "MANDARIN OIL (Citrus nobilis)",
+            "MANDARIN OIL (Citrus reticulata)",
+            "MEYER LEMON LEAF OIL",
+            "MEYER LEMON PEEL OIL (citrus meyerii Y.)",
+            "MICROCITRUS SPECIES OIL",
+            "ORANGE JUICE (Citrus sinensis L. Osbeck)",
+            "ORANGE OIL (Citrus sinensis L. Osbeck)",
+            "ORLANDO TANGELO (dancy mand duncan+grapefr hybrid)",
+            "OVAL KUMQUAT PEEL (F. margarita (Lour.) Swingle)",
+            "PERSIAN LIME JUICE",
+            "PERSIAN LIME OIL",
+            "PERSIAN LIME PEEL (C. limettioides Tanaka)",
+            "POMELO PEEL OIL (Citrus grandis Osbeck)",
+            "POMELO PINK JUICE (citr grandis Osbeck) PO52",
+            "POMELO WHITE JUICE (citr grandis Osbeck) PO51",
+            "PONKAN PEEL OIL (Citrus reticulair Blanco)",
+            "ROUND KUMQUAT PEEL (F. jap\u00f4nica (Thumb.) Swingle)",
+            "SATSUMA MANDARIN JUICE (Citrus unshiu)",
+            "SATSUMA MANDARIN PEEL OIL (Citrus unshiu)",
+            "SICILIAN LEMON PEEL (C. \u00d7 limon (L.) Burm. fil.)",
+            "SUDACHI OIL (Citrus sudachi Hort. ex Shirai)",
+            "SWANGI PEEL OIL (Citrus hystrix DC)",
+            "SWEET ORANGE PEEL OIL (C. sinesis)",
+            "TAHITI ACID LIME PEEL (C. \u00d7latifolia Tan. ex Y.T.)",
+            "TANGERINE MANDARIN JUICE",
+            "TANGERINE MANDARIN PEEL OIL",
+            "VALENCIA ORANGE PEEL (C. sinensis L. Osbeck var.V)",
+            "YUZU OIL (Citrus junos Sieb. ex Tanaka)"
+        ],
+        "CLOUDBERRY (Rubus chamaemorus L.)": [
+            "CLOUDBERRY (Rubus chamaemorus L.)"
+        ],
+        "CROWBERRY (Empetrum nigrum coll.)": [
+            "CROWBERRY (Empetrum nigrum coll.)"
+        ],
+        "CUPUACU (Theobroma grandiflorum Spreng.)": [
+            "CUPUACU (Theobroma grandiflorum Spreng.)"
+        ],
+        "CUSTARD APPLE, ATEMOYA (Annona atemoya)": [
+            "CUSTARD APPLE, ATEMOYA (Annona atemoya)"
+        ],
+        "DALIEB, PALMYRA PALM FRUIT (Borassus aethiopum L.)": [
+            "DALIEB, PALMYRA PALM FRUIT (Borassus aethiopum L.)"
+        ],
+        "DATE (Phoenix dactylifera L.)": [
+            "DATE (Phoenix dactylifera L.)"
+        ],
+        "DRAGON FRUIT (genus Hylocereus/Selenicereus)": [
+            "DRAGON FRUIT (Hylocereus costaricensis)",
+            "DRAGON FRUIT (Hylocereus undatus)"
+        ],
+        "DURIAN (Durio zibethinus)": [
+            "DURIAN (Durio zibethinus)"
+        ],
+        "DWARF QUINCE (Chaenomeles japonica)": [
+            "DWARF QUINCE (Chaenomeles japonica)"
+        ],
+        "ELDERBERRY (Sambucus nigra L.)": [
+            "ELDER FLOWER",
+            "ELDERBERRY FRUIT",
+            "ELDERBERRY JUICE"
+        ],
+        "FIG (Ficus carica L.)": [
+            "FIG (dried)",
+            "FIG (fresh)"
+        ],
+        "GABIROBA (Campomanesia xanthocarpa)": [
+            "GABIROBA (Campomanesia xanthocarpa)"
+        ],
+        "GRAPE (Vitis species)": [
+            "OTHER VITIS SPECIES",
+            "RAISIN",
+            "VITIS LABRUSCA L.",
+            "VITIS ROTUNDIFOLIA",
+            "VITIS VINIFERA L. (Cabernet Sauv. thinning grapes)",
+            "VITIS VINIFERA L. (syrah or shiraz)",
+            "VITIS VINIFERA L. (Syrah thinning grapes)",
+            "VITIS VINIFERA L. (Tempranillo thinning grapes)"
+        ],
+        "GUAVA and FEYOA": [
+            "FEYOA FRUIT (Feijoa sellowiana)",
+            "FEYOA PEEL",
+            "GUAVA ESSENCE",
+            "GUAVA FRUIT (Psidium guajava L.)",
+            "GUAVA PEEL",
+            "STRAWBERRY GUAVA (Psidium cattleianum Sabine)",
+            "STRAWBERRY GUAVA LEAF OIL (Psidium cattleianum S.)",
+            "YELLOW GUAVA (P.cattleianum Sab.var.lucidum Hort.)"
+        ],
+        "HOG PLUM (Spondias mombins L.)": [
+            "HOG PLUM (fruit pulp, Spondias mombins L.)",
+            "HOG PLUM (pasteurised juice, Spondias mombins L.)",
+            "HOG PLUM (raw juice, Spondias mombins L.)",
+            "HOG PLUM (thermosonicated juice, S. mombins L.)"
+        ],
+        "JATOB\u00c1-DO-CERRADO FRUIT": [
+            "JATOB\u00c1-DO-CERRADO FRUIT PEEL OIL"
+        ],
+        "KARAKA (Corynocarpus laevigatus J.R. et G. Forst.)": [
+            "KARAKA (Corynocarpus laevigatus J.R. et G. Forst.)"
+        ],
+        "KIWIFRUIT (Actinidia chinensis, syn. A. deliciosa)": [
+            "KIWIFRUIT (Actinidia chinensis, syn. A. deliciosa)"
+        ],
+        "LITCHI (Litchi chinensis Sonn.)": [
+            "LITCHI FRUIT",
+            "LITCHI JUICE"
+        ],
+        "LOGANBERRY JUICE (Rubus ursinus var. loganobaccus)": [
+            "LOGANBERRY JUICE (Rubus ursinus var. loganobaccus)"
+        ],
+        "LOQUAT (Eriobotrya japonica Lindl.)": [
+            "LOQUAT (Eriobotrya japonica Lindl.)"
+        ],
+        "MABOLO (diospyros blancoi)": [
+            "MABOLO (diospyros blancoi)"
+        ],
+        "MAMMEE APPLE (Mammea americana L.)": [
+            "MAMMEE APPLE (Mammea americana L.)"
+        ],
+        "MANGIFERA SPECIES": [
+            "BACHANG (Mangifera foetida Lour.)",
+            "BAMBANGAN (Mangifera panjang Kostermans)",
+            "BINJAI (Mangifera caesia Jack)",
+            "KUINI (Mangifera odorata Griff.)",
+            "MANGO (canned juice) (Mangifera indica L.)",
+            "MANGO (fresh pulp) (Mangifera indica L.)",
+            "MANGO (over-ripe pur\u00e9e) (var. keaw)",
+            "MANGO (over-ripe pur\u00e9e) (var. maha-chanok)",
+            "MANGO (over-ripe pur\u00e9e) (var. sam-pee)",
+            "MANGO (over-ripe pur\u00e9e, heated) (var. keaw)",
+            "MANGO (over-ripe pur\u00e9e, heated) (var. maha-chanok)",
+            "MANGO (over-ripe pur\u00e9e, heated) (var. sam-pee)",
+            "MANGO (peel) (Mangifera indica L.)",
+            "MANGO ALPHONSO",
+            "MANGO TOTAPURI"
+        ],
+        "MANGOSTEEN (Garcinia mangostana L.)": [
+            "MANGOSTEEN (Garcinia mangostana L.)"
+        ],
+        "MARULA (Sclerocarya birrea subsp. caffra)": [
+            "MARULA (Sclerocarya birrea subsp. caffra)"
+        ],
+        "MELON": [
+            "MUSK MELON (Cucumis melo L.)",
+            "WATER MELON (Citrullus vulgaris)"
+        ],
+        "MONODORA TENUIFOLIA": [
+            "MONODORA TENUIFOLIA"
+        ],
+        "MOUNTAIN PAPAYA (C. candamarcensis, C. pubescens)": [
+            "MOUNTAIN PAPAYA (C. candamarcensis, C. pubescens)"
+        ],
+        "MULBERRY (Morus species)": [
+            "MULBERRY (Morus species)"
+        ],
+        "MURUCI (Byrsonima crassifolia)": [
+            "MURUCI (Byrsonima crassifolia)"
+        ],
+        "NARANJILLA FRUIT (Solanum quitoense Lam.)": [
+            "NARANJILLA FRUIT (Solanum quitoense Lam.)"
+        ],
+        "NECTARINE": [
+            "NECTARINE"
+        ],
+        "NONI (Morinda citrifolia L.)": [
+            "NONI (Morinda citrifolia L.)"
+        ],
+        "OLIVE (Olea europaea)": [
+            "BLACK OLIVE",
+            "EXTRA-VIRGIN OLIVE OIL",
+            "EXTRA-VIRGIN OLIVE OIL (Iranian phishomi)",
+            "GREEN OLIVE",
+            "OLIVE OIL",
+            "OLIVE OIL (Turkey, Izmir)",
+            "OLIVE POMACE (dried)"
+        ],
+        "OMIJA FRUIT (Schisandra chinensis Baillon)": [
+            "OMIJA FRUIT (Schisandra chinensis Baillon)"
+        ],
+        "PAPAYA (Carica papaya L.)": [
+            "PAPAYA (Carica papaya L.)",
+            "PAPAYA (red maradol)"
+        ],
+        "PAPER MULBERRY (Broussonetia papyrifera)": [
+            "PAPER MULBERRY (Broussonetia papyrifera)"
+        ],
+        "PASSION FRUIT (PASSIFLORA SPECIES)": [
+            "PASSIFLORA MOLLISSIMA, CURUBA (pulp)",
+            "PASSIFLORA VITIFOLIA HBK, GRANADILLA (pulp)",
+            "PASSION FRUIT (purple) (P. EDULIS SIMS)",
+            "PASSION FRUIT (yellow) (P.F. FLAVICARPA)",
+            "PASSION FRUIT JUICE (Hybrid) (P. EDULIS)",
+            "PASSION FRUIT JUICE (purple) (P. EDULIS SIMS)",
+            "PASSION FRUIT JUICE (yellow) (P. F. FLAVICARPA)"
+        ],
+        "PAWPAW (Asimina triloba Dunal.)": [
+            "PAWPAW (Asimina triloba Dunal.)"
+        ],
+        "PEACH (Prunus persica L.)": [
+            "PEACH (Prunus persica L.)"
+        ],
+        "PEAR (Pyrus communis L.)": [
+            "BARTLETT PEAR (Williams pear, Bon Chretien)",
+            "PEAR, OTHER TYPES"
+        ],
+        "PEPINO FRUIT (Solanum muricatum)": [
+            "PEPINO FRUIT (Solanum muricatum)"
+        ],
+        "PINEAPPLE (Ananas comosus)": [
+            "PINEAPPLE (Ananas comosus)"
+        ],
+        "PLUM (Prunus species)": [
+            "JAPANESE PLUM (Prunus salicina Lindl cultivars)",
+            "PLUM (fresh) (Prunus domestica cultivars)",
+            "PLUM JUICE (Prunus domestica cultivars)",
+            "PLUM KERNEL OIL (Prunus domestica L.)",
+            "PLUMCOT (Prunus armenica x Prunus salicina)",
+            "PRUNE (dried plum)",
+            "PRUNUS MUME SIEB. et ZUCC. (salted and pickled)",
+            "PRUNUS SIMONII",
+            "UMEZUKE and UMEBOSHI (Prunus mume Sieb. et Zucc.)"
+        ],
+        "POMEGRANATE juice (Punica granatum L.)": [
+            "POMEGRANATE juice (Punica granatum L.)"
+        ],
+        "PRICKLY PEAR (Opuntia ficus indica)": [
+            "PRICKLY PEAR (Opuntia ficus indica)"
+        ],
+        "PULASAN (Nephelium ramboutan-ake (Labill.) Leenh.)": [
+            "PULASAN (Nephelium ramboutan-ake (Labill.) Leenh.)"
+        ],
+        "QUINCE, MARMELO (Cydonia oblonga Mill.)": [
+            "QUINCE, MARMELO (Cydonia oblonga Mill.)"
+        ],
+        "RAMBUTAN (Nephelium lappaceum L.)": [
+            "RAMBUTAN (Nephelium lappaceum L.)"
+        ],
+        "RASPBERRY, BLACKBERRY and BOYSENBERRY": [
+            "BLACK RASPBERRY (leaves)",
+            "BLACKBERRY (fresh)",
+            "BLACKBERRY (heated)",
+            "BLACKBERRY (leaves)",
+            "BOYSENBERRY (hybrid)",
+            "RASPBERRY (leaves)",
+            "RASPBERRY (Rubus idaeus L.)"
+        ],
+        "RED COFFEE BERRY (fresh)": [
+            "RED COFFEE BERRY (C. arabica var. catimore)",
+            "RED COFFEE BERRY (C. arabica var. Leroy)",
+            "RED COFFEE BERRY (C. canephora var. robusta)"
+        ],
+        "RED CURRANTS JUICE (Ribes rubrum L.)": [
+            "RED CURRANTS JUICE (Ribes rubrum L.)"
+        ],
+        "SAPODILLA FRUIT (Achras sapota L.)": [
+            "SAPODILLA FRUIT (Achras sapota L.)"
+        ],
+        "SCORODOCARPUS borneensis Becc (wood garlic)": [
+            "SCORODOCARPUS borneensis Becc (wood garlic)"
+        ],
+        "SEA BUCKTHORN (Hippopha\u00eb rhamnoides L.)": [
+            "SEA BUCKTHORN (Hippopha\u00eb rhamnoides L.)"
+        ],
+        "SOURSOP (Annona muricata L.)": [
+            "SOURSOP (Annona muricata L.)"
+        ],
+        "SPINELESS MONKEY ORANGE (Strychnos madagasc.)": [
+            "SPINELESS MONKEY ORANGE (Strychnos madagasc.)"
+        ],
+        "STARFRUIT (Averrhoa carambola L.)": [
+            "STARFRUIT (Averrhoa carambola L.)"
+        ],
+        "STRAWBERRY (Fragaria species)": [
+            "STRAWBERRY FRUIT",
+            "STRAWBERRY FRUIT (var. Albion)",
+            "STRAWBERRY FRUIT (var. Festival)",
+            "STRAWBERRY FRUIT (var. Frontera)",
+            "STRAWBERRY JAM",
+            "STRAWBERRY JUICE"
+        ],
+        "SWEETSOP, SUGAR APPLE (Annona squamosa L.)": [
+            "SWEETSOP, SUGAR APPLE (Annona squamosa L.)"
+        ],
+        "SYZYGIUM SPECIES": [
+            "MALAY APPLE (Syzygium malaccense Merr. & Perry)",
+            "ROSE APPLE (Syzygium jambos A., Eugenia jambos L.)",
+            "WATER APPLE (Syzygium aqueum Alston)",
+            "WAX JAMBU (Syzygium samarangense Merr. & Perry)"
+        ],
+        "TAMARIND (Tamarindus indica L.)": [
+            "TAMARIND (Tamarindus indica L.)"
+        ],
+        "TAPEREBA, CAJA FRUIT (Spondias lutea L.)": [
+            "TAPEREBA, CAJA FRUIT (Spondias lutea L.)"
+        ],
+        "VACCINIUM SPECIES": [
+            "AMERICAN CRANBERRY JUICE (V. macrocarpon Ait.)",
+            "BILBERRY JUICE (Vaccinium myrtillus L.)",
+            "BOG BLUEBERRY JUICE (Vaccinium uliginosum L.)",
+            "CRANBERRY (sweetened and dried, craisin)",
+            "EUROPEAN CRANBERRY JUICE (Vaccinium oxycoccus L.)",
+            "HIGH-BUSH BLUEBERRY JUICE (V. corymbosum L.)",
+            "LINGONBERRY, COWBERRY (Vaccinium vitis idaea L.)",
+            "RABBITEYE BLUEBERRY (Vaccinium ashei Raede)",
+            "WILD BLUEBERRY (Vaccinium angustifolium)"
+        ],
+        "WOOD APPLE (Feronia limonia)": [
+            "WOOD APPLE (Feronia limonia)"
+        ]
+    },
+    "NUTS": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "ALMOND": [
+            "ALMOND (roasted) (Prunus amygdalus)",
+            "ALMOND HULL (mission)",
+            "ALMOND HULL (nonpareil)",
+            "ALMOND OIL (Amygdalus communis)"
+        ],
+        "BRAZIL NUT (Bertholletia excelsa)": [
+            "BRAZIL NUT (Bertholletia excelsa)"
+        ],
+        "CANDLENUT (Aleurites moluccana)": [
+            "CANDLENUT (Aleurites moluccana)"
+        ],
+        "CASHEW NUT (Anacardium occidentale)": [
+            "CASHEW NUT (raw)",
+            "CASHEW NUT (roasted)"
+        ],
+        "CHESTNUT (Castanea species)": [
+            "CHESTNUT FLOWER",
+            "CHINESE CHESTNUT (Castanea molissima) (boiled)",
+            "CHINESE CHESTNUT (Castanea molissima) (raw)",
+            "CHINESE CHESTNUT (Castanea molissima) (roasted)",
+            "ITALIAN CHESTNUT (Castanea sativa Mill.) (boiled)",
+            "ITALIAN CHESTNUT (Castanea sativa Mill.) (raw)",
+            "ITALIAN CHESTNUT (Castanea sativa Mill.) (roasted)"
+        ],
+        "COCONUT (Cocos nucifera L.)": [
+            "COCONUT (roasted)",
+            "COCONUT MEAT",
+            "COCONUT MILK",
+            "COCONUT OIL"
+        ],
+        "FILBERT, HAZELNUT (Corylus avellano)": [
+            "FILBERT, HAZELNUT (raw)",
+            "FILBERT, HAZELNUT (roasted)"
+        ],
+        "MACADAMIA NUT (Macadamia integrifolia)": [
+            "MACADAMIA NUT (Macadamia integrifolia) (raw)",
+            "MACADAMIA NUT (Macadamia integrifolia) (roasted)"
+        ],
+        "PEANUT (Arachis hypogaea L.)": [
+            "PEANUT (raw)",
+            "PEANUT (roasted)",
+            "PEANUT BUTTER",
+            "PEANUT OIL"
+        ],
+        "PECAN (Carya illinoensis Koch)": [
+            "PECAN (raw)",
+            "PECAN (roasted)"
+        ],
+        "PISTACHIO NUT (Pistacia vera)": [
+            "PISTACHIO NUT (Pistacia vera) (raw)",
+            "PISTACHIO NUT (Pistacia vera) (roasted)"
+        ],
+        "WALNUT (Juglans species)": [
+            "GREEN WALNUT HUSK (dried unripe)(Juglans regia L.)",
+            "MANCHURIAN WALNUT (Juglans mandshurica Maxim.)",
+            "WALNUT KERNEL (Juglans regia L.)",
+            "WALNUT KERNEL OIL (Juglans regia L.)",
+            "WALNUT PELLICLE (Juglans regia L.)",
+            "WALNUT ROOT BARK (Juglans regia L.)",
+            "WALNUT STEM BARK (Juglans regia L.)"
+        ]
+    },
+    "BREAD": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "AMARANTH": [
+            "AMARANTH (A. cruentus)",
+            "AMARANTH (A. hybridus)",
+            "AMARANTH (A. hypochondriacus)",
+            "AMARANTH (A. palmeri)",
+            "AMARANTH (A. retroflexus)",
+            "AMARANTH (A. spinosus)"
+        ],
+        "BARLEY": [
+            "BARLEY (roasted)",
+            "BARLEY (unprocessed)",
+            "MALTED BARLEY (roasted)"
+        ],
+        "BREAD and BREAD PREFERMENT": [
+            "BREAD and BREAD PREFERMENT"
+        ],
+        "BREAD DOUGH": [
+            "BREAD DOUGH"
+        ],
+        "BUCKWHEAT": [
+            "BUCKWHEAT"
+        ],
+        "CRISPBREAD": [
+            "CRISPBREAD"
+        ],
+        "DONUT": [
+            "DONUT"
+        ],
+        "MAIZE (Zea mays L.)": [
+            "CORN (Zea mays)",
+            "CORN TORTILLAS",
+            "DENT CORN OIL",
+            "MAIZE (Mp708 genotype)",
+            "MAIZE (Tx601 genotype)",
+            "ORANGE MAIZE FLOUR (variety Pool 8A)",
+            "PROVITAMIN A MAIZE FLOUR",
+            "PROVITAMIN A MAIZE PORRIDGE",
+            "QUALITY PROTEIN MAIZE FLOUR",
+            "QUALITY PROTEIN MAIZE PORRIDGE",
+            "SWEET CORN",
+            "TACO SHELL",
+            "TORTILLA CHIPS",
+            "TORTILLA FLOUR",
+            "WHITE MAIZE FLOUR",
+            "WHITE MAIZE PORRIDGE",
+            "YELLOW MAIZE FLOUR",
+            "YELLOW MAIZE PORRIDGE"
+        ],
+        "MALT": [
+            "CHOCOLATE MALT",
+            "MALT",
+            "PEATED MALT",
+            "WORT"
+        ],
+        "OATS (Avena sativa L.)": [
+            "OAT FLAKES",
+            "OAT FLAKES (toasted)",
+            "OAT GROATS",
+            "OAT GROATS (toasted)",
+            "OATMEAL",
+            "OATMEAL (cooked)",
+            "OATMEAL (fresh extrusion product)"
+        ],
+        "POPCORN": [
+            "POPCORN"
+        ],
+        "RICE (Oryza sativa L.)": [
+            "BASMATI RICE (cooked)",
+            "BASMATI RICE (raw)",
+            "BROWN RICE (long grain, cooked)",
+            "BROWN RICE (long grain, raw)",
+            "JASMINE RICE (cooked)",
+            "JASMINE RICE (raw)",
+            "PARBOILED RICE (cooked)",
+            "RICE (unprocessed)",
+            "RICE BRAN",
+            "SCENTED RICE (cooked)",
+            "SCENTED RICE (unprocessed)",
+            "SOONG-NEUNG (extract of cooked and roasted rice)",
+            "TRADITIONAL RICE (cooked)",
+            "WHITE RICE (long grain, milled, cooked)",
+            "WHITE RICE (long grain, milled, raw)"
+        ],
+        "RICE BRAN": [
+            "DEFATTED RICE BRAN",
+            "DEFATTED RICE BRAN (insoluble dietary fibre)",
+            "DEFATTED RICE BRAN (soluble dietary fibre)"
+        ],
+        "RICE CAKE": [
+            "RICE CAKE"
+        ],
+        "RYE": [
+            "RYE BREAD",
+            "RYE CRISPBREAD"
+        ],
+        "TRITICALE GRAIN (Triticosecale Wittm. Ex A. Camus)": [
+            "WINTER TRITICALE GRAIN (cv. Borwo)",
+            "WINTER TRITICALE GRAIN (cv. Fredro)",
+            "WINTER TRITICALE GRAIN (cv. Panteon)"
+        ],
+        "WHEAT": [
+            "EINKORN",
+            "EMMER",
+            "HARD RED SPRING",
+            "SPELT",
+            "TIANYOU (traditional fermented wheat)",
+            "WHEAT (soft whole-grain, lightly milled)",
+            "WHEAT FLOUR (mix of English soft wheats)",
+            "WHEAT GRASS",
+            "WHOLE WHEAT FLOUR (Triticum aestivum cv. Paragon)"
+        ],
+        "WHEATEN BREAD": [
+            "WHEAT GRASS BREAD",
+            "WHEATEN BREAD (hard red winter wheat)",
+            "WHEATEN BREAD (hard white winter wheat)",
+            "WHEATEN BREAD BAQUETTES CRUST",
+            "WHEATEN BREAD BROWN",
+            "WHEATEN BREAD CRUMB",
+            "WHEATEN BREAD CRUST",
+            "WHEATEN BREAD WHITE"
+        ],
+        "WILD RICE (Zizania aquatica)": [
+            "WILD RICE (Zizania aquatica)"
+        ]
+    },
+    "MISCELLAENOUS": {
+        "Product category": [
+            "Products in this category"
+        ],
+        "AMBRETTE SEED (Ablemoschus seed)": [
+            "ABELMOSCHUS ESCULENTUS (L.) MOENCH SEED",
+            "ABELMOSCHUS MOSCHATUS MEDIK SEED"
+        ],
+        "AMBRETTE SEED ESSENTIAL OIL(Abelmoschus moschatus)": [
+            "AMBRETTE SEED ESSENTIAL OIL(Abelmoschus moschatus)"
+        ],
+        "ANNATTO (Bixa orellana L.)": [
+            "ANNATTO oil-soluble extract",
+            "ANNATTO water-soluble extract"
+        ],
+        "BUCHU OIL": [
+            "BUCHU OIL"
+        ],
+        "CARROT SEED": [
+            "CARROT SEED"
+        ],
+        "CEDARWOOD OIL": [
+            "CEDARWOOD OIL (J. ashei)",
+            "CEDARWOOD OIL (J. californica)",
+            "CEDARWOOD OIL (J. deppeana)",
+            "CEDARWOOD OIL (J. erythrocarpa)",
+            "CEDARWOOD OIL (J. monosperma)",
+            "CEDARWOOD OIL (J. occidentalis var. australis)",
+            "CEDARWOOD OIL (J. occidentalis var. occidentalis)",
+            "CEDARWOOD OIL (J. osteosperma)",
+            "CEDARWOOD OIL (J. pinchotii)",
+            "CEDARWOOD OIL (J. scopulorum)",
+            "CEDARWOOD OIL (J. virginiana)"
+        ],
+        "CONOCARPUS SPP. TREE": [
+            "C. ERECTUS FRUIT EXTRACT",
+            "C. ERECTUS LEAVE EXTRACT",
+            "C. ERECTUS ROOT EXTRACT",
+            "C. LANCIFOLIUS FRUIT EXTRACT",
+            "C. LANCIFOLIUS LEAVE EXTRACT",
+            "C. LANCIFOLIUS ROOT EXTRACT"
+        ],
+        "EUCALYPTUS ESSENTIAL OIL (E. grandis\u00d7E. urophylla)": [
+            "EUCALYPTUS ESSENTIAL OIL (E. grandis\u00d7E. urophylla)"
+        ],
+        "FERMENTED FISH SAUCE": [
+            "NAMPLA (premium)",
+            "NAMPLA (standard)",
+            "NUOC-MAM",
+            "OYSTER SAUCE"
+        ],
+        "FERMENTED SOYA PRODUCTS": [
+            "BLACK SOYBEAN SAUCE",
+            "DOUCHI",
+            "JAPANESE SOY SAUCE (Koikuchi)",
+            "JAPANESE SOY SAUCE (Sai-Shikomi)",
+            "JAPANESE SOY SAUCE (Shiro)",
+            "JAPANESE SOY SAUCE (Tamari)",
+            "JAPANESE SOY SAUCE (Usukuchi)",
+            "MISO (koji, aspergillus oryzae)",
+            "NATTO (bacillus subtiles)",
+            "SHOYU (koji, aspergillus oryzae)",
+            "SOY SAUCE (aroma type Baijiu)",
+            "SOY SAUCE (dark)",
+            "SOY SAUCE (light)",
+            "SOY SAUCE (non-categorised)",
+            "SOYBEAN PASTE",
+            "TEMPEH"
+        ],
+        "HEARTWOOD": [
+            "AMERICAN OAK (mixture of 4 types)",
+            "EUROPEAN OAK (Q. robur)",
+            "FRENCH OAK (Q. sessiliflora Sallisb.)",
+            "KASHIWA OAK (Q. dentata)",
+            "KONARA OAK (Q. serrata)",
+            "MIZUNARA (Q. mongolica var. grosseserrata)",
+            "PORTUGUESE CHESTNUT (Castanea sitiva Mill.)",
+            "PORTUGUESE OAK (Q. pyrenaica Willd)"
+        ],
+        "HONEY": [
+            "ACACIA HONEY (several species)",
+            "ASPHODEL HONEY (Asphodelus microcarpus species)",
+            "ASSA-PEIXE HONEY (Vernonia ferruginea Less.)",
+            "BANKSIA HONEY (several species)",
+            "BLUE GUM HONEY (Eucalyptus leucoxylon)",
+            "BUCKWHEAT HONEY (Fagopyrum esculentum)",
+            "BURSARIA HONEY (Bursaria spinosa)",
+            "CARAWAY HONEY",
+            "CASHEW HONEY (Anacardium occidentale)",
+            "CHESTNUT HONEY (Castanea sativa L.)",
+            "CITRUS SPECIES HONEY",
+            "CLOVER HONEY (Trifolium repens)",
+            "COFFEE HONEY (Coffea species)",
+            "CORNFLOWER HONEY (Centaurea cyanus L.)",
+            "DANDELION HONEY (Taraxacum officinale Web.)",
+            "EUCALYPTUS HONEY (several species)",
+            "FINE LAVENDER HONEY (Lavendula angustifolia)",
+            "FIR HONEYDEW HONEY (Abies alba Mill.)",
+            "GOLDENROD HONEY (Solidago species)",
+            "HAZE HONEY (Rhus succedanea)",
+            "HEATHER HONEY (Calluna vulgaris / Erica arborea)",
+            "HONEY OF LEPTOSPERMUM SPECIES (Manuka and Kanuka)",
+            "HONEYDEW HONEY (Cucumis melo L.)",
+            "LAVANDIN HONEY (Lavender angustifolia x latifolia)",
+            "LEATHERWOOD HONEY (Eucryphia lucida)",
+            "LINDEN or LIME TREE HONEY (Tilia cordata)",
+            "LONGAN HONEY (Euphoria longana)",
+            "LUCERNE HONEY (Medigo sativa)",
+            "MANUKA HONEY (Leptospermum scoparium Forst.)",
+            "MARMELEIRO & MORRAO DE CANDEIA HONEY (Croton sp.)",
+            "MOLTIKA HONEY (Moltkia petraea (Tratt.) Griseb.)",
+            "MULTIFLORAL HONEY or UNDEFINED HONEY",
+            "ORANGE BLOSSOM HONEY (Citrus sinensis L.)",
+            "PHACELIA HONEY (Phacelia tanacetifolia Benth.)",
+            "PINE / FIR HONEY",
+            "PURPLE MILK THISTLE HONEY (Silybum marianum)",
+            "RAPE HONEY (Brassica napus L.)",
+            "RHODODENDRON HONEY",
+            "ROSEMARY HONEY (Rosmarinus officinalis)",
+            "SAGE HONEY (Salvia officinalis L.)",
+            "SAVORY HONEY (Satureja subspicata Bartl. ex Vis.)",
+            "STECHAS LAVENDER HONEY (Lavandula stoechas)",
+            "STRAWBERRY TREE HONEY (Arbutus unedo L.)",
+            "SULLA HONEY (Hedysarium coronarium L.)",
+            "SUNFLOWER HONEY (Helianthus annuus L.)",
+            "THISTLE HONEY (Carduus nutans)",
+            "THYME HONEY (Thymus vulgaris)",
+            "WILLOW HONEY (Salix species)",
+            "YELLOW BOX HONEY (Eucalyptus melliodora)"
+        ],
+        "HOP (Humulus lupulus)": [
+            "HOP CONES or PELLETS (Humulus lupulus)",
+            "HOP OIL (Humulus lupulus cv. Whitbreads Golding)",
+            "HOP OIL (Humulus lupulus)"
+        ],
+        "KUMAZASA (Sasa albo-marginata)": [
+            "KUMAZASA (Sasa albo-marginata)"
+        ],
+        "MAPLE SYRUP (Acer saccharum)": [
+            "MAPLE SYRUP (Acer saccharum)"
+        ],
+        "MASTIC (Pistacia lentiscus)": [
+            "MASTIC (Pistacia lentiscus L.) AERIAL PARTS OIL",
+            "MASTIC (Pistacia lentiscus L.) FRUIT OIL",
+            "MASTIC (Pistacia lentiscus L.) GALL OIL",
+            "MASTIC (Pistacia lentiscus L.) GUM OIL",
+            "MASTIC (Pistacia lentiscus L.) LEAF OIL",
+            "MASTIC (Pistacia lentiscus var. chia) GUM OIL",
+            "MASTIC (Pistacia lentiscus var. chia) LEAF OIL",
+            "MASTIC (Pistacia lentiscus var. chia) TWIG OIL"
+        ],
+        "MISO (soy bean, rice or fish)": [
+            "FISH MISO (with koji)",
+            "FISH MISO (without koji)",
+            "MISO (soy bean, rice or fish)",
+            "SOY MISO (dark)",
+            "SOY MISO (light)"
+        ],
+        "PISTACHIO OIL (Pistacia vera)": [
+            "PISTACHIO (Pistacia vera) FRUIT OIL",
+            "PISTACHIO (Pistacia vera) GUM OIL",
+            "PISTACHIO (Pistacia vera) HULL OIL",
+            "PISTACHIO (Pistacia vera) LEAF OIL"
+        ],
+        "PISTACIA ATLANTICA": [
+            "PISTACIA ATLANTICA, BUD OIL",
+            "PISTACIA ATLANTICA, FRUIT OIL",
+            "PISTACIA ATLANTICA, LEAF OIL",
+            "PISTACIA ATLANTICA, OLEORESIN ESS. OIL"
+        ],
+        "PISTACIA PALAESTINA (Pistacia terebinthus L.)": [
+            "PISTACIA PALAESTINA, FRUIT OIL",
+            "PISTACIA PALAESTINA, GALL OIL",
+            "PISTACIA PALAESTINA, LEAF OIL"
+        ],
+        "POTATO CHIPS (American)": [
+            "POTATO CHIPS (American)"
+        ],
+        "PUMPKIN SEED OIL (non-categorised)": [
+            "RAW PUMPKIN SEED OIL (cold-pressed, fresh)",
+            "RAW PUMPKIN SEED OIL (cold-pressed, old)"
+        ],
+        "RAPESEED": [
+            "RAPESEED OIL",
+            "RAPESEED RAW",
+            "RAPESEED ROASTED"
+        ],
+        "ROSELLE (Hibiscus sabdariffa L.)": [
+            "ROSELLE CALYCES, GREEN CULTIVAR (mature)",
+            "ROSELLE CALYCES, RED CULTIVAR (mature)",
+            "ROSELLE LEAF, GREEN CULTIVAR (flowering stage)",
+            "ROSELLE LEAF, GREEN CULTIVAR (postflowering stage)",
+            "ROSELLE LEAF, GREEN CULTIVAR (pre-flowering stage)",
+            "ROSELLE LEAF, RED CULTIVAR (flowering stage)",
+            "ROSELLE LEAF, RED CULTIVAR (post-flowering stage)",
+            "ROSELLE LEAF, RED CULTIVAR (pre-flowering stage)",
+            "ROSELLE SEEDS, GREEN CULTIVAR (mature)",
+            "ROSELLE SEEDS, RED CULTIVAR (mature)"
+        ],
+        "SESAME SEED (roasted)": [
+            "SESAME SEED (roasted)"
+        ],
+        "SIBERIAN GINSENG (Eleutherococcus Senticosus)": [
+            "SIBERIAN GINSENG FRUIT (E. Senticosus)",
+            "SIBERIAN GINSENG SEED OIL (E. Senticosus)"
+        ],
+        "SUGAR": [
+            "CANE SUGAR",
+            "PANELA WATER"
+        ],
+        "SUGAR MOLASSES": [
+            "SUGAR MOLASSES"
+        ],
+        "SUKIYAKI": [
+            "SUKIYAKI"
+        ],
+        "TAGETES": [
+            "TAGETES ERECTA OIL",
+            "TAGETES MINUTA OIL",
+            "TAGETES PATULA OIL",
+            "TAGETES RIOJANA FERRARO OIL",
+            "TAGETES TENUIFOLIA OIL"
+        ],
+        "tom yam (lemongrass, galangal, kaffir lime leaf)": [
+            "tom yam (lemongrass, galangal, kaffir lime leaf)"
+        ],
+        "TURPENTINE OIL (Pistacia terebinthus)": [
+            "TURPENTINE (Pistacia terebinthus) FLOWER OIL",
+            "TURPENTINE (Pistacia terebinthus) FRUIT OIL",
+            "TURPENTINE (Pistacia terebinthus) LEAF OIL",
+            "TURPENTINE (Pistacia terebinthus) TWIG OIL"
+        ],
+        "WHEY PROTEIN": [
+            "WHEY PROTEIN",
+            "WHEY PROTEIN HYDROLYSATE",
+            "WHEY PROTEIN ISOLATE"
+        ],
+        "WOOD SMOKE": [
+            "APPLE TREE SMOKE",
+            "ASPEN TREE SMOKE",
+            "BIRCH TREE SMOKE",
+            "CHERRY TREE SMOKE",
+            "CHESTNUT TREE SMOKE",
+            "DOUGLAS-FIR HEARTWOOD SMOKE",
+            "DOUGLAS-FIR SAPWOOD SMOKE",
+            "EASTERN CEDAR TREE SMOKE",
+            "HARD MAPLE SMOKE",
+            "HICKORY TREE SMOKE",
+            "LODGEPOLE PINE BARK SMOKE",
+            "LODGEPOLE PINE WOOD SMOKE",
+            "RED ADLER TREE SMOKE",
+            "RED OAK SMOKE",
+            "REDWOOD TREE SMOKE",
+            "WALNUT TREE SMOKE",
+            "WHITE OAK SMOKE"
+        ],
+        "YEAST": [
+            "YEAST EXTRACT (saccharomyces cerevisiae)"
+        ]
+    }
+}

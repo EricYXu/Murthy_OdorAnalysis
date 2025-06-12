@@ -1,0 +1,3 @@
+Name: MAIZE (Mp708 genotype)
+URL: https://www.vcf-online.nl/VcfProdDetails.cfm?prodkey=15711
+Description: No description available

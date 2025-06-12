@@ -1,0 +1,3 @@
+Name: SQUID (non-categorised)
+URL: https://www.vcf-online.nl/VcfProdDetails.cfm?prodkey=22100
+Description: No description available

@@ -1,0 +1,3 @@
+Name: SHOYU (koji, aspergillus oryzae)
+URL: https://www.vcf-online.nl/VcfProdDetails.cfm?prodkey=12810
+Description: No description available
