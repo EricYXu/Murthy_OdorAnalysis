@@ -29,3 +29,4 @@ plt.ylabel("Fruit Type")
 if store_image:
     folder = "./eric_fruit_barplot_figures"
     plt.savefig(f"{folder}/fruit_barplot.pdf")
+plt.show()
