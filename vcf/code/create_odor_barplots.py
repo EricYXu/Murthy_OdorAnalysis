@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import json
 
 # Open and load the JSON file + store image parameter
-with open("all_category_data.json", "r") as file:
+with open("../all_category_data.json", "r") as file:
     data = json.load(file)
 store_image = True
 
@@ -27,6 +27,6 @@ plt.title("Fruit Type Frequencies")
 plt.xlabel("Frequency")
 plt.ylabel("Fruit Type")
 if store_image:
-    folder = "./eric_fruit_barplot_figures"
+    folder = "../eric_fruit_barplot_figures"
     plt.savefig(f"{folder}/fruit_barplot.pdf")
 plt.show()
