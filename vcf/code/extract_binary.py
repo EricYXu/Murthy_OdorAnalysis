@@ -9,8 +9,6 @@ extract_binary.py
 
 Extracts binary presence/absence odor data from a CSV file with additional parameters.
 
-Usage:
-    python binary_extract.py --input input.csv --categories category.json --classes CLASS1,CLASS2,CLASS3,etc. --foods food1,food2,food3,etc.
 
 Author: Eric Xu
 Date: 2025-06-17 
@@ -19,7 +17,7 @@ Date: 2025-06-17
 
 def get_binary(input_path: str, categories_path: str, classes: list[str], foods: list[str]) -> tuple[pd.DataFrame, list[int]]:
     try:
-        """Parse input column titles."""
+        # Parse input column titles.
         vcf_data = pd.read_csv(input_path)
         mixnames = vcf_data.columns[1:].values
         parsed_mixnames = ['Unnamed: 0']
@@ -30,7 +28,7 @@ def get_binary(input_path: str, categories_path: str, classes: list[str], foods:
             parsed_mixnames.append(parsed_string.strip()) 
         vcf_data.columns = parsed_mixnames
 
-        """Returns the binary data for each food, along with a list of indices for assigning colors later."""
+        # Returns the binary data for each food, along with a list of indices for assigning colors later.
         with open(categories_path, "r") as file:
             category_data = json.load(file) 
         combined_odors = []

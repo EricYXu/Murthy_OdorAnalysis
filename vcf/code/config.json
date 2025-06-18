@@ -1,0 +1,16 @@
+{
+    "classes": [
+        "FRUITS",
+        "FRUITS",
+        "FRUITS"
+    ],
+    "foods": [
+        "APPLE FRESH (Malus species)",
+        "RED COFFEE BERRY (fresh)",
+        "STRAWBERRY (Fragaria species)"
+    ],
+    "input_path": "../Matrix.csv",
+    "categories_path": "../better_category_data.json",
+    "store_image": true,
+    "output_folder": "../eric_fruit_pca_figures"
+}
