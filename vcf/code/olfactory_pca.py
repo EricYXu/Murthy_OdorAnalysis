@@ -54,7 +54,7 @@ def main(config_path="./config.json") -> None:
         patches = []
         for idx, food in enumerate(foods):
             patches.append(mpatches.Patch(color=COLORS[idx], label=food))
-        plt.legend(handles=patches, fontsize=10)
+        plt.legend(handles=patches, fontsize=8)
         plt.title(f"PCA with 3 Principal Components on Food Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
         if store_image:
             plt.savefig(f"{output_folder}/food_pca_3_comps_{foods}.pdf")
