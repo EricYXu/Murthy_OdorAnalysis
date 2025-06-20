@@ -43,7 +43,7 @@ def main(config_path="./config.json") -> None:
         # Gets the binary data from a subset of VCF dataset and runs principal component analysis.
         vcf_subset_df, colors = get_binary(input_path, categories_path, classes, foods)
         X_scaled = StandardScaler().fit_transform(vcf_subset_df)
-        n_components= 10
+        n_components= 30
         if n_components > min(vcf_subset_df.shape[0], vcf_subset_df.shape[1]):
             n_components = min(vcf_subset_df.shape[0], vcf_subset_df.shape[1])
         pca = PCA(n_components, random_state=1)
@@ -60,13 +60,11 @@ def main(config_path="./config.json") -> None:
         ax.set_xlabel('t-SNE Dim 1')
         ax.set_ylabel('t-SNE Dim 2')
         ax.set_zlabel('t-SNE Dim 3')
-        plt.title(f"3D t-SNE of Dataset PCA-Reduced to {n_components} Components (Color by Food Type)")
-        txt = f"Cumulative explained variance:{np.cumsum(pca.explained_variance_ratio_)}"
-        plt.figtext(0.01, 0.01, txt, wrap=True, horizontalalignment='left', fontsize=4)
+        plt.title(f"3D t-SNE of Dataset PCA-Reduced to {n_components} Components (Color by Food Type)\nCumulative explained variance:{np.cumsum(pca.explained_variance_ratio_)}")
 
         # Add legend for colors
         patches = [mpatches.Patch(color=COLORS[idx], label=food) for idx, food in enumerate(foods)]
-        plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
+        plt.legend(handles=patches, loc='lower center', bbox_to_anchor=(0.5, -0.15), fontsize=8, ncol=len(foods))
         if store_image:
             plt.savefig(f"{output_folder}/pca_{n_components}_to_tsne_3_{foods}.pdf")
         plt.tight_layout()

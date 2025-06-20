@@ -7,7 +7,7 @@
     "foods": [
         "APPLE FRESH (Malus species)",
         "CITRUS FRUITS",
-        "MANGIFERA SPECIES"
+        "GUAVA and FEYOA"
     ],
     "input_path": "../Matrix.csv",
     "categories_path": "../better_category_data.json",
