@@ -8,14 +8,13 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 """
-intrinsic_dimension_estimation.py
+pca_num_components.py
 
-This script estimates the intrinsic dimension of the dataset using both PCA explained variance and scikit-dimension's DANCo estimator.
+This script estimates the intrinsic dimension of the dataset using both PCA explained variance.
 It loads Matrix.csv (rows=features, columns=data points), performs PCA, and plots cumulative explained variance as a function of number of components.
-It also prints the intrinsic dimension estimated by DANCo.
 
 Usage:
-    python3 intrinsic_dimension_estimation.py
+    python3 pca_num_components.py
 
 """
 
@@ -64,8 +63,8 @@ def main(config_path="./config.json") -> None:
         plt.figure(figsize=(8, 5))
         plt.plot(np.arange(1, len(cum_explained_var)+1), cum_explained_var, marker='o')
         plt.axhline(0.75, color='r', linestyle=':', label='75% variance')
-        plt.axhline(0.85, color='r', linestyle=':', label='85% variance')
-        plt.axhline(0.95, color='r', linestyle=':', label='95% variance')
+        plt.axhline(0.85, color='r', linestyle='--', label='85% variance')
+        plt.axhline(0.95, color='r', linestyle='-', label='95% variance')
         plt.xlabel('Number of Principal Components')
         plt.ylabel('Cumulative Explained Variance')
         plt.title(f'Intrinsic Dimension Estimation via PCA\nNumber of components to explain 75% variance (PCA): {n_components_75}\nNumber of components to explain 85% variance (PCA): {n_components_85}\nNumber of components to explain 95% variance (PCA): {n_components_95}')
