@@ -1,13 +1,13 @@
 {
     "classes": [
         "FRUITS",
-        "SPICES",
-        "NUTS"
+        "FRUITS",
+        "FRUITS"
     ],
     "foods": [
-        "APPLE FRESH (Malus species)",
-        "PEPPER (Piper nigrum L.)",
-        "WALNUT (Juglans species)"
+        "MANGIFERA SPECIES",
+        "OLIVE (Olea europaea)",
+        "PLUM (Prunus species)"
     ],
     "input_path": "../Matrix.csv",
     "categories_path": "../better_category_data.json",
