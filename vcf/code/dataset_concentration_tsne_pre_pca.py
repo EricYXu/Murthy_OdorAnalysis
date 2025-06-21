@@ -185,7 +185,7 @@ def main(config_path="./config.json"):
         # Plot 3D scatter plot of first 3 principal components
         fig = plt.figure(figsize=(10, 8))
         ax = fig.add_subplot(111, projection='3d')
-        ax.scatter(X_pca[:, 0], X_pca[:, 1], X_pca[:, 2], c=colors, s=20, alpha=0.6)
+        ax.scatter(X_tsne[:, 0], X_tsne[:, 1], X_tsne[:, 2], c=colors, s=20, alpha=0.6)
         ax.set_xlabel('Principal Component 1')
         ax.set_ylabel('Principal Component 2')
         ax.set_zlabel('Principal Component 3')
@@ -199,8 +199,8 @@ def main(config_path="./config.json"):
         if store_results:
             plt.savefig(f"{output_folder}/entire_dataset_conc_pca_{n_components}_components", dpi=300, bbox_inches='tight')
             # Save PCA results
-            pca_df = pd.DataFrame(X_pca, index=conc_matrix.columns, columns=['PC1', 'PC2', 'PC3'])
-            pca_df.to_csv(f'{output_folder}/concentration_pca_results.csv')
+            # pca_df = pd.DataFrame(X_pca, index=conc_matrix.columns, columns=['PC1', 'PC2', 'PC3'])
+            # pca_df.to_csv(f'{output_folder}/concentration_pca_results.csv')
         plt.tight_layout()
         plt.show()
         
