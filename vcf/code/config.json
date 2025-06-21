@@ -11,6 +11,6 @@
     ],
     "input_path": "../Matrix.csv",
     "categories_path": "../better_category_data.json",
-    "store_image": true,
-    "output_folder": "../eric_pca_to_tsne_figures"
+    "store_results": true,
+    "output_folder": "../eric_concentration_figures"
 }

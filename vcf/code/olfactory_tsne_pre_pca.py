@@ -38,7 +38,7 @@ def main(config_path="./config.json") -> None:
         output_folder = config["output_folder"]
         classes = config["classes"]
         foods = config["foods"]
-        store_image = config["store_image"]
+        store_results = config["store_results"]
         
         # Gets the binary data from a subset of VCF dataset and runs principal component analysis.
         vcf_subset_df, colors = get_binary(input_path, categories_path, classes, foods)
@@ -65,7 +65,7 @@ def main(config_path="./config.json") -> None:
         # Add legend for colors
         patches = [mpatches.Patch(color=COLORS[idx], label=food) for idx, food in enumerate(foods)]
         plt.legend(handles=patches, loc='lower center', bbox_to_anchor=(0.5, -0.15), fontsize=8, ncol=len(foods))
-        if store_image:
+        if store_results:
             plt.savefig(f"{output_folder}/pca_{n_components}_to_tsne_3_{foods}.pdf")
         plt.tight_layout()
         plt.show()

@@ -13,14 +13,14 @@ import warnings
 warnings.filterwarnings("ignore")
 
 """
-olfactory_entire_tsne_pre_pca.py
+dataset_tsne_pre_pca.py
 
 Script that first runs principal component analysis to reduce the entire binary VCF dataset
 to a 50-dimensional space, then second runs t-distributed stochastic neighbor embedding 
 on olfactory data from VCF dataset.
 
 Usage:
-    python3 olfactory_entire_tsne_pre_pca.py
+    python3 dataset_tsne_pre_pca.py
 
 """
 

@@ -29,7 +29,7 @@ def main(config_path="./config.json") -> None:
         input_path = config["input_path"]
         categories_path = config["categories_path"]
         output_folder = config["output_folder"]
-        store_image = config["store_image"]
+        store_results = config["store_results"]
         classes = config["classes"]
         foods = config["foods"]
 

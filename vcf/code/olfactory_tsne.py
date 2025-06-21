@@ -33,7 +33,7 @@ def main(config_path="./config.json") -> None:
         input_path = config["input_path"]
         categories_path = config["categories_path"]
         output_folder = config["output_folder"]
-        store_image = config["store_image"]
+        store_results = config["store_results"]
         classes = config["classes"]
         foods = config["foods"]
 
@@ -57,7 +57,7 @@ def main(config_path="./config.json") -> None:
             patches.append(mpatches.Patch(color=COLORS[idx], label=food))
         plt.legend(handles=patches, fontsize=10)
         plt.title(f"tSNE with 3 Dimensions on Food Data", fontsize=8)
-        if store_image:
+        if store_results:
             plt.savefig(f"{output_folder}/food_pca_3_comps_{foods}.pdf")
         plt.show()
     except Exception as e:

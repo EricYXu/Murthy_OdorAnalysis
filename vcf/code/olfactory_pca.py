@@ -21,6 +21,9 @@ Usage:
 COLORS = ["red", "orange", "green", "blue", "purple"]
 
 def load_config(config_path: str) -> dict:
+    """
+    Parses configuration JSON file for parameters regarding foods of interest and input/output paths. 
+    """
     with open(config_path, 'r') as file:
         return json.load(file)
 
@@ -31,7 +34,7 @@ def main(config_path="./config.json") -> None:
         input_path = config["input_path"]
         categories_path = config["categories_path"]
         output_folder = config["output_folder"]
-        store_image = config["store_image"]
+        store_results = config["store_results"]
         classes = config["classes"]
         foods = config["foods"]
         
@@ -56,7 +59,7 @@ def main(config_path="./config.json") -> None:
             patches.append(mpatches.Patch(color=COLORS[idx], label=food))
         plt.legend(handles=patches, fontsize=8)
         plt.title(f"PCA with 3 Principal Components on Food Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
-        if store_image:
+        if store_results:
             plt.savefig(f"{output_folder}/food_pca_3_comps_{foods}.pdf")
         plt.show()
     except Exception as e:
