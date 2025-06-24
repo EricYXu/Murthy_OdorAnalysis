@@ -12,5 +12,5 @@
     "input_path": "../Matrix.csv",
     "categories_path": "../better_category_data.json",
     "store_results": true,
-    "output_folder": "../eric_concentration_figures"
+    "output_folder": "../eric_pca_figures/2d"
 }

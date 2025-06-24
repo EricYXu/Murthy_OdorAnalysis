@@ -35,7 +35,7 @@ def main(config_path="./config.json") -> None:
         input_path = config["input_path"]
         categories_path = config["categories_path"]
         output_folder = config["output_folder"]
-        store_image = config["store_image"]
+        store_image = config["store_results"]
         
         # Gets the binary data and runs principal component analysis.
         raw = pd.read_csv(input_path)
@@ -44,8 +44,8 @@ def main(config_path="./config.json") -> None:
         pca = PCA(n_components=50, random_state=1)
         X_pca = pca.fit_transform(X_scaled)
 
-        # Run t-SNE to 3 dimensions
-        X_tsne = TSNE(n_components=3, perplexity=30, random_state=1).fit_transform(X_pca)
+        # Run t-SNE to 2 dimensions
+        X_tsne = TSNE(n_components=2, perplexity=30, random_state=1).fit_transform(X_pca)
 
         # Load data point names
         dfbin = pd.read_csv(input_path, header=0)
@@ -85,12 +85,13 @@ def main(config_path="./config.json") -> None:
 
         # 3D plot of t-SNE results
         fig = plt.figure(figsize=(10, 8))
-        ax = fig.add_subplot(111, projection='3d')
-        sc = ax.scatter(X_tsne[:, 0], X_tsne[:, 1], X_tsne[:, 2], c=colors, s=20)
+        # ax = fig.add_subplot(111, projection='3d')
+        ax = fig.add_subplot(111)
+        # sc = ax.scatter(X_tsne[:, 0], X_tsne[:, 1], X_tsne[:, 2], c=colors, s=20)
+        sc = ax.scatter(X_tsne[:, 0], X_tsne[:, 1], c=colors, s=20)
         ax.set_xlabel('t-SNE Dim 1')
         ax.set_ylabel('t-SNE Dim 2')
-        ax.set_zlabel('t-SNE Dim 3')
-        plt.title(f"3D t-SNE of Dataset PCA-Reduced to 50 Components (Color by Food Class)")
+        plt.title(f"2D t-SNE of Dataset PCA-Reduced to 50 Components (Color by Food Class)")
         txt = f"Cumulative explained variance:{np.cumsum(pca.explained_variance_ratio_)}"
         plt.figtext(0.01, 0.01, txt, wrap=True, horizontalalignment='left', fontsize=4)
 
@@ -98,7 +99,7 @@ def main(config_path="./config.json") -> None:
         patches = [mpatches.Patch(color=color_map[cls], label=cls) for cls in unique_classes]
         plt.legend(handles=patches, bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8)
         if store_image:
-            plt.savefig(f"{output_folder}/entire_pca_50_to_tsne_3.pdf")
+            plt.savefig(f"{output_folder}/entire_pca_50_to_tsne_2.pdf")
         plt.tight_layout()
         plt.show()
     except Exception as e:

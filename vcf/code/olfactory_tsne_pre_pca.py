@@ -51,22 +51,22 @@ def main(config_path="./config.json") -> None:
         combined_colors = [COLORS[idx] for idx in colors]
 
         # Runs t-SNE to 3 dimensions
-        X_tsne = TSNE(n_components=3, perplexity=30, random_state=1).fit_transform(X_pca)
+        X_tsne = TSNE(n_components=2, perplexity=30, random_state=1).fit_transform(X_pca)
 
         # 3D plot of t-SNE results
         fig = plt.figure(figsize=(10, 8))
-        ax = fig.add_subplot(111, projection='3d')
-        ax.scatter(X_tsne[:, 0], X_tsne[:, 1], X_tsne[:, 2], c=combined_colors, s=20)
+        ax = fig.add_subplot(111) # , projection='3d'
+        # ax.scatter(X_tsne[:, 0], X_tsne[:, 1], X_tsne[:, 2], c=combined_colors, s=20)
+        ax.scatter(X_tsne[:, 0], X_tsne[:, 1], c=combined_colors, s=20)
         ax.set_xlabel('t-SNE Dim 1')
         ax.set_ylabel('t-SNE Dim 2')
-        ax.set_zlabel('t-SNE Dim 3')
-        plt.title(f"3D t-SNE of Dataset PCA-Reduced to {n_components} Components (Color by Food Type)\nCumulative explained variance:{np.cumsum(pca.explained_variance_ratio_)}")
+        plt.title(f"2D t-SNE of Dataset PCA-Reduced to {n_components} Components (Color by Food Type)\nCumulative explained variance:{np.cumsum(pca.explained_variance_ratio_)}")
 
         # Add legend for colors
         patches = [mpatches.Patch(color=COLORS[idx], label=food) for idx, food in enumerate(foods)]
         plt.legend(handles=patches, loc='lower center', bbox_to_anchor=(0.5, -0.15), fontsize=8, ncol=len(foods))
         if store_results:
-            plt.savefig(f"{output_folder}/pca_{n_components}_to_tsne_3_{foods}.pdf")
+            plt.savefig(f"{output_folder}/pca_{n_components}_to_tsne_2_{foods}.pdf")
         plt.tight_layout()
         plt.show()
     except Exception as e:
