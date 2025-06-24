@@ -1,8 +1,5 @@
 {
     "ALCOHOLIC1": {
-        "Product category": [
-            "Products in this category"
-        ],
         "BANTU BEER": [
             "BANTU BEER"
         ],
@@ -75,7 +72,6 @@
         "WINE": [
             "BOTRYTISED WINE",
             "DRY WHITE WINE (BLENDED)",
-            "DRY WHITE WINE (Chardonnay w/o malolactic ferment)",
             "DRY WHITE WINE (Chardonnay)",
             "DRY WHITE WINE (Chenin blanc)",
             "DRY WHITE WINE (Muscat of Alexandria)",
@@ -147,9 +143,6 @@
         ]
     },
     "ALCOHOLIC 2": {
-        "Product category": [
-            "Products in this category"
-        ],
         "ANISE BRANDY": [
             "OUZO",
             "PASTIS",
@@ -258,9 +251,6 @@
         ]
     },
     "DAIRY": {
-        "Product category": [
-            "Products in this category"
-        ],
         "BLUE CHEESES": [
             "BLUE CHEESES"
         ],
@@ -268,29 +258,13 @@
             "CASEIN HYDROLYSATE (Bacillus subtitles)"
         ],
         "CHEDDAR CHEESE": [
-            "CHEDDAR CHEESE",
-            "CHEDDAR CHEESE (age 1 month)",
-            "CHEDDAR CHEESE (age 11 months)",
-            "CHEDDAR CHEESE (age 12 months)",
-            "CHEDDAR CHEESE (age 13 months)",
-            "CHEDDAR CHEESE (age 15 months)",
-            "CHEDDAR CHEESE (age 18 months)",
-            "CHEDDAR CHEESE (age 2 months)",
-            "CHEDDAR CHEESE (age 2 weeks)",
-            "CHEDDAR CHEESE (age 27 months)",
-            "CHEDDAR CHEESE (age 3 months)",
-            "CHEDDAR CHEESE (age 30 months)",
-            "CHEDDAR CHEESE (age 4 months)",
-            "CHEDDAR CHEESE (age 6 months)",
-            "CHEDDAR CHEESE (age 8 months)"
+            "CHEDDAR CHEESE"
         ],
         "CHEESE, VARIOUS TYPES": [
             "BRIE",
             "CAMEMBERT",
             "CHEESES, OTHER",
             "COTTAGE CHEESE",
-            "CREAM CHEESE (4 weeks old)",
-            "CREAM CHEESE (cholesterol-removed, 4 weeks old)",
             "CREAM CHEESE (cholesterol-removed, fresh)",
             "CREAM CHEESE (fresh)",
             "DOMIATI CHEESE",
@@ -350,12 +324,7 @@
         ]
     },
     "COFFEE TEA COCOA": {
-        "Product category": [
-            "Products in this category"
-        ],
         "COCOA category": [
-            "COCOA BEANS (ferment. w. 2 yeast strains + dried)",
-            "COCOA BEANS (fermented w/o inoculum and dried)",
             "COCOA BEANS (P. kudriavzevii fermented and dried)",
             "COCOA BEANS (S. cerevisiae fermented and dried)",
             "COCOA BUTTER",
@@ -369,14 +338,6 @@
         "COFFEE": [
             "COFFEE",
             "COLOMBIAN COFFEE (green)"
-        ],
-        "KOMBUCHA": [
-            "BLACK TEA KOMBUCHA (fermented for 6 days)",
-            "CHRYSANTHEMUM KOMBUCHA (fermented for 6 days)",
-            "GREEN TEA KOMBUCHA (fermented for 6 days)",
-            "HONEYSUCKLE KOMBUCHA (fermented for 6 days)",
-            "MINT KOMBUCHA (fermented for 6 days)",
-            "WHITE TEA KOMBUCHA (fermented for 6 days)"
         ],
         "MATE (Ilex paraguayensis)": [
             "GREEN MATE",
@@ -412,9 +373,6 @@
         ]
     },
     "SEAFOOD": {
-        "Product category": [
-            "Products in this category"
-        ],
         "BLUE-GREEN ALGAE": [
             "BLUE-GREEN ALGAE (aoko)"
         ],
@@ -598,9 +556,6 @@
         ]
     },
     "MEAT": {
-        "Product category": [
-            "Products in this category"
-        ],
         "ALLIGATOR": [
             "ALLIGATOR MEAT - tail"
         ],
@@ -610,8 +565,6 @@
             "BEEF (fried)",
             "BEEF (grilled, roasted)",
             "BEEF (raw)",
-            "BEEF BURGER (cooked, electrical grill)",
-            "BEEF BURGER (raw)",
             "BEEF FAT (heated)",
             "BEEF LIVER (fried)",
             "STEWED BEEF JUICE"
@@ -625,12 +578,10 @@
             "CHICKEN BREAST (cooked) (Hubbard Red JA breed)",
             "CHICKEN BREAST (cooked) (Leghorn breed)",
             "CHICKEN BREAST (cooked) (Naked Neck breed)",
-            "CHICKEN BREAST (cooked) (Ross 308 breed)",
             "CHICKEN BREAST (raw)",
             "CHICKEN BREAST (raw) (Hubbard Red JA breed)",
             "CHICKEN BREAST (raw) (Leghorn breed)",
             "CHICKEN BREAST (raw) (Naked Neck breed)",
-            "CHICKEN BREAST (raw) (Ross 308 breed)",
             "CHICKEN BREAST (sugar-smoked)",
             "CHICKEN FAT",
             "CHICKEN SKIN (baked)",
@@ -697,9 +648,6 @@
         ]
     },
     "SPICES": {
-        "Product category": [
-            "Products in this category"
-        ],
         "AGASTACHE SPECIES": [
             "ANISE HYSSOP (Agastache foeniculum (Pursh) Kuntze)",
             "CATNIP GIANT HYSSOP (Agastache nepetoides K.)",
@@ -821,7 +769,6 @@
             "EUCALYPTUS OIL (Eucalyptus globulus Labill)"
         ],
         "FENNEL (Foeniculum vulg., ssp. capillaceum; var.)": [
-            "BITTER FENNEL FRUIT/SEED",
             "BITTER FENNEL OIL (F. var. vulgare (Miller))",
             "BITTER FENNEL TEA",
             "FENNEL WASTE (Foeniculum vulgare Mill.)",
@@ -1052,9 +999,6 @@
         ]
     },
     "VEGETABLES": {
-        "Product category": [
-            "Products in this category"
-        ],
         "ALLIUM SPECIES": [
             "CAUCAS (Allium victoralis L.)",
             "CHIVE (Allium schoenoprasum L.)",
@@ -1114,10 +1058,7 @@
             "CHILI PEPPER PLACENTA (C. annuum)",
             "CHILI PEPPER PLACENTA (C. baccatum)",
             "CHILI PEPPER PLACENTA (C. chinense)",
-            "CHILI PEPPER PLACENTA (C. chinense\u00d7C. frutescens)",
-            "GREEN PAPRIKA, BELL/SWEET PEPPER (capsicum annuum)",
-            "PAPRIKA, BELL/SWEET PEPPER(capsicum annuum) uncat.",
-            "RED PAPRIKA, BELL/SWEET PEPPER (capsicum annuum)"
+            "CHILI PEPPER PLACENTA (C. chinense\u00d7C. frutescens)"
         ],
         "CARROT (Daucus carota L.)": [
             "CARROT (Daucus carota L.)"
@@ -1252,9 +1193,6 @@
         ]
     },
     "FUNGI": {
-        "Product category": [
-            "Products in this category"
-        ],
         "DESERT TRUFFLE (Terfeziaceae)": [
             "DESERT TRUFFLE (Terfeziaceae)"
         ],
@@ -1284,9 +1222,6 @@
         ]
     },
     "FRUITS": {
-        "Product category": [
-            "Products in this category"
-        ],
         "ACEROLA (Malpighia)": [
             "ACEROLA (Malpighia)"
         ],
@@ -1735,9 +1670,6 @@
         ]
     },
     "NUTS": {
-        "Product category": [
-            "Products in this category"
-        ],
         "ALMOND": [
             "ALMOND (roasted) (Prunus amygdalus)",
             "ALMOND HULL (mission)",
@@ -1802,9 +1734,6 @@
         ]
     },
     "BREAD": {
-        "Product category": [
-            "Products in this category"
-        ],
         "AMARANTH": [
             "AMARANTH (A. cruentus)",
             "AMARANTH (A. hybridus)",
@@ -1837,9 +1766,6 @@
             "CORN (Zea mays)",
             "CORN TORTILLAS",
             "DENT CORN OIL",
-            "MAIZE (Mp708 genotype)",
-            "MAIZE (Tx601 genotype)",
-            "ORANGE MAIZE FLOUR (variety Pool 8A)",
             "PROVITAMIN A MAIZE FLOUR",
             "PROVITAMIN A MAIZE PORRIDGE",
             "QUALITY PROTEIN MAIZE FLOUR",
@@ -1913,8 +1839,7 @@
             "TIANYOU (traditional fermented wheat)",
             "WHEAT (soft whole-grain, lightly milled)",
             "WHEAT FLOUR (mix of English soft wheats)",
-            "WHEAT GRASS",
-            "WHOLE WHEAT FLOUR (Triticum aestivum cv. Paragon)"
+            "WHEAT GRASS"
         ],
         "WHEATEN BREAD": [
             "WHEAT GRASS BREAD",
@@ -1931,9 +1856,6 @@
         ]
     },
     "MISCELLAENOUS": {
-        "Product category": [
-            "Products in this category"
-        ],
         "AMBRETTE SEED (Ablemoschus seed)": [
             "ABELMOSCHUS ESCULENTUS (L.) MOENCH SEED",
             "ABELMOSCHUS MOSCHATUS MEDIK SEED"
@@ -2000,7 +1922,6 @@
             "TEMPEH"
         ],
         "HEARTWOOD": [
-            "AMERICAN OAK (mixture of 4 types)",
             "EUROPEAN OAK (Q. robur)",
             "FRENCH OAK (Q. sessiliflora Sallisb.)",
             "KASHIWA OAK (Q. dentata)",
@@ -2030,7 +1951,6 @@
             "FIR HONEYDEW HONEY (Abies alba Mill.)",
             "GOLDENROD HONEY (Solidago species)",
             "HAZE HONEY (Rhus succedanea)",
-            "HEATHER HONEY (Calluna vulgaris / Erica arborea)",
             "HONEY OF LEPTOSPERMUM SPECIES (Manuka and Kanuka)",
             "HONEYDEW HONEY (Cucumis melo L.)",
             "LAVANDIN HONEY (Lavender angustifolia x latifolia)",
@@ -2044,7 +1964,6 @@
             "MULTIFLORAL HONEY or UNDEFINED HONEY",
             "ORANGE BLOSSOM HONEY (Citrus sinensis L.)",
             "PHACELIA HONEY (Phacelia tanacetifolia Benth.)",
-            "PINE / FIR HONEY",
             "PURPLE MILK THISTLE HONEY (Silybum marianum)",
             "RAPE HONEY (Brassica napus L.)",
             "RHODODENDRON HONEY",

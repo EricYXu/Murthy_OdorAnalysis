@@ -5,12 +5,13 @@
         "FRUITS"
     ],
     "foods": [
-        "APPLE FRESH (Malus species)",
-        "CITRUS FRUITS",
+        "RASPBERRY, BLACKBERRY and BOYSENBERRY",
+        "PLUM (Prunus species)",
         "GUAVA and FEYOA"
     ],
     "input_path": "../Matrix.csv",
-    "categories_path": "../better_category_data.json",
+    "categories_path": "../edited_category_data.json",
+    "threshold": 5,
     "store_results": true,
     "output_folder": "../eric_pca_figures/2d"
 }

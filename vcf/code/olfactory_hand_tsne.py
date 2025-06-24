@@ -10,13 +10,13 @@ from sklearn.preprocessing import StandardScaler
 from extract_binary import get_binary
 
 """
-olfactory_tsne.py
+olfactory_hand_tsne.py
 
 Script that runs t-distributed stochastic neighbor embedding (nonlinear dimensionality reduction method)
 on olfactory data from VCF dataset.
 
 Usage:
-    python3 olfactory_tsne.py
+    python3 olfactory_hand_tsne.py
 
 """
 
@@ -32,17 +32,20 @@ def main(config_path="./config.json") -> None:
         config = load_config(config_path)
         input_path = config["input_path"]
         categories_path = config["categories_path"]
+        threshold = config["threshold"]
         output_folder = config["output_folder"]
         store_results = config["store_results"]
         classes = config["classes"]
         foods = config["foods"]
 
         # Gets the binary data and runs t-SNE.
-        combined_df, combined_colors = get_binary(input_path, categories_path, classes, foods)
+        combined_df, combined_colors = get_binary(input_path, categories_path, classes, foods, threshold)
         X_scaled = StandardScaler().fit_transform(combined_df)
         tsne = TSNE(n_components=3, perplexity=20, max_iter=3000, random_state=0)
         X_tsne = tsne.fit_transform(X_scaled)
         tsne_df = pd.DataFrame(data = X_tsne, columns =("Dim_1", "Dim_2", "Dim_3"))
+
+        
         combined_colors = [COLORS[idx] for idx in combined_colors]
 
         # Plots the projected points.

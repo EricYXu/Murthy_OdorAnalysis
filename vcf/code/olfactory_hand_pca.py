@@ -8,13 +8,13 @@ from sklearn.preprocessing import StandardScaler
 from extract_binary import get_binary
 
 """
-olfactory_pca.py
+olfactory_hand_pca.py
 
 Script that runs principal component analysis (linear dimensionality reduction method) 
-on a subset of fruit/nut/miscellaneous odors in the VCF binary dataset. 
+on a hand-picked subset of odors in the VCF binary dataset. 
 
 Usage:
-    python3 olfactory_pca.py
+    python3 olfactory_hand_pca.py
 
 """
 
@@ -79,4 +79,3 @@ def main(config_path="./config.json") -> None:
 
 if __name__ == "__main__":
     sys.exit(main())
-
