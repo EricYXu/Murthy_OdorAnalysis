@@ -10,13 +10,13 @@ from sklearn.preprocessing import StandardScaler
 from extract_binary import get_binary
 
 """
-olfactory_hand_tsne.py
+hand_tsne.py
 
 Script that runs t-distributed stochastic neighbor embedding (nonlinear dimensionality reduction method)
 on olfactory data from VCF dataset.
 
 Usage:
-    python3 olfactory_hand_tsne.py
+    python3 hand_tsne.py
 
 """
 

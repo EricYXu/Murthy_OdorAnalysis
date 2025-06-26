@@ -46,6 +46,9 @@ def get_binary(input_path: str, categories_path: str, classes: list[str], foods:
 
 
 def get_binary_with_threshold(input_path: str, foods_path: str, category: str, threshold: int) -> tuple[pd.DataFrame, list[int], list[str]]:
+    """
+    If category = "ALL", the entire dataset is included.
+    """
     try:
         # Parse input column titles.
         vcf_data = pd.read_csv(input_path)
@@ -61,19 +64,32 @@ def get_binary_with_threshold(input_path: str, foods_path: str, category: str, t
         # Returns binary data for each food, list of indices for assigning colors, and list of food names.
         with open(foods_path, "r") as file:
             category_data = json.load(file) 
-        category_data = category_data[category]
         combined_odors = []
         combined_indices = []
         combined_names = []
-        name_idx = -1
-        for food_type in list(category_data.keys()):
-            if len(category_data[food_type]) >= threshold:
-                name_idx += 1
-                combined_names.append(food_type)
-                for sample in category_data[food_type]:
-                    combined_odors.append(sample)
-                    combined_indices.append(name_idx)
-        combined_df = vcf_data[combined_odors].T
+        if category != "ALL":
+            category_data = category_data[category]
+            name_idx = -1
+            for food_type in list(category_data.keys()):
+                if len(category_data[food_type]) >= threshold:
+                    name_idx += 1
+                    combined_names.append(food_type)
+                    for sample in category_data[food_type]:
+                        combined_odors.append(sample)
+                        combined_indices.append(name_idx)
+            combined_df = vcf_data[combined_odors].T
+        else:
+            name_idx = -1
+            for food_category in list(category_data.keys()):
+                for food in category_data[food_category]:
+                    if len(food) >= threshold:
+                        name_idx += 1
+                        combined_names.append(food)
+                        for sample in category_data[food_category][food]:
+                            combined_odors.append(sample)
+                            combined_indices.append(name_idx)
+            combined_df = vcf_data[combined_odors].T
+
         return combined_df, combined_indices, combined_names
     
     except Exception as e:

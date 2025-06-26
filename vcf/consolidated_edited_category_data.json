@@ -1,8 +1,5 @@
 {
     "ALCOHOLIC1": {
-        "BANTU BEER": [
-            "BANTU BEER"
-        ],
         "BEER": [
             "AMERICAN BEER",
             "AMERICAN BEER (premium)",
@@ -13,72 +10,35 @@
             "PALE ALE CRAFT BEER",
             "PALE ALE CRAFT BEER (low alcoholic)",
             "TRAPIST BEER (Belgian)",
-            "WHEAT BEER (Belgian)"
-        ],
-        "BEER (non-categorised)": [
+            "WHEAT BEER (Belgian)",
+            "BANTU BEER",
             "BEER (non-categorised)"
         ],
-        "BILBERRY WINE": [
-            "BILBERRY WINE"
-        ],
-        "CASHEW APPLE WINE": [
-            "CASHEW APPLE WINE"
-        ],
-        "CIDER (APPLE WINE)": [
-            "CIDER (APPLE WINE)"
-        ],
-        "GUAVA WINE": [
-            "GUAVA WINE"
-        ],
-        "KIWI WINE": [
+        "NON-GRAPE FRUIT WINE": [
+            "BILBERRY WINE",
+            "CASHEW APPLE WINE",
+            "CIDER (APPLE WINE)",
+            "GUAVA WINE",
             "KIWI WINE (S. cerevisiae and W. anomalus)",
             "KIWI WINE (S. cerevisiae)",
-            "KIWI WINE (W. anomalus)"
+            "KIWI WINE (W. anomalus)",
+            "LITCHI WINE",
+            "PASSION FRUIT WINE",
+            "PLUM WINE",
+            "POMEGRANATE wine (Punica granatum L.)",
+            "STRAWBERRY WINE"
         ],
-        "KOREAN RICE WINE": [
+        "RICE WINE": [
             "GUGIJAJU (KOREAN RICE WINE)",
             "KUKWHAJU (KOREAN RICE WINE)",
-            "MEASILJU (KOREAN RICE WINE)"
-        ],
-        "LITCHI WINE": [
-            "LITCHI WINE"
-        ],
-        "PASSION FRUIT WINE": [
-            "PASSION FRUIT WINE"
-        ],
-        "PLUM WINE": [
-            "PLUM WINE"
-        ],
-        "POMEGRANATE wine (Punica granatum L.)": [
-            "POMEGRANATE wine (Punica granatum L.)"
-        ],
-        "SAKE (non-categorised)": [
+            "MEASILJU (KOREAN RICE WINE)",
             "CHINESE RICE WINE (Guyelongshan Huadiao)",
             "CHINESE RICE WINE QU",
             "SAKE (Sokujo-brewed)",
             "SAKE (Yamahai-brewed)"
         ],
-        "SHERRY": [
-            "AMONTILLADO SHERRY WINE",
-            "FINO SHERRY WINE",
-            "OLOROSO SHERRY WINE"
-        ],
-        "SHERRY (non-categorised)": [
-            "SHERRY (non-categorised)"
-        ],
-        "STRAWBERRY WINE": [
-            "STRAWBERRY WINE"
-        ],
-        "WINE": [
+        "RED GRAPE WINE": [
             "BOTRYTISED WINE",
-            "DRY WHITE WINE (BLENDED)",
-            "DRY WHITE WINE (Chardonnay)",
-            "DRY WHITE WINE (Chenin blanc)",
-            "DRY WHITE WINE (Muscat of Alexandria)",
-            "DRY WHITE WINE (Sauvignon Blanc)",
-            "DRY WHITE WINE (Thompson Seedless)",
-            "DRY WHITE WINE (Verdehlo)",
-            "DRY WHITE WINE (Viognier)",
             "MUST (Chardonnay)",
             "MUST (Leon Millot)",
             "MUST (M\u00fcller-Thurgau)",
@@ -115,8 +75,17 @@
             "RED WINE (Ulugbey Karasi)",
             "RED WINE (Vidadillo)",
             "ROS\u00c9 WINE",
-            "SPARKLING WINE",
-            "SPECIAL WINE",
+            "YOUNG RED WINE"
+        ],
+        "WHITE GRAPE WINE": [
+            "DRY WHITE WINE (BLENDED)",
+            "DRY WHITE WINE (Chardonnay)",
+            "DRY WHITE WINE (Chenin blanc)",
+            "DRY WHITE WINE (Muscat of Alexandria)",
+            "DRY WHITE WINE (Sauvignon Blanc)",
+            "DRY WHITE WINE (Thompson Seedless)",
+            "DRY WHITE WINE (Verdehlo)",
+            "DRY WHITE WINE (Viognier)",
             "WHITE WINE (Albari\u00f1o - O Condado)",
             "WHITE WINE (Albari\u00f1o - O Rosal)",
             "WHITE WINE (Albillo, H. vineae+S. cerevisiae)",
@@ -139,7 +108,10 @@
             "WHITE WINE (Verdejo, retail stored)",
             "WHITE WINE (Verdicchio)",
             "YOUNG DRY WHITE WINE",
-            "YOUNG RED WINE"
+            "AMONTILLADO SHERRY WINE",
+            "FINO SHERRY WINE",
+            "OLOROSO SHERRY WINE",
+            "SHERRY (non-categorised)"
         ]
     },
     "ALCOHOLIC 2": {
@@ -148,55 +120,14 @@
             "PASTIS",
             "RAKI"
         ],
-        "APPLE BRANDY (non-categorised)": [
+        "FRUIT BRANDY": [
             "APPLE BRANDY (''Alquitara'' distilled)",
-            "APPLE BRANDY (unkn. type)"
-        ],
-        "APRICOT BRANDY": [
-            "APRICOT BRANDY"
-        ],
-        "ARBUTUS DISTILLATE (Portuguese brandy)": [
-            "ARBUTUS DISTILLATE (Portuguese brandy)"
-        ],
-        "ARRACK": [
-            "ARRACK"
-        ],
-        "AWAMORI (Japanese liquor)": [
-            "AWAMORI (Japanese liquor)"
-        ],
-        "BAIJIU (CHINESE LIQUOR)": [
-            "BAIJIU (Chixiang Aroma)",
-            "BAIJIU (Fenjui)",
-            "BAIJIU (Guotai)",
-            "BAIJIU (Wuliangye)",
-            "GUOJING BAIJIU (sesame-flavor, aged)",
-            "GUOJING BAIJIU (sesame-flavor, non-aged)"
-        ],
-        "BLACKBERRY BRANDY": [
-            "BLACKBERRY BRANDY"
-        ],
-        "BLUEBERRY BRANDY": [
-            "BLUEBERRY BRANDY"
-        ],
-        "CELERY BRANDY": [
-            "CELERY BRANDY"
-        ],
-        "CHERRY BRANDY": [
-            "CHERRY BRANDY"
-        ],
-        "EAU DE VIE DE CIDRE (Apple Brandy)": [
-            "EAU DE VIE DE CIDRE (Apple Brandy)"
-        ],
-        "EAU DE VIE DE COING": [
-            "EAU DE VIE DE COING"
-        ],
-        "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)": [
-            "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)"
-        ],
-        "GIN": [
-            "GIN"
-        ],
-        "GRAPE BRANDY": [
+            "APPLE BRANDY (unkn. type)",
+            "APRICOT BRANDY",
+            "ARBUTUS DISTILLATE (Portuguese brandy)",
+            "BLACKBERRY BRANDY",
+            "BLUEBERRY BRANDY",
+            "CHERRY BRANDY",
             "ARMAGNAC (French brandy)",
             "BRANDY (by-product from Spanish Holandas brandy)",
             "BRANDY (unknown type)",
@@ -213,22 +144,45 @@
             "PISCO (Chilean brandy)",
             "PISCO (Peruvian brandy, aromatic)",
             "PISCO (Peruvian brandy, non-aromatic)",
-            "WEINBRAND (German brandy)"
+            "WEINBRAND (German brandy)",
+            "PEAR BRANDY",
+            "PLUM BRANDY",
+            "RASPBERRY BRANDY"
+        ],
+        "ARRACK": [
+            "ARRACK"
+        ],
+        "AWAMORI (Japanese liquor)": [
+            "AWAMORI (Japanese liquor)"
+        ],
+        "BAIJIU (CHINESE LIQUOR)": [
+            "BAIJIU (Chixiang Aroma)",
+            "BAIJIU (Fenjui)",
+            "BAIJIU (Guotai)",
+            "BAIJIU (Wuliangye)",
+            "GUOJING BAIJIU (sesame-flavor, aged)",
+            "GUOJING BAIJIU (sesame-flavor, non-aged)"
+        ],
+        "CELERY BRANDY": [
+            "CELERY BRANDY"
+        ],
+        "EAU DE VIE DE CIDRE (Apple Brandy)": [
+            "EAU DE VIE DE CIDRE (Apple Brandy)"
+        ],
+        "EAU DE VIE DE COING": [
+            "EAU DE VIE DE COING"
+        ],
+        "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)": [
+            "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)"
+        ],
+        "GIN": [
+            "GIN"
         ],
         "MEZCAL (Agave salmiana)": [
             "MEZCAL (Agave salmiana)"
         ],
         "MULBERRY SPIRIT (Mouro)": [
             "MULBERRY SPIRIT (Mouro)"
-        ],
-        "PEAR BRANDY": [
-            "PEAR BRANDY"
-        ],
-        "PLUM BRANDY": [
-            "PLUM BRANDY"
-        ],
-        "RASPBERRY BRANDY": [
-            "RASPBERRY BRANDY"
         ],
         "RUM": [
             "RUM Category I (total volatiles > 3600 ppm)",
@@ -251,16 +205,7 @@
         ]
     },
     "DAIRY": {
-        "BLUE CHEESES": [
-            "BLUE CHEESES"
-        ],
-        "CASEIN HYDROLYSATE": [
-            "CASEIN HYDROLYSATE (Bacillus subtitles)"
-        ],
-        "CHEDDAR CHEESE": [
-            "CHEDDAR CHEESE"
-        ],
-        "CHEESE, VARIOUS TYPES": [
+        "CHEESES": [
             "BRIE",
             "CAMEMBERT",
             "CHEESES, OTHER",
@@ -290,7 +235,11 @@
             "ROMANO CHEESE",
             "RUSSIAN CHEESES",
             "SHEEP CHEESE",
-            "TILSIT CHEESE"
+            "TILSIT CHEESE",
+            "BLUE CHEESES",
+            "CHEDDAR CHEESE",
+            "AFUEGA'l PITU",
+            "SWISS CHEESES"
         ],
         "MILK and MILK PRODUCTS": [
             "BUTTER",
@@ -315,12 +264,6 @@
             "SOUR CREAM (reduced fat)",
             "WATER BUFFALO MILK",
             "YOGURT"
-        ],
-        "SPANISH CHEESES": [
-            "AFUEGA'l PITU"
-        ],
-        "SWISS CHEESES": [
-            "SWISS CHEESES"
         ]
     },
     "COFFEE TEA COCOA": {
@@ -339,11 +282,7 @@
             "COFFEE",
             "COLOMBIAN COFFEE (green)"
         ],
-        "MATE (Ilex paraguayensis)": [
-            "GREEN MATE",
-            "MATE (roasted)"
-        ],
-        "ROOIBOS TEA (Aspalathus linearis)": [
+        "RED TEA": [
             "ROOIBOS TEA (Aspalathus linearis)"
         ],
         "TEA": [
@@ -569,23 +508,25 @@
             "BEEF LIVER (fried)",
             "STEWED BEEF JUICE"
         ],
-        "CHICKEN": [
+        "RAW CHICKEN": [
+            "CHICKEN (raw)",
+            "CHICKEN BREAST (raw)",
+            "CHICKEN BREAST (raw) (Hubbard Red JA breed)",
+            "CHICKEN BREAST (raw) (Leghorn breed)",
+            "CHICKEN BREAST (raw) (Naked Neck breed)",
+            "CHICKEN SKIN (raw)"
+        ],
+        "COOKED CHICKEN": [
             "CHICKEN (cooked)",
             "CHICKEN (fried)",
-            "CHICKEN (raw)",
             "CHICKEN (roasted)",
             "CHICKEN BREAST (baked)",
             "CHICKEN BREAST (cooked) (Hubbard Red JA breed)",
             "CHICKEN BREAST (cooked) (Leghorn breed)",
             "CHICKEN BREAST (cooked) (Naked Neck breed)",
-            "CHICKEN BREAST (raw)",
-            "CHICKEN BREAST (raw) (Hubbard Red JA breed)",
-            "CHICKEN BREAST (raw) (Leghorn breed)",
-            "CHICKEN BREAST (raw) (Naked Neck breed)",
             "CHICKEN BREAST (sugar-smoked)",
             "CHICKEN FAT",
             "CHICKEN SKIN (baked)",
-            "CHICKEN SKIN (raw)",
             "CHICKEN SKIN (sugar-smoked)"
         ],
         "EGG": [
@@ -595,41 +536,40 @@
             "CHICKEN EGG WHITE (raw)",
             "CHICKEN EGG YOLK (raw)"
         ],
-        "GUINEA HEN": [
-            "GUINEA HEN"
-        ],
-        "HAM": [
-            "JINHUA HAM",
-            "XUANWEI HAM"
-        ],
-        "LAMB and MUTTON": [
+        "RAW LAMB": [
             "LAMB (raw)",
+            "MUTTON (raw)"
+        ],
+        "COOKED LAMB": [
             "LAMB (roasted)",
             "LAMB and MUTTON FAT (heated)",
             "LAMB and MUTTON LIVER",
             "MUTTON (boiled)",
-            "MUTTON (cooked)",
-            "MUTTON (raw)"
+            "MUTTON (cooked)"
         ],
-        "MORTADELLA": [
-            "MORTADELLA (briefly cooked, fresh)",
-            "MORTADELLA (traditionally cooked, fresh)"
-        ],
-        "PORK": [
-            "PORK FAT (bacon)",
-            "PORK LIVER",
+        "UNCOOKED PORK": [
             "PORK RIB MEAT (raw, Duroc-Bamei hybrid breed)",
             "PORK TENDERLOIN (raw, Duroc-Bamei hybrid breed)",
             "PORK TENDON MEAT (raw, Duroc-Bamei hybrid breed)",
+            "PORK, UNCURED (raw)",
+            "PORK, CURED (raw)"
+        ],
+        "COOKED PORK": [
+            "PORK FAT (bacon)",
+            "PORK LIVER",
             "PORK, CURED (boiled, cooked)",
             "PORK, CURED (fried)",
-            "PORK, CURED (raw)",
             "PORK, CURED (smoked)",
             "PORK, UNCURED (boiled, cooked)",
             "PORK, UNCURED (fried and seasoned)",
             "PORK, UNCURED (grilled, roasted)",
-            "PORK, UNCURED (raw)",
             "PORK, UNCURED (smoked)"
+        ],
+        "HAM": [
+            "MORTADELLA (briefly cooked, fresh)",
+            "MORTADELLA (traditionally cooked, fresh)",
+            "JINHUA HAM",
+            "XUANWEI HAM"
         ]
     },
     "SPICES": {
@@ -1606,13 +1546,11 @@
         "STARFRUIT (Averrhoa carambola L.)": [
             "STARFRUIT (Averrhoa carambola L.)"
         ],
-        "STRAWBERRY (Fragaria species)": [
+        "STRAWBERRY and STRAWBERRY DERIVATIVES": [
             "STRAWBERRY FRUIT",
             "STRAWBERRY FRUIT (var. Albion)",
             "STRAWBERRY FRUIT (var. Festival)",
-            "STRAWBERRY FRUIT (var. Frontera)"
-        ],
-        "STRAWBERRY DERIVATIVES": [
+            "STRAWBERRY FRUIT (var. Frontera)",
             "STRAWBERRY JAM",
             "STRAWBERRY JUICE"
         ],
