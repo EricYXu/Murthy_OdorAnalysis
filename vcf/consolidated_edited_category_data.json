@@ -1,5 +1,5 @@
 {
-    "ALCOHOLIC1": {
+    "ALCOHOLIC": {
         "BEER": [
             "AMERICAN BEER",
             "AMERICAN BEER (premium)",
@@ -112,15 +112,8 @@
             "FINO SHERRY WINE",
             "OLOROSO SHERRY WINE",
             "SHERRY (non-categorised)"
-        ]
-    },
-    "ALCOHOLIC 2": {
-        "ANISE BRANDY": [
-            "OUZO",
-            "PASTIS",
-            "RAKI"
         ],
-        "FRUIT BRANDY": [
+        "BRANDY": [
             "APPLE BRANDY (''Alquitara'' distilled)",
             "APPLE BRANDY (unkn. type)",
             "APRICOT BRANDY",
@@ -147,13 +140,10 @@
             "WEINBRAND (German brandy)",
             "PEAR BRANDY",
             "PLUM BRANDY",
-            "RASPBERRY BRANDY"
-        ],
-        "ARRACK": [
-            "ARRACK"
-        ],
-        "AWAMORI (Japanese liquor)": [
-            "AWAMORI (Japanese liquor)"
+            "RASPBERRY BRANDY",
+            "EAU DE VIE DE CIDRE (Apple Brandy)",
+            "EAU DE VIE DE COING",
+            "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)"
         ],
         "BAIJIU (CHINESE LIQUOR)": [
             "BAIJIU (Chixiang Aroma)",
@@ -163,35 +153,15 @@
             "GUOJING BAIJIU (sesame-flavor, aged)",
             "GUOJING BAIJIU (sesame-flavor, non-aged)"
         ],
-        "CELERY BRANDY": [
-            "CELERY BRANDY"
-        ],
-        "EAU DE VIE DE CIDRE (Apple Brandy)": [
-            "EAU DE VIE DE CIDRE (Apple Brandy)"
-        ],
-        "EAU DE VIE DE COING": [
-            "EAU DE VIE DE COING"
-        ],
-        "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)": [
-            "EAU DE VIE DE FIGUE (Fig Brandy, Tunisian)"
-        ],
-        "GIN": [
-            "GIN"
-        ],
-        "MEZCAL (Agave salmiana)": [
-            "MEZCAL (Agave salmiana)"
-        ],
-        "MULBERRY SPIRIT (Mouro)": [
-            "MULBERRY SPIRIT (Mouro)"
+        "AGAVE SPIRIT": [
+            "MEZCAL (Agave salmiana)",
+            "TEQUILA (Agave tequilana)"
         ],
         "RUM": [
             "RUM Category I (total volatiles > 3600 ppm)",
             "RUM Category II (total volatiles 1100-3600 ppm)",
             "RUM Category III (total volatiles 240-1100 ppm)",
             "RUM Category unknown"
-        ],
-        "TEQUILA (Agave tequilana)": [
-            "TEQUILA (Agave tequilana)"
         ],
         "WHISKY": [
             "BOURBON WHISKY",
@@ -282,9 +252,6 @@
             "COFFEE",
             "COLOMBIAN COFFEE (green)"
         ],
-        "RED TEA": [
-            "ROOIBOS TEA (Aspalathus linearis)"
-        ],
         "TEA": [
             "BLACK TEA",
             "BLACK TEA (brewed)",
@@ -308,14 +275,13 @@
             "QIMEN BLACK TEA",
             "RED OOLONG TEA (brewed)",
             "SENCHA TEA (GREEN TEA)",
-            "WHITE TEA"
+            "WHITE TEA",
+            "ROOIBOS TEA (Aspalathus linearis)"
         ]
     },
     "SEAFOOD": {
-        "BLUE-GREEN ALGAE": [
-            "BLUE-GREEN ALGAE (aoko)"
-        ],
-        "BROWN ALGAE": [
+        "ALGAE": [
+            "BLUE-GREEN ALGAE (aoko)",
             "BROWN ALGAE (ascophyllum nodosum)",
             "BROWN ALGAE (colpomenia sinuosa)",
             "BROWN ALGAE (cutleria multifida)",
@@ -331,29 +297,68 @@
             "KELP (Laminaria angustata, brown algae)",
             "KELP (Laminaria diabolica)",
             "KELP (Laminaria japonica, brown algae)",
-            "KELP (Laminaria ochotensis)"
+            "KELP (Laminaria ochotensis)",
+            "GREEN ALGAE (acetabularia ryukyuensis)",
+            "GREEN ALGAE (bryopsis maxima)",
+            "GREEN ALGAE (caulerpa racemosa)",
+            "GREEN ALGAE (cladophora rudolphiana)",
+            "GREEN ALGAE (cladophoropsis vaucheriaeformis)",
+            "GREEN ALGAE (enteromorpha clathrata)",
+            "GREEN ALGAE (enteromorpha linza)",
+            "GREEN ALGAE (halicornye wrightii)",
+            "GREEN ALGAE (halimeda opuntia)",
+            "GREEN ALGAE (monostroma nitidum)",
+            "GREEN ALGAE OIL (ulva pertusa)",
+            "GREEN ALGEA (boodlea coacta)",
+            "GREEN ALGEA (codium intricatum)",
+            "GREEN ALGEA (ulva linza)",
+            "GREEN ALGEA (ulva pertusa)",
+            "GREEN ALGEA (ulva prolifera)",
+            "RED ALGAE (ahnfeltia paradoxa)",
+            "RED ALGAE (asparagopsis taxiformis)",
+            "RED ALGAE (beckerella subrostata)",
+            "RED ALGAE (carpopeltis angusta)",
+            "RED ALGAE (carpopeltis cornea)",
+            "RED ALGAE (ceratodictyon spongiosum)",
+            "RED ALGAE (chondria californica)",
+            "RED ALGAE (chondrus elatus)",
+            "RED ALGAE (chondrus verrucosa)",
+            "RED ALGAE (coeloseira pacifica)",
+            "RED ALGAE (corallina officinalis)",
+            "RED ALGAE (gigartha mamillosa)",
+            "RED ALGAE (gracilaria verrucosa)",
+            "RED ALGAE (hyena nidulans)",
+            "RED ALGAE (hypnea charoides)",
+            "RED ALGAE (hypnea roman)",
+            "RED ALGAE (laurencia subopposita)",
+            "RED ALGAE (liagora caenomyce)",
+            "RED ALGAE (spyridia filamentosa)",
+            "RED ALGAE (vidalia obtusiloba)",
+            "RED ALGEA (porphyra tenera)"
         ],
-        "CAVIAR": [
-            "CAVIAR"
-        ],
-        "CLAM": [
-            "CLAM"
-        ],
-        "CRAB": [
+        "CRUSTACEANS": [
+            "CRAYFISH BYPRODUCT (hydrolysate, P. clarkii)",
+            "CRAYFISH BYPRODUCT (P. clarkii)",
             "BLUE CRAB (by-products, C. sapidus)",
             "BLUE CRAB (fresh meat, C. sapidus)",
             "CRUCIFIX CRAB (body meat, C. feriatus)",
             "CRUCIFIX CRAB (carapace soft meat, C. feriatus)",
-            "CRUCIFIX CRAB (leg meat, C. feriatus)"
+            "CRUCIFIX CRAB (leg meat, C. feriatus)",
+            "KRILL",
+            "LOBSTER (Balmain bug, Ibacus peronii)",
+            "LOBSTER (Moreton Bay bug, Thenus orientalis)"
         ],
-        "CRAYFISH": [
-            "CRAYFISH BYPRODUCT (hydrolysate, P. clarkii)",
-            "CRAYFISH BYPRODUCT (P. clarkii)"
+        "MOLLUSCS": [
+            "CUTTLEFISH",
+            "CLAM",
+            "OYSTERS",
+            "MUSSEL",
+            "SCALLOP",
+            "SQUID MANTLE FLESH (cooked)",
+            "SQUID MANTLE FLESH (raw)",
+            "SQUID (non-categorised)"
         ],
-        "CUTTLEFISH": [
-            "CUTTLEFISH"
-        ],
-        "FISH": [
+        "FISH AND FISH PRODUCT": [
             "ALBACORE (canned)",
             "ALBACORE (cooked)",
             "ALBACORE (raw)",
@@ -408,69 +413,10 @@
             "TUNA (canned)",
             "TUNA (raw)",
             "WHITE FISH (oxidized)",
-            "WHITE FISH (raw)"
+            "WHITE FISH (raw)",
+            "CAVIAR"
         ],
-        "GREEN ALGAE": [
-            "GREEN ALGAE (acetabularia ryukyuensis)",
-            "GREEN ALGAE (bryopsis maxima)",
-            "GREEN ALGAE (caulerpa racemosa)",
-            "GREEN ALGAE (cladophora rudolphiana)",
-            "GREEN ALGAE (cladophoropsis vaucheriaeformis)",
-            "GREEN ALGAE (enteromorpha clathrata)",
-            "GREEN ALGAE (enteromorpha linza)",
-            "GREEN ALGAE (halicornye wrightii)",
-            "GREEN ALGAE (halimeda opuntia)",
-            "GREEN ALGAE (monostroma nitidum)",
-            "GREEN ALGAE OIL (ulva pertusa)",
-            "GREEN ALGEA (boodlea coacta)",
-            "GREEN ALGEA (codium intricatum)",
-            "GREEN ALGEA (ulva linza)",
-            "GREEN ALGEA (ulva pertusa)",
-            "GREEN ALGEA (ulva prolifera)"
-        ],
-        "KRILL": [
-            "KRILL"
-        ],
-        "LOBSTER": [
-            "LOBSTER (Balmain bug, Ibacus peronii)",
-            "LOBSTER (Moreton Bay bug, Thenus orientalis)"
-        ],
-        "MUSSEL": [
-            "MUSSEL"
-        ],
-        "OYSTERS": [
-            "OYSTERS"
-        ],
-        "RED ALGAE": [
-            "RED ALGAE (ahnfeltia paradoxa)",
-            "RED ALGAE (asparagopsis taxiformis)",
-            "RED ALGAE (beckerella subrostata)",
-            "RED ALGAE (carpopeltis angusta)",
-            "RED ALGAE (carpopeltis cornea)",
-            "RED ALGAE (ceratodictyon spongiosum)",
-            "RED ALGAE (chondria californica)",
-            "RED ALGAE (chondrus elatus)",
-            "RED ALGAE (chondrus verrucosa)",
-            "RED ALGAE (coeloseira pacifica)",
-            "RED ALGAE (corallina officinalis)",
-            "RED ALGAE (gigartha mamillosa)",
-            "RED ALGAE (gracilaria verrucosa)",
-            "RED ALGAE (hyena nidulans)",
-            "RED ALGAE (hypnea charoides)",
-            "RED ALGAE (hypnea roman)",
-            "RED ALGAE (laurencia subopposita)",
-            "RED ALGAE (liagora caenomyce)",
-            "RED ALGAE (spyridia filamentosa)",
-            "RED ALGAE (vidalia obtusiloba)",
-            "RED ALGEA (porphyra tenera)"
-        ],
-        "SCALLOP": [
-            "SCALLOP"
-        ],
-        "SEA URCHIN (echinus)": [
-            "PURPLE SEA URCHIN GONADS (Paracentrotus Lividus)"
-        ],
-        "SHRIMPS (PRAWN)": [
+        "SHRIMPS AND SHRIMP PRODUCT": [
             "SHRIMPS, PRAWN (Carid, Plesionika sp.)",
             "SHRIMPS, PRAWN (cooked fermented)",
             "SHRIMPS, PRAWN (cooked)",
@@ -481,23 +427,11 @@
             "SHRIMPS, PRAWN (Red spot king,Penaeus longistylus)",
             "SHRIMPS, PRAWN (Red, Aristeomorpha foliacea)",
             "SHRIMPS, PRAWN (roasted)",
-            "SHRIMPS, PRAWN (Royal red, Hymenopenaeus sibogae)"
-        ],
-        "SQUID": [
-            "SQUID MANTLE FLESH (cooked)",
-            "SQUID MANTLE FLESH (raw)"
-        ],
-        "SQUID (non-categorised)": [
-            "SQUID (non-categorised)"
-        ],
-        "TRASSI (cooked)": [
+            "SHRIMPS, PRAWN (Royal red, Hymenopenaeus sibogae)",
             "TRASSI (cooked)"
         ]
     },
     "MEAT": {
-        "ALLIGATOR": [
-            "ALLIGATOR MEAT - tail"
-        ],
         "BEEF": [
             "BEEF (boiled, cooked)",
             "BEEF (canned)",
@@ -572,21 +506,7 @@
             "XUANWEI HAM"
         ]
     },
-    "SPICES": {
-        "AGASTACHE SPECIES": [
-            "ANISE HYSSOP (Agastache foeniculum (Pursh) Kuntze)",
-            "CATNIP GIANT HYSSOP (Agastache nepetoides K.)",
-            "KOREAN MINT (Agastache rugosa Kuntze)"
-        ],
-        "ALPINIA SPECIES": [
-            "CHEKUR (Alpinia sessilis = Kaempferia galanga)",
-            "GREATER GALANGA (Laos) (Alpinia galanga Willd.)",
-            "SMALLER GALANGA (Alpinia officinarum Hance)"
-        ],
-        "ANGELICA (Angelica archangelica L.)": [
-            "ANGELICA ROOT OIL",
-            "ANGELICA SEED OIL"
-        ],
+    "SPICES NOT DONE": {
         "ANISE": [
             "ANISE (Pimpinella anisum L.)",
             "ANISE FRUITS",
@@ -597,9 +517,6 @@
             "ROASTED ARGAN OIL (cold-pressed, old)",
             "UNROASTED ARGAN OIL (cold-pressed, fresh)",
             "UNROASTED ARGAN OIL (cold-pressed, old)"
-        ],
-        "ASAFOETIDA OIL": [
-            "ASAFOETIDA OIL"
         ],
         "ASHANTI PEPPER (Piper guineense Schum and Thom)": [
             "ASHANTI PEPPER (Piper guineense Schum and Thom)"
@@ -631,9 +548,6 @@
         "CARDAMOM (Ellettaria cardamomum Maton.)": [
             "CARDAMOM (Ellettaria cardamomum Maton.)"
         ],
-        "CHERVIL (Anthriscus cerefolium L.)": [
-            "CHERVIL (Anthriscus cerefolium L.)"
-        ],
         "CINNAMOMUM SPECIES": [
             "CASSIA BARK (Cinnamomum cassia Blume)",
             "CASSIA LEAF (Cinnamomum cassia Blume)",
@@ -653,11 +567,9 @@
         "CORIANDER SEED (Coriandrum sativum L.)": [
             "CORIANDER SEED (Coriandrum sativum L.)"
         ],
-        "CUMIN OIL": [
+        "CUMIN OIL AND SEED": [
             "BLACK CUMIN OIL (cold-pressed, fresh)",
-            "BLACK CUMIN OIL (cold-pressed, old)"
-        ],
-        "CUMIN SEED (Cuminum cyminum L.)": [
+            "BLACK CUMIN OIL (cold-pressed, old)",
             "CUMIN SEED (Cuminum cyminum L.)"
         ],
         "CURCUMA SPECIES": [
@@ -687,9 +599,6 @@
             "INDIAN DILL ROOT (Anethum sowa Roxb.)",
             "INDIAN DILL SEED (Anethum sowa Roxb.)"
         ],
-        "DRAGONHEAD (Dracocephalum moldavica L.)": [
-            "DRAGONHEAD (Dracocephalum moldavica L.)"
-        ],
         "EUCALYPTUS OIL (Eucalyptus globulus Labill)": [
             "EUCALYPTUS OIL (Eucalyptus globulus Labill)"
         ],
@@ -700,17 +609,11 @@
             "SWEET FENNEL OIL (F. var. dulce (Miller))",
             "VEGETABLE FENNEL OIL (F. var. azoricum (Miller))"
         ],
-        "FENUGREEK (Trigonella foenum-graecum L.)": [
-            "FENUGREEK (Trigonella foenum-graecum L.)"
-        ],
         "FLAXSEED OIL": [
             "BROWN FLAXSEED OIL (cold-pressed, fresh)",
             "BROWN FLAXSEED OIL (cold-pressed, old)",
             "GOLD FLAXSEED OIL (cold-pressed, fresh)",
             "GOLD FLAXSEED OIL (cold-pressed, old)"
-        ],
-        "GENTIAN ROOT": [
-            "GENTIAN ROOT"
         ],
         "GINGER (Zingiber species)": [
             "GINGER (Zingiber cassumunar Roxb.)",
@@ -720,9 +623,6 @@
         "HEMP OIL": [
             "HEMP OIL (cold-pressed, fresh)",
             "HEMP OIL (cold-pressed, old)"
-        ],
-        "INDIAN CRESS ABSOLUTE (Tropaelum majus L.)": [
-            "INDIAN CRESS ABSOLUTE (Tropaelum majus L.)"
         ],
         "JUNIPERUS COMMUNIS": [
             "JUNIPER BERRY",
@@ -919,7 +819,7 @@
             "XYLOPIA PARVIFLORA (A. RICH) BENTH."
         ]
     },
-    "VEGETABLES": {
+    "VEGETABLES NOT DONE": {
         "ALLIUM SPECIES": [
             "CAUCAS (Allium victoralis L.)",
             "CHIVE (Allium schoenoprasum L.)",
@@ -1113,12 +1013,6 @@
         ]
     },
     "FUNGI": {
-        "DESERT TRUFFLE (Terfeziaceae)": [
-            "DESERT TRUFFLE (Terfeziaceae)"
-        ],
-        "MATSUTAKE (Tricholoma matsutake)": [
-            "MATSUTAKE (Tricholoma matsutake)"
-        ],
         "MUSHROOM": [
             "AGARICUS (= Psalliota) varieties",
             "BOLETUS EDULIS (dried)",
@@ -1141,15 +1035,8 @@
             "WINTER TRUFFLE (Tuber brumale)"
         ]
     },
-    "FRUITS": {
-        "ACEROLA (Malpighia)": [
-            "ACEROLA (Malpighia)"
-        ],
-        "AMBARELLA FRUIT (Spondias cytherea S.)": [
-            "AMBARELLA FRUIT (ripe, Spondias cytherea S.)",
-            "AMBARELLA FRUIT (unripe, Spondias cytherea S.)"
-        ],
-        "APPLE FRESH (Malus species)": [
+    "FRUITS NOT DONE": {
+        "APPLE AND APPLE PRODUCT": [
             "APPLE FRESH (Braeburn)",
             "APPLE FRESH (Cox's Orange Pippin)",
             "APPLE FRESH (Cox's Orange)",
@@ -1167,69 +1054,25 @@
             "APPLE FRESH (Royal Gala)",
             "APPLE FRESH (Ruixue)",
             "APPLE FRESH UNRIPE (Fuiji)",
-            "APPLE FRESH UNRIPE (Ruixue)"
-        ],
-        "APPLE PROCESSED (Malus species)": [
+            "APPLE FRESH UNRIPE (Ruixue)",
             "APPLE JAM",
             "APPLE PROCESSED (cooked)",
             "APPLE PROCESSED (juice)"
-        ],
-        "ARCTIC BRAMBLE (Rubus arcticus L.)": [
-            "ARCTIC BRAMBLE (Rubus arcticus L.)"
         ],
         "ARTOCARPUS SPECIES": [
             "CHEMPEDAK (Artocarpus polyphema Pers.)",
             "JACKFRUIT (Artocarpus heterophyllus Lam.)"
         ],
-        "ASIAN PEAR (Pyrus serotina, Pyrus pyrifolia)": [
-            "ASIAN PEAR (Pyrus serotina, Pyrus pyrifolia)"
-        ],
         "AVOCADO (Persea americana Mill.)": [
             "AVOCADO (Persea americana Mill.)"
-        ],
-        "BABACO FRUIT (Carica pentagona Heilborn)": [
-            "BABACO FRUIT (Carica pentagona Heilborn)"
-        ],
-        "BACURI (Platonia insignis)": [
-            "BACURI (Platonia insignis)"
-        ],
-        "BELI, BAEL (Aegle marmelos Correa)": [
-            "BELI, BAEL (Aegle marmelos Correa)"
-        ],
-        "BLACK CHOKE BERRY JUICE(Aronia melanocarpa Ell.)": [
-            "BLACK CHOKE BERRY JUICE(Aronia melanocarpa Ell.)"
-        ],
-        "BLACK CURRANTS (Ribes nigrum L.)": [
-            "BLACK CURRANTS - BERRIES",
-            "BLACK CURRANTS - BUDS"
-        ],
-        "BULLOCK'S HEART (Annona reticulata L.)": [
-            "BULLOCK'S HEART (Annona reticulata L.)"
-        ],
-        "CALIFORNIA PEPPER (Schinus molle L.)": [
-            "CALIFORNIA PEPPER (Schinus molle L.)"
-        ],
-        "CAPE GOOSEBERRY (Physalis peruviana L.)": [
-            "CAPE GOOSEBERRY (Physalis peruviana L.)"
         ],
         "CASHEW APPLE (Anacardium occidentale)": [
             "CASHEW APPLE (fresh)",
             "CASHEW APPLE JUICE"
         ],
-        "CERIMAN, PINANONA (Monstera deliciosa Liebm.)": [
-            "CERIMAN, PINANONA (Monstera deliciosa Liebm.)"
-        ],
-        "CHERIMOYA (Annona cherimolia Mill.)": [
-            "CHERIMOYA (Annona cherimolia Mill.)"
-        ],
         "CHERRY (Prunus avium (sweet), Pr. cerasus (sour))": [
             "SOUR CHERRY (Prunus cerasus L.)",
             "SWEET CHERRY (Prunus avium L.)"
-        ],
-        "CHINESE QUINCE (Pseudocydonia sinensis Schneid)": [
-            "CHINESE QUINCE FLESH",
-            "CHINESE QUINCE FRUIT",
-            "CHINESE QUINCE PEEL"
         ],
         "CITRUS FRUITS": [
             "AUSTRALIAN FINGER LIME PEEL (cv. Alstonville)",
@@ -1306,21 +1149,6 @@
             "VALENCIA ORANGE PEEL (C. sinensis L. Osbeck var.V)",
             "YUZU OIL (Citrus junos Sieb. ex Tanaka)"
         ],
-        "CLOUDBERRY (Rubus chamaemorus L.)": [
-            "CLOUDBERRY (Rubus chamaemorus L.)"
-        ],
-        "CROWBERRY (Empetrum nigrum coll.)": [
-            "CROWBERRY (Empetrum nigrum coll.)"
-        ],
-        "CUPUACU (Theobroma grandiflorum Spreng.)": [
-            "CUPUACU (Theobroma grandiflorum Spreng.)"
-        ],
-        "CUSTARD APPLE, ATEMOYA (Annona atemoya)": [
-            "CUSTARD APPLE, ATEMOYA (Annona atemoya)"
-        ],
-        "DALIEB, PALMYRA PALM FRUIT (Borassus aethiopum L.)": [
-            "DALIEB, PALMYRA PALM FRUIT (Borassus aethiopum L.)"
-        ],
         "DATE (Phoenix dactylifera L.)": [
             "DATE (Phoenix dactylifera L.)"
         ],
@@ -1331,28 +1159,15 @@
         "DURIAN (Durio zibethinus)": [
             "DURIAN (Durio zibethinus)"
         ],
-        "DWARF QUINCE (Chaenomeles japonica)": [
-            "DWARF QUINCE (Chaenomeles japonica)"
-        ],
-        "ELDERBERRY (Sambucus nigra L.)": [
-            "ELDER FLOWER",
-            "ELDERBERRY FRUIT",
-            "ELDERBERRY JUICE"
-        ],
         "FIG (Ficus carica L.)": [
             "FIG (dried)",
             "FIG (fresh)"
         ],
-        "GABIROBA (Campomanesia xanthocarpa)": [
-            "GABIROBA (Campomanesia xanthocarpa)"
-        ],
-        "GRAPE (OTHER species)": [
+        "GRAPE": [
             "OTHER VITIS SPECIES",
             "RAISIN",
             "VITIS LABRUSCA L.",
-            "VITIS ROTUNDIFOLIA"
-        ],
-        "GRAPE (VITIS VINIFERA species)": [
+            "VITIS ROTUNDIFOLIA",
             "VITIS VINIFERA L. (Cabernet Sauv. thinning grapes)"
         ],
         "GUAVA and FEYOA": [
@@ -1365,27 +1180,12 @@
             "STRAWBERRY GUAVA LEAF OIL (Psidium cattleianum S.)",
             "YELLOW GUAVA (P.cattleianum Sab.var.lucidum Hort.)"
         ],
-        "HOG PLUM (Spondias mombins L.)": [
-            "HOG PLUM (fruit pulp, Spondias mombins L.)",
-            "HOG PLUM (pasteurised juice, Spondias mombins L.)",
-            "HOG PLUM (raw juice, Spondias mombins L.)",
-            "HOG PLUM (thermosonicated juice, S. mombins L.)"
-        ],
-        "KARAKA (Corynocarpus laevigatus J.R. et G. Forst.)": [
-            "KARAKA (Corynocarpus laevigatus J.R. et G. Forst.)"
-        ],
         "KIWIFRUIT (Actinidia chinensis, syn. A. deliciosa)": [
             "KIWIFRUIT (Actinidia chinensis, syn. A. deliciosa)"
         ],
         "LITCHI (Litchi chinensis Sonn.)": [
             "LITCHI FRUIT",
             "LITCHI JUICE"
-        ],
-        "LOGANBERRY JUICE (Rubus ursinus var. loganobaccus)": [
-            "LOGANBERRY JUICE (Rubus ursinus var. loganobaccus)"
-        ],
-        "LOQUAT (Eriobotrya japonica Lindl.)": [
-            "LOQUAT (Eriobotrya japonica Lindl.)"
         ],
         "MABOLO (diospyros blancoi)": [
             "MABOLO (diospyros blancoi)"
@@ -1450,9 +1250,6 @@
             "OLIVE OIL (Turkey, Izmir)",
             "OLIVE POMACE (dried)"
         ],
-        "OMIJA FRUIT (Schisandra chinensis Baillon)": [
-            "OMIJA FRUIT (Schisandra chinensis Baillon)"
-        ],
         "PAPAYA (Carica papaya L.)": [
             "PAPAYA (Carica papaya L.)",
             "PAPAYA (red maradol)"
@@ -1477,7 +1274,8 @@
         ],
         "PEAR (Pyrus communis L.)": [
             "BARTLETT PEAR (Williams pear, Bon Chretien)",
-            "PEAR, OTHER TYPES"
+            "PEAR, OTHER TYPES",
+            "ASIAN PEAR (Pyrus serotina, Pyrus pyrifolia)"
         ],
         "PEPINO FRUIT (Solanum muricatum)": [
             "PEPINO FRUIT (Solanum muricatum)"
@@ -1591,12 +1389,6 @@
             "ALMOND HULL (nonpareil)",
             "ALMOND OIL (Amygdalus communis)"
         ],
-        "BRAZIL NUT (Bertholletia excelsa)": [
-            "BRAZIL NUT (Bertholletia excelsa)"
-        ],
-        "CANDLENUT (Aleurites moluccana)": [
-            "CANDLENUT (Aleurites moluccana)"
-        ],
         "CASHEW NUT (Anacardium occidentale)": [
             "CASHEW NUT (raw)",
             "CASHEW NUT (roasted)"
@@ -1649,33 +1441,14 @@
         ]
     },
     "BREAD": {
-        "AMARANTH": [
-            "AMARANTH (A. cruentus)",
-            "AMARANTH (A. hybridus)",
-            "AMARANTH (A. hypochondriacus)",
-            "AMARANTH (A. palmeri)",
-            "AMARANTH (A. retroflexus)",
-            "AMARANTH (A. spinosus)"
-        ],
         "BARLEY": [
             "BARLEY (roasted)",
             "BARLEY (unprocessed)",
             "MALTED BARLEY (roasted)"
         ],
-        "BREAD and BREAD PREFERMENT": [
-            "BREAD and BREAD PREFERMENT"
-        ],
-        "BREAD DOUGH": [
+        "BREAD, BREAD PREFERMENT, BREAD DOUGH": [
+            "BREAD and BREAD PREFERMENT",
             "BREAD DOUGH"
-        ],
-        "BUCKWHEAT": [
-            "BUCKWHEAT"
-        ],
-        "CRISPBREAD": [
-            "CRISPBREAD"
-        ],
-        "DONUT": [
-            "DONUT"
         ],
         "MAIZE (Zea mays L.)": [
             "CORN (Zea mays)",
@@ -1709,10 +1482,7 @@
             "OATMEAL (cooked)",
             "OATMEAL (fresh extrusion product)"
         ],
-        "POPCORN": [
-            "POPCORN"
-        ],
-        "RICE (Oryza sativa L.)": [
+        "RICE, RICE BRAN, RICE PRODUCT": [
             "BASMATI RICE (cooked)",
             "BASMATI RICE (raw)",
             "BROWN RICE (long grain, cooked)",
@@ -1727,14 +1497,11 @@
             "SOONG-NEUNG (extract of cooked and roasted rice)",
             "TRADITIONAL RICE (cooked)",
             "WHITE RICE (long grain, milled, cooked)",
-            "WHITE RICE (long grain, milled, raw)"
-        ],
-        "RICE BRAN": [
+            "WHITE RICE (long grain, milled, raw)",
             "DEFATTED RICE BRAN",
             "DEFATTED RICE BRAN (insoluble dietary fibre)",
-            "DEFATTED RICE BRAN (soluble dietary fibre)"
-        ],
-        "RICE CAKE": [
+            "DEFATTED RICE BRAN (soluble dietary fibre)",
+            "WILD RICE (Zizania aquatica)",
             "RICE CAKE"
         ],
         "RYE": [
@@ -1765,12 +1532,9 @@
             "WHEATEN BREAD CRUMB",
             "WHEATEN BREAD CRUST",
             "WHEATEN BREAD WHITE"
-        ],
-        "WILD RICE (Zizania aquatica)": [
-            "WILD RICE (Zizania aquatica)"
         ]
     },
-    "MISCELLAENOUS": {
+    "MISCELLAENOUS NOT DONE": {
         "AMBRETTE SEED (Ablemoschus seed)": [
             "ABELMOSCHUS ESCULENTUS (L.) MOENCH SEED",
             "ABELMOSCHUS MOSCHATUS MEDIK SEED"
@@ -1966,29 +1730,10 @@
         "SESAME SEED (roasted)": [
             "SESAME SEED (roasted)"
         ],
-        "SIBERIAN GINSENG (Eleutherococcus Senticosus)": [
-            "SIBERIAN GINSENG FRUIT (E. Senticosus)",
-            "SIBERIAN GINSENG SEED OIL (E. Senticosus)"
-        ],
-        "SUGAR": [
+        "SUGAR AND SUGAR MOLASSES": [
             "CANE SUGAR",
-            "PANELA WATER"
-        ],
-        "SUGAR MOLASSES": [
+            "PANELA WATER",
             "SUGAR MOLASSES"
-        ],
-        "SUKIYAKI": [
-            "SUKIYAKI"
-        ],
-        "TAGETES": [
-            "TAGETES ERECTA OIL",
-            "TAGETES MINUTA OIL",
-            "TAGETES PATULA OIL",
-            "TAGETES RIOJANA FERRARO OIL",
-            "TAGETES TENUIFOLIA OIL"
-        ],
-        "tom yam (lemongrass, galangal, kaffir lime leaf)": [
-            "tom yam (lemongrass, galangal, kaffir lime leaf)"
         ],
         "TURPENTINE OIL (Pistacia terebinthus)": [
             "TURPENTINE (Pistacia terebinthus) FLOWER OIL",
