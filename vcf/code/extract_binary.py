@@ -82,7 +82,7 @@ def get_binary_with_threshold(input_path: str, foods_path: str, category: str, t
             name_idx = -1
             for food_category in list(category_data.keys()):
                 for food in category_data[food_category]:
-                    if len(food) >= threshold:
+                    if len(category_data[food_category][food]) >= threshold:
                         name_idx += 1
                         combined_names.append(food)
                         for sample in category_data[food_category][food]:
