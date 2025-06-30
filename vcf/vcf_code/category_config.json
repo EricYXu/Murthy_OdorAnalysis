@@ -1,0 +1,8 @@
+{
+    "input_path": "../Matrix.csv",
+    "foods_path": "../consolidated_edited_category_data.json",
+    "category": "DAIRY",
+    "threshold": 5,
+    "store_results": true,
+    "output_folder": "../eric_pca_figures/2d"
+}

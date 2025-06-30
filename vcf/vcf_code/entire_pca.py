@@ -2,6 +2,7 @@ import sys
 import json
 import pandas as pd
 import matplotlib.cm as cm
+import matplotlib.colors as mcolors
 from matplotlib import pyplot as plt
 from sklearn.decomposition import PCA
 import matplotlib.patches as mpatches
@@ -48,12 +49,12 @@ def main(config_path) -> None:
             pca_df.columns = ["PC1", "PC2"]
         elif n_components == 3:
             pca_df.columns = ["PC1", "PC2", "PC3"]
-        color_map = {food: cm.tab20(i % 20) for i, food in enumerate(combined_names)}
+        xkcd_color_list = list(mcolors.XKCD_COLORS.values())
+        color_map = {food: xkcd_color_list[i] for i, food in enumerate(combined_names)}
         combined_colors = [color_map[combined_names[idx]] for idx in combined_indices]
-        print(len(combined_names))
 
         # Plot the projected points.
-        fig = plt.figure()
+        fig = plt.figure(figsize=(20,16))
         if n_components == 3:
             ax = fig.add_subplot(111, projection='3d')
             ax.scatter(pca_df['PC1'], pca_df['PC2'], pca_df['PC3'], color=combined_colors, alpha=0.75)
@@ -68,8 +69,8 @@ def main(config_path) -> None:
         patches = []
         for food in combined_names:
             patches.append(mpatches.Patch(color=color_map[food], label=food))
-        plt.legend(handles=patches, fontsize=8)
-        plt.title(f"PCA with {n_components} Principal Components on Food Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
+        plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.05, 1))
+        plt.title(f"PCA with {n_components} Principal Components on VCF Dataset with Threshold = {threshold}\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
         if store_results:
             plt.savefig(f"{output_folder}/food_pca_{n_components}_comps_{category}_threshold={threshold}.pdf")
         plt.show()

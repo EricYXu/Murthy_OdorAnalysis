@@ -68,9 +68,9 @@ def main(config_path) -> None:
         for food in combined_names:
             patches.append(mpatches.Patch(color=color_map[food], label=food))
         plt.legend(handles=patches, fontsize=8)
-        plt.title(f"PCA with {n_components} Principal Components on Food Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
+        plt.title(f"PCA with {n_components} Principal Components on {category} Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
         if store_results:
-            plt.savefig(f"{output_folder}/food_pca_{n_components}_comps_{category}.pdf")
+            plt.savefig(f"{output_folder}/{category}_pca_{n_components}_comps.pdf")
         plt.show()
 
     except Exception as e:

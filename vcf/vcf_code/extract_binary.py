@@ -95,3 +95,5 @@ def get_binary_with_threshold(input_path: str, foods_path: str, category: str, t
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         sys.exit(1)
+
+def get_embeddings()
