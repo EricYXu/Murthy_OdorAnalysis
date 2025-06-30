@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.metrics import pairwise_distances
-from code.extract_binary import get_binary_with_threshold
 
 
 """ 
@@ -13,6 +12,7 @@ Script that obtains the correlation matrices for text embedding data.
 
 Usage:
     python text_embed_corr_matrix.py
+
 """
 
 # ===== PROGRAM SPECIFICATIONS =====
