@@ -4,5 +4,5 @@
     "category": "ALL",
     "threshold": 1,
     "store_results": true,
-    "output_folder": "../eric_barplot_figures"
+    "output_folder": "../figures/eric_barplot_figures"
 }

@@ -4,5 +4,5 @@
     "category": "ALL",
     "threshold": 10,
     "store_results": true,
-    "output_folder": "../eric_entire_figures"
+    "output_folder": "../figures/eric_entire_figures"
 }

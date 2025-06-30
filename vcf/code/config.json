@@ -13,5 +13,5 @@
     "categories_path": "../edited_category_data.json",
     "threshold": 5,
     "store_results": true,
-    "output_folder": "../eric_pca_figures/2d"
+    "output_folder": "../figures/eric_pca_figures/2d"
 }
