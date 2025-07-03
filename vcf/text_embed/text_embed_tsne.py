@@ -23,16 +23,18 @@ Usage:
 # ===== PROGRAM SPECIFICATIONS =====
 store_results = True
 output_folder = "../figures/text_embed_figures"
+threshold = 5
 
 
 # ===== DATA RETRIEVAL =====
 word_embeddings_df = pd.read_csv("./output_word_embeddings.csv")
 smellword_embeddings_df = pd.read_csv("./output_smellword_embeddings.csv")
+sample_word_embeddings_df = pd.read_csv("./sample_word_embeddings.csv")
 
 
 # ===== RUN PCA =====
 pca_components = 50
-X_scaled = StandardScaler().fit_transform(word_embeddings_df.T)
+X_scaled = StandardScaler().fit_transform(sample_word_embeddings_df.T)
 pca = PCA(pca_components, random_state=1).fit(X_scaled)
 X_pca = pca.transform(X_scaled)
 
@@ -42,8 +44,8 @@ tsne_components = 2
 X_tsne = TSNE(tsne_components, perplexity=30, random_state=1).fit_transform(X_pca)
 
 
-# ===== OBTAIN COLORCODINGS ===== 
-with open("../all_category_data.json", "r") as file:
+# ===== OBTAIN COLORCODINGS WITH THRESHOLD ===== 
+with open("../edited_category_data.json", "r") as file:
     food_dict = json.load(file)
 combined_indices = []
 combined_names = []
@@ -51,9 +53,11 @@ category_idx = 0
 for food_category in food_dict:
     combined_names.append(food_category)
     for food_item in food_dict[food_category]:
-        if food_item == "Product category":
+        if food_item == "Product category" or len(food_dict[food_category][food_item]) < threshold:
             continue
-        combined_indices.append(category_idx)
+        else:
+            for food_sample in food_dict[food_category][food_item]: # this is for getting the colorcodings for each sample
+                combined_indices.append(category_idx) 
     category_idx += 1
 xkcd_color_list = list(mcolors.XKCD_COLORS.values())
 color_map = {food: xkcd_color_list[i] for i, food in enumerate(combined_names)}
@@ -70,7 +74,8 @@ ax.scatter(X_tsne[:,0], X_tsne[:,1], color=combined_colors, alpha=0.75)
 ax.set_xlabel('TSNE Dim1')
 ax.set_ylabel('TSNE Dim2')
 plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.05, 1))
-plt.title(f"TSNE to {tsne_components} Dim from PCA to {pca_components} Dim on Food Word Embeddings\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
+plt.title(f"TSNE to {tsne_components} Dim from PCA to {pca_components} Dim on Food Sample Word Embeddings at THRESHOLD={threshold}", fontsize=8)
+plt.figtext(0.01, 0.01, f"Cumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=5, bbox={"facecolor":"lightgray", "alpha":0.5})
 if store_results:
-    plt.savefig(f"{output_folder}/food_word_embedding_pca={pca_components}_tsne={tsne_components}.pdf")
+    plt.savefig(f"{output_folder}/sample_word_embedding_pca={pca_components}_tsne={tsne_components}_threshold={threshold}.pdf")
 plt.show()
