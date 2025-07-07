@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 import matplotlib.patches as mpatches
 from sklearn.preprocessing import StandardScaler
+sys.path.append('../')
 from extract_binary import get_binary
 
 """

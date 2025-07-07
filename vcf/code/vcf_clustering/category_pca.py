@@ -2,22 +2,21 @@ import sys
 import json
 import pandas as pd
 import matplotlib.cm as cm
-import matplotlib.colors as mcolors
 from matplotlib import pyplot as plt
 from sklearn.decomposition import PCA
 import matplotlib.patches as mpatches
 from sklearn.preprocessing import StandardScaler
+sys.path.append('../')
 from extract_binary import get_binary, get_binary_with_threshold
 
 """
-entire_pca.py
+olfactory_category_pca.py
 
-Script that runs principal component analysis on every odor in
-the VCF dataset that contains a number of samples that meets or exceeds a specified threshold. 
+Script that runs principal component analysis (linear dimensionality reduction method) on a food category in 
+the VCF dataset. 
 
 Usage:
-    python3 entire_pca.py
-    
+    python3 olfactory_category_pca.py
 """
 
 def load_config(config_path: str) -> dict:
@@ -49,12 +48,11 @@ def main(config_path) -> None:
             pca_df.columns = ["PC1", "PC2"]
         elif n_components == 3:
             pca_df.columns = ["PC1", "PC2", "PC3"]
-        xkcd_color_list = list(mcolors.XKCD_COLORS.values())
-        color_map = {food: xkcd_color_list[i] for i, food in enumerate(combined_names)}
+        color_map = {food: cm.tab20(i % 20) for i, food in enumerate(combined_names)}
         combined_colors = [color_map[combined_names[idx]] for idx in combined_indices]
 
         # Plot the projected points.
-        fig = plt.figure(figsize=(20,16))
+        fig = plt.figure()
         if n_components == 3:
             ax = fig.add_subplot(111, projection='3d')
             ax.scatter(pca_df['PC1'], pca_df['PC2'], pca_df['PC3'], color=combined_colors, alpha=0.75)
@@ -69,10 +67,10 @@ def main(config_path) -> None:
         patches = []
         for food in combined_names:
             patches.append(mpatches.Patch(color=color_map[food], label=food))
-        plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.05, 1))
-        plt.title(f"PCA with {n_components} Principal Components on VCF Dataset with Threshold = {threshold}\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
+        plt.legend(handles=patches, fontsize=8)
+        plt.title(f"PCA with {n_components} Principal Components on {category} Data\nExplained Variance Ratio: {pca.explained_variance_ratio_}\nCumulative: {pca.explained_variance_ratio_.cumsum()}", fontsize=8)
         if store_results:
-            plt.savefig(f"{output_folder}/food_pca_{n_components}_comps_{category}_threshold={threshold}.pdf")
+            plt.savefig(f"{output_folder}/{category}_pca_{n_components}_comps.pdf")
         plt.show()
 
     except Exception as e:
@@ -80,5 +78,5 @@ def main(config_path) -> None:
         sys.exit(1)
 
 if __name__ == "__main__":
-    sys.exit(main("./entire_config.json"))
+    sys.exit(main("../category_config.json"))
 

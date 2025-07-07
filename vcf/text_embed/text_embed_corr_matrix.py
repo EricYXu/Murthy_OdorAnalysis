@@ -23,9 +23,9 @@ threshold = 20
 
 # ===== DATA RETRIEVAL =====
 word_embeddings_path = "./output_word_embeddings.csv"
-smellword_embeddings_path = "./output_smellword_embeddings.csv"
+smellword_embeddings_path = "./output_smellword_embeddings.csv" # BUG: FIX THIS FOR SMELL WORD EMBEDDINGS
 sampleword_embeddings_path = "./sample_word_embeddings.csv"
-df_of_choice, combined_indices, combined_names = get_embeddings_with_threshold(sampleword_embeddings_path, category_path, threshold)
+df_of_choice, combined_indices, combined_names = get_embeddings_with_threshold(smellword_embeddings_path, category_path, threshold)
 
 # ===== POPULATING CORRELATION MATRIX =====
 array_of_choice = df_of_choice.T.to_numpy()
@@ -36,6 +36,9 @@ for idx1 in range(array_of_choice.shape[0]-1):
         distance = pairwise_distances(array_of_choice[idx1].reshape(1,-1), array_of_choice[idx2].reshape(1,-1), metric=metric)[0][0]
         corr_matrix[idx1][idx2] = distance
         corr_matrix[idx2][idx1] = distance
+
+# ===== SAVING NUMPY ARRAY =====
+np.save('../code/representation_sim/smellword_corr_matrix.npy', corr_matrix)
 
 # ===== TRACKING CATEGORIES =====
 category_text = ""
@@ -53,8 +56,8 @@ fig, ax = plt.subplots(figsize=(10,6))
 im = ax.imshow(corr_matrix, cmap='viridis', origin='lower', interpolation='nearest')
 cbar = fig.colorbar(im, ax=ax)
 cbar.set_label('Value Range')
-ax.set_title(f'Sample Food Word Embeddings Correlation Matrix w/ Threshold={threshold} and {metric} metric')
+ax.set_title(f'\"Smell Of\" Food Word Embeddings Correlation Matrix w/ Threshold={threshold} and {metric} metric')
 plt.figtext(0.05, 0.05, category_text, fontsize=5, bbox={"facecolor":"lightgray", "alpha":0.5})
 if store_results:
-    plt.savefig(f"{output_folder}/sampleword_embedding_threshold={threshold}_metric={metric}_corr_matrix.pdf")
+    plt.savefig(f"{output_folder}/smellword_embedding_threshold={threshold}_metric={metric}_corr_matrix.pdf")
 plt.show()

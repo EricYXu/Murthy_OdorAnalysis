@@ -1,4 +1,3 @@
-import csv
 import sys
 from typing import List
 import pandas as pd
@@ -97,3 +96,26 @@ def get_binary_with_threshold(input_path: str, foods_path: str, category: str, t
         sys.exit(1)
 
 
+def get_embeddings_with_threshold(input_path: str, category_path: str, threshold: int) -> tuple[pd.DataFrame, list[int], list[str]]:
+    # === DATA RETRIEVAL ===
+    text_embed_data = pd.read_csv(input_path)
+    with open(category_path, "r") as file:
+        category_data = json.load(file) 
+
+    # === GET FOOD SAMPLES SURPASSING THRESHOLD ===
+    valid_samples = []
+    combined_indices = []
+    combined_names = []
+    food_idx = 0
+    for food_category in list(category_data.keys()):
+        for food_item in category_data[food_category]:
+            if len(category_data[food_category][food_item]) < threshold:
+                continue
+            else:
+                combined_names.append(food_item)
+                for food_sample in category_data[food_category][food_item]:
+                    combined_indices.append(food_idx)
+                    valid_samples.append(food_sample)
+                food_idx += 1
+    
+    return text_embed_data[valid_samples], combined_indices, combined_names

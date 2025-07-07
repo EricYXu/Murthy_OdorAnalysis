@@ -8,6 +8,7 @@ import matplotlib.cm as cm
 from matplotlib import pyplot as plt
 import matplotlib.patches as mpatches
 from sklearn.preprocessing import StandardScaler
+sys.path.append('../')
 from extract_binary import get_binary, get_binary_with_threshold
 
 warnings.filterwarnings("ignore")
@@ -69,5 +70,5 @@ def main(config_path) -> None:
         sys.exit(1)
 
 if __name__ == "__main__":
-    sys.exit(main("./category_config.json"))
+    sys.exit(main("../category_config.json"))
 

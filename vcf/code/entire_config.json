@@ -1,8 +1,8 @@
 {
-    "input_path": "../Matrix.csv",
-    "foods_path": "../edited_category_data.json",
+    "input_path": "../../Matrix.csv",
+    "foods_path": "../../edited_category_data.json",
     "category": "ALL",
-    "threshold": 1,
+    "threshold": 20,
     "store_results": true,
-    "output_folder": "../figures/eric_entire_figures"
+    "output_folder": "../../figures/eric_entire_figures"
 }

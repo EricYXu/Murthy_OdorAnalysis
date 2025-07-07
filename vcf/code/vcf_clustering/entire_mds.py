@@ -1,27 +1,21 @@
 import sys
 import json
-import umap
-import warnings
-import numpy as np
 import pandas as pd
-import matplotlib.cm as cm
+from sklearn.manifold import MDS
 import matplotlib.colors as mcolors
 from matplotlib import pyplot as plt
 import matplotlib.patches as mpatches
 from sklearn.preprocessing import StandardScaler
-from extract_binary import get_binary, get_binary_with_threshold
-
-warnings.filterwarnings("ignore")
+sys.path.append('../')
+from extract_binary import get_binary_with_threshold
 
 """
-entire_umap.py
+entire_mds.py
 
-Script that runs Uniform Manifold Approximation and Projection on a food category in 
-the VCF dataset. 
+Script that runs multi-dimensional scaling on the text embeddings and VCF binary dataset.
 
 Usage:
-    python3 entire_umap.py
-    
+    python entire_mds.py
 """
 
 def load_config(config_path: str) -> dict:
@@ -33,7 +27,7 @@ def load_config(config_path: str) -> dict:
 
 def main(config_path) -> None: 
     try:
-        # Obtains principal component analysis parameters.
+        # Obtains multi-dimensional scaling parameters.
         config = load_config(config_path)
         input_path = config["input_path"]
         foods_path = config["foods_path"]
@@ -41,32 +35,31 @@ def main(config_path) -> None:
         threshold = config["threshold"]
         output_folder = config["output_folder"]
         store_results = config["store_results"]
-        umap_components = 2
+        n_components = 2 # always keep this at 2
         
-        # Gets the binary data and assigns colors.
+        # Gets the binary data and runs principal component analysis.
         combined_df, combined_indices, combined_names = get_binary_with_threshold(input_path, foods_path, category, threshold) 
-        X_scaled = StandardScaler().fit_transform(combined_df)
-
-        # Gets color information for plotting.
+        # X_scaled = StandardScaler().fit_transform(combined_df)
+        X_mds = MDS(n_components, random_state=1).fit_transform(combined_df)
+        mds_df = pd.DataFrame(data=X_mds)
+        mds_df.columns = ["MDS1", "MDS2"]
         xkcd_color_list = list(mcolors.XKCD_COLORS.values())
         color_map = {food: xkcd_color_list[i] for i, food in enumerate(combined_names)}
         combined_colors = [color_map[combined_names[idx]] for idx in combined_indices]
+
+        # Plot the projected points.
+        fig = plt.figure(figsize=(20,16))
+        ax = fig.add_subplot(111)
+        ax.scatter(mds_df['MDS1'], mds_df['MDS2'], color=combined_colors, alpha=0.75)
+        ax.set_xlabel('MDS Dimension 1')
+        ax.set_ylabel('MDS Dimension 2')
         patches = []
         for food in combined_names:
             patches.append(mpatches.Patch(color=color_map[food], label=food))
-
-        # Runs UMAP
-        n_neighbors = 30
-        embedding = umap.UMAP(umap_components, metric="euclidean", random_state=1).fit_transform(X_scaled)
-        fig = plt.figure(figsize=(27,21))
-        ax = fig.add_subplot(111)
-        ax.set_xlabel('UMAP Dim 1')
-        ax.set_ylabel('UMAP Dim 2')
-        plt.title(f"UMAP with {umap_components} Components on Food Category: {category} with Threshold={threshold}", fontsize=8)
-        plt.scatter(embedding[:, 0], embedding[:, 1], c=combined_colors, s=5)
-        plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.01, 1))
+        plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.05, 1))
+        plt.title(f"MDS with {n_components} Dimensions on VCF Dataset with Threshold = {threshold}", fontsize=8)
         if store_results:
-            plt.savefig(f"{output_folder}/umap_{category}_2d_threshold={threshold}.pdf")
+            plt.savefig(f"{output_folder}/food_mds_{n_components}dim_{category}_threshold={threshold}.pdf")
         plt.show()
 
     except Exception as e:
@@ -74,5 +67,6 @@ def main(config_path) -> None:
         sys.exit(1)
 
 if __name__ == "__main__":
-    sys.exit(main("./entire_config.json"))
+    sys.exit(main("../entire_config.json"))
+
 
