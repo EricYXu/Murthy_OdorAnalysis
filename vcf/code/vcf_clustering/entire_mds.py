@@ -1,3 +1,4 @@
+import os
 import sys
 import json
 import pandas as pd
@@ -6,7 +7,11 @@ import matplotlib.colors as mcolors
 from matplotlib import pyplot as plt
 import matplotlib.patches as mpatches
 from sklearn.preprocessing import StandardScaler
-sys.path.append('../')
+
+# ===== CROSS-DIRECTORY IMPORTS =====
+sys.path.append("/Users/ericxu/Documents/Github/Murthy_OdorAnalysis/vcf/code/vcf_dist_matrix")
+from get_dist_matrix import get_distance_matrix
+sys.path.append("/Users/ericxu/Documents/Github/Murthy_OdorAnalysis/vcf/code")
 from extract_binary import get_binary_with_threshold
 
 """
@@ -36,11 +41,12 @@ def main(config_path) -> None:
         output_folder = config["output_folder"]
         store_results = config["store_results"]
         n_components = 2 # always keep this at 2
+        metric = "jaccard"
         
         # Gets the binary data and runs principal component analysis.
-        combined_df, combined_indices, combined_names = get_binary_with_threshold(input_path, foods_path, category, threshold) 
-        # X_scaled = StandardScaler().fit_transform(combined_df)
-        X_mds = MDS(n_components, random_state=1).fit_transform(combined_df)
+        dissimilarity_matrix, _ = get_distance_matrix(input_path, foods_path, threshold, metric)
+        _, combined_indices, combined_names = get_binary_with_threshold(input_path, foods_path, category, threshold) 
+        X_mds = MDS(n_components=2, dissimilarity='precomputed', random_state=1).fit_transform(dissimilarity_matrix)
         mds_df = pd.DataFrame(data=X_mds)
         mds_df.columns = ["MDS1", "MDS2"]
         xkcd_color_list = list(mcolors.XKCD_COLORS.values())
@@ -57,9 +63,9 @@ def main(config_path) -> None:
         for food in combined_names:
             patches.append(mpatches.Patch(color=color_map[food], label=food))
         plt.legend(handles=patches, fontsize=8, bbox_to_anchor=(1.05, 1))
-        plt.title(f"MDS with {n_components} Dimensions on VCF Dataset with Threshold = {threshold}", fontsize=8)
+        plt.title(f"MDS with {n_components} Dimensions on VCF Dataset with {metric} Metric & Threshold = {threshold}", fontsize=8)
         if store_results:
-            plt.savefig(f"{output_folder}/food_mds_{n_components}dim_{category}_threshold={threshold}.pdf")
+            plt.savefig(f"{output_folder}/{metric}_food_mds_{n_components}dim_{category}_threshold={threshold}.pdf")
         plt.show()
 
     except Exception as e:

@@ -2,7 +2,7 @@
     "input_path": "../../Matrix.csv",
     "foods_path": "../../edited_category_data.json",
     "category": "ALL",
-    "threshold": 20,
+    "threshold": 10,
     "store_results": true,
     "output_folder": "../../figures/eric_entire_figures"
 }
