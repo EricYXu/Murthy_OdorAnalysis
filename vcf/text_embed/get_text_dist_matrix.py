@@ -9,7 +9,7 @@ from extract_binary import get_embeddings_with_threshold
 """
 get_text_dist_matrix.py
 
-Script that obtains the correlation matrix for word embeddings.
+Script that obtains the correlation matrix for food sample word embeddings.
 """
 
 # ===== GET DISTANCE MATRIX FUNCTION =====

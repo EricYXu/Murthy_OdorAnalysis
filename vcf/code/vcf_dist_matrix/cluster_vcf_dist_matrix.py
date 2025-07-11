@@ -23,7 +23,7 @@ store_results = True
 input_path = "../../Matrix.csv"
 foods_path = "../../edited_category_data.json"
 output_folder = "../../figures/dist_matrix_figures"
-threshold = 20
+threshold = 10
 metric = "jaccard"
 
 
@@ -53,8 +53,8 @@ if via_block_averaging:
 if via_binarization:
     cluster_representatives = []
     for idx_pair in cluster_indice_list:
-        threshold = 0.5
-        binarized_vector = (vcf_df.iloc[idx_pair[0]:idx_pair[1]+1].mean(axis=0) > threshold).astype(int)
+        bin_threshold = 0.5
+        binarized_vector = (vcf_df.iloc[idx_pair[0]:idx_pair[1]+1].mean(axis=0) > bin_threshold).astype(int)
         cluster_representatives.append(binarized_vector)
     cluster_representatives = np.array(cluster_representatives)
 
@@ -67,7 +67,10 @@ if via_binarization:
 
 # ===== SAVING NUMPY ARRAY =====
 if store_results:
-    np.save('../representation_sim/cluster_vcf_binary_dist_matrix.npy', cluster_dist_matrix)
+    if via_binarization:
+        np.save(f'../representation_sim/matrices/cluster_vcf_binarization_threshold={threshold}_dist_matrix.npy', cluster_dist_matrix)
+    if via_block_averaging:
+        np.save(f'../representation_sim/matrices/cluster_vcf_block_average_threshold={threshold}_dist_matrix.npy', cluster_dist_matrix)
 
 
 # ===== TRACKING CLUSTERS =====

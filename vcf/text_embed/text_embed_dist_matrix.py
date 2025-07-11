@@ -21,7 +21,7 @@ store_results = True
 output_folder = "../figures/dist_matrix_figures"
 sampleword_embedding_path = "./sample_word_embeddings.csv"
 category_path = "../edited_category_data.json"
-threshold = 10
+threshold = 20
 metric = "euclidean"
 
 
@@ -32,7 +32,7 @@ dist_matrix, category_indice_list = get_text_distance_matrix(sampleword_embeddin
 
 # ===== SAVING NUMPY ARRAY =====
 if store_results:
-    np.save('../code/representation_sim/sampleword_dist_matrix.npy', dist_matrix)
+    np.save(f'../code/representation_sim/matrices/sampleword_threshold={threshold}_metric={metric}_dist_matrix.npy', dist_matrix)
 
 
 # ===== TRACKING CATEGORIES =====

@@ -1,12 +1,15 @@
-"""
-Script to create bar plots of different food mixtures in the VCF dataset.
-"""
-
-# Imports
 import sys
 import json
 import matplotlib.pyplot as plt
 
+"""
+create_odor_barplots.py
+
+Script to create bar plots of different food mixtures in the VCF dataset.
+
+Usage: 
+    python create_odor_barplots.py
+"""
 
 def load_config(config_path: str) -> dict:
     """

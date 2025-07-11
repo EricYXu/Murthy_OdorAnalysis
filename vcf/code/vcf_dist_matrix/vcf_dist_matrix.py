@@ -21,7 +21,7 @@ store_results = True
 input_path = "../../Matrix.csv"
 foods_path = "../../edited_category_data.json"
 output_folder = "../../figures/dist_matrix_figures"
-threshold = 10
+threshold = 20
 metric = "jaccard"
 
 # ===== DATA RETRIEVAL =====
@@ -30,7 +30,8 @@ dist_matrix, category_indice_list = get_distance_matrix(input_path, foods_path, 
 
 # ===== SAVING NUMPY ARRAY =====
 if store_results:
-    np.save('../representation_sim/vcf_binary_dist_matrix.npy', dist_matrix)
+    np.save(f'../representation_sim/matrices/vcf_threshold={threshold}_metric={metric}_dist_matrix.npy', dist_matrix)
+    
 
 # ===== TRACKING CATEGORIES =====
 category_text = ""

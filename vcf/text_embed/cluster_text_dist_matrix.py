@@ -1,10 +1,9 @@
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import pairwise_distances
 from get_text_dist_matrix import get_text_distance_matrix
 sys.path.append('../code/')
-from extract_binary import get_embeddings_with_threshold
+from extract_binary import get_embeddings_with_threshold # type: ignore
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -24,7 +23,7 @@ output_folder = "../figures/dist_matrix_figures"
 sampleword_embedding_path = "./sample_word_embeddings.csv"
 category_path = "../edited_category_data.json"
 threshold = 20
-metric = "euclidean"
+metric = "euclidean" # try cosine similarity 
 
 
 # ===== DATA RETRIEVAL =====
@@ -52,7 +51,7 @@ if via_block_averaging:
 
 # ===== SAVING NUMPY ARRAY =====
 if store_results:
-    np.save('../code/representation_sim/cluster_text_dist_matrix.npy', cluster_dist_matrix)
+    np.save(f'../code/representation_sim/matrices/cluster_text_threshold={threshold}_dist_matrix.npy', cluster_dist_matrix)
 
 
 # ===== TRACKING CLUSTERS =====
