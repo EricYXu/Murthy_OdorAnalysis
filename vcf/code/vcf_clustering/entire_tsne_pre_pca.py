@@ -78,9 +78,6 @@ def main(config_path: str) -> None:
         if store_results:
             plt.savefig(f"{output_folder}/pca_{pca_components}_to_tsne_{tsne_components}_perplexity_{perplexity}_threshold={threshold}_{category}.pdf")
         plt.show()
-        # print(pca.explained_variance_ratio_)
-        # print("---")
-        # print(pca.explained_variance_ratio_.cumsum())
 
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
