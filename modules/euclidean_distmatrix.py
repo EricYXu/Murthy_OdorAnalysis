@@ -12,6 +12,7 @@ class EuclideanDM:
     """
 
     METRIC = "euclidean"
+    BOUNDARY_LINES = True
 
     def __init__(self, dataset, opt: DMOptions):
         """Takes in a DMOptions object to produce a EuclideanDM object."""
@@ -28,7 +29,7 @@ class EuclideanDM:
         # Obtains dataset.
         dataset = self._dataset
         dataset_df = dataset.get_dataframe()
-        dataset_array = dataset_df.T.to_numpy()
+        dataset_array = dataset_df.T.to_numpy() # remove .T here to switch to ten-adjective
 
         # Obtains the distance matrix. 
         dist_matrix = np.zeros((dataset_array.shape[0], dataset_array.shape[0]))
@@ -38,6 +39,8 @@ class EuclideanDM:
                 dist_matrix[idx1][idx2] = distance
                 dist_matrix[idx2][idx1] = distance
         
+        print("euclidean item: ",dist_matrix.shape)
+
         return dist_matrix
     
 
@@ -55,6 +58,8 @@ class EuclideanDM:
                         num_entries += 1
                 cluster_dist_matrix[cluster1_idx][cluster2_idx] = cluster_sum / num_entries
         
+        print("euclidean cluster: ",cluster_dist_matrix.shape)
+
         return cluster_dist_matrix
 
 
@@ -129,12 +134,18 @@ class EuclideanDM:
 
         # Displaying the distance matrix.
         dataset_name = "Text Dataset"
-        title = f' Distance Matrix on {dataset_name} w/ Threshold={self._dataset._threshold} and {EuclideanDM.METRIC.capitalize()} Metric'
+        title = f'Itemwise Distance Matrix on {dataset_name} w/ Threshold={self._dataset._threshold} and {EuclideanDM.METRIC.capitalize()} Metric'
         filename = f"{self._output_path}/dist_matrix_threshold={self._dataset._threshold}_metric={EuclideanDM.METRIC}.pdf"
-
         fig, ax = plt.subplots(figsize=(10,6))
         im = ax.imshow(self.get_itemwise_distance_matrix(), cmap='viridis', origin='lower', interpolation='None', vmin=0, vmax=1.2)
         ax.set_title(title)
+
+        if EuclideanDM.BOUNDARY_LINES == True:
+            # Adds horizontal and vertical lines to demarcate clusters.
+            cluster_indexes = self.get_cluster_indices()
+            for idx in range(1, len(cluster_indexes)):
+                ax.axvline(x=cluster_indexes[idx][0] + 0.5, color='red', linestyle='--', linewidth=1)
+                ax.axhline(y=cluster_indexes[idx][0] + 0.5, color='red', linestyle='--', linewidth=1)
 
         if self._show_captions:
             cbar = fig.colorbar(im, ax=ax)

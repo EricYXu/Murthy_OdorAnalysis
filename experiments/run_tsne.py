@@ -11,7 +11,7 @@ from modules.tsne_cluster import TSNECluster
 tsne_dataset_params = SimpleNamespace()
 tsne_dataset_params.input_path = "../datasets/VCF_CSV/Matrix.csv"
 tsne_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
-tsne_dataset_params.threshold = 5
+tsne_dataset_params.threshold = 20
 
 tsne_dataset_options = DatasetOptions(param_namespace=tsne_dataset_params)
 tsne_dataset = VCFBinaryDataset(tsne_dataset_options)
@@ -20,7 +20,7 @@ tsne_dataset = VCFBinaryDataset(tsne_dataset_options)
 # ===== INSTANTIATE TSNE CLUSTER =====
 tsne_cluster_params = SimpleNamespace()
 tsne_cluster_params.output_path = "../new_figures/new_tsne"
-tsne_cluster_params.show_captions = False
+tsne_cluster_params.show_captions = True
 tsne_cluster_params.show_results = True
 tsne_cluster_params.store_results = True
 

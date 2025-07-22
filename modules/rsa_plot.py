@@ -1,5 +1,7 @@
+import textwrap
 import numpy as np
 import pandas as pd
+from scipy import stats
 import matplotlib.pyplot as plt
 from sklearn.metrics import pairwise_distances
 from options.rsa_options import RSAOptions
@@ -10,6 +12,8 @@ class RSAPlot:
     
     It can be used to display and save RSA scatter plot figures.
     """
+
+    CLUSTER_LABELS = True
 
     def __init__(self, dist_matrix1, dist_matrix2, opt: RSAOptions):
         """Takes in a RSAOptions object to produce a RSAPlot object."""
@@ -35,15 +39,17 @@ class RSAPlot:
             for y in range(0, x):
                 rep1_vals.append(dist_matrix1[x][y])
                 rep2_vals.append(dist_matrix2[x][y])
-        corr_coef = np.corrcoef(rep1_vals, rep2_vals)[0][1]
-        r_squared = corr_coef**2
-        corr_text = f"Correlation Coeff. = {corr_coef}\nR^2 = {r_squared}"
+
+        res = stats.pearsonr(rep1_vals, rep2_vals)
+        # corr_coef = np.corrcoef(rep1_vals, rep2_vals)[0][1]
+        # r_squared = corr_coef**2
+        corr_text = f"{res}"
 
         # Generate plots. 
-        matrix1 = ""
-        matrix2 = ""
+        matrix1 = "Text"
+        matrix2 = "VCF"
         title = f"Itemwise RSA Scatter Plot w/ Threshold = {self._dist_matrix1._dataset._threshold}"
-        filename = f"{self._output_path}/rsa_plot_threshold={self._dist_matrix1._dataset._threshold}.pdf"
+        filename = f"{self._output_path}/itemwise_rsa_plot_threshold={self._dist_matrix1._dataset._threshold}.pdf"
         fig = plt.figure(figsize=(10,8))
         ax = fig.add_subplot(111)
         ax.scatter(rep1_vals, rep2_vals)
@@ -73,19 +79,44 @@ class RSAPlot:
             for y in range(0, x):
                 rep1_vals.append(dist_matrix1[x][y])
                 rep2_vals.append(dist_matrix2[x][y])
-        corr_coef = np.corrcoef(rep1_vals, rep2_vals)[0][1]
-        r_squared = corr_coef**2
-        corr_text = f"Correlation Coeff. = {corr_coef}\nR^2 = {r_squared}"
+
+        res = stats.pearsonr(rep1_vals, rep2_vals)
+        # corr_coef = np.corrcoef(rep1_vals, rep2_vals)[0][1]
+        # r_squared = corr_coef**2
+        corr_text = f"{res}"
 
         # Generate plots. 
-        matrix1 = ""
-        matrix2 = ""
+        matrix1 = "Text"
+        matrix2 = "VCF"
         title = f"Clusterwise RSA Scatter Plot w/ Threshold = {self._dist_matrix1._dataset._threshold}"
-        filename = f"{self._output_path}/rsa_plot_threshold={self._dist_matrix1._dataset._threshold}.pdf"
-        fig = plt.figure(figsize=(10,8))
+        filename = f"{self._output_path}/clusterwise_rsa_plot_threshold={self._dist_matrix1._dataset._threshold}.pdf"
+        fig = plt.figure(figsize=(16,12))
         ax = fig.add_subplot(111)
         ax.scatter(rep1_vals, rep2_vals)
         plt.title(title, fontsize=8)
+
+        if RSAPlot.CLUSTER_LABELS == True:
+            names = self._dist_matrix1._dataset.get_names()
+            legend = ""
+            cluster_names = []
+            num_points = 0
+            for x in range(0, dist_matrix1.shape[0]):
+                for y in range(0, x):
+                    num_points += 1
+                    legend += f"{num_points} | Text: {names[x]}, VCF: {names[y]}\n"
+                    cluster_names.append(f"Rep1: {names[x]}, Rep2: {names[y]}")
+            for i in range(1, num_points+1):
+                ax.annotate(i, (rep1_vals[i-1], rep2_vals[i-1]), fontsize=9, wrap=True)
+            plt.figtext(0.8, 0.05, legend, fontsize=5, bbox={"facecolor":"lightgray", "alpha":0.5})
+
+            # Saves as a CSV
+            data = {
+                "Rep1": rep1_vals,
+                "Rep2": rep2_vals,
+                "ClusterPairs": cluster_names
+            }
+            df = pd.DataFrame(data)
+            df.to_csv(f'{self._output_path}/ten_adjective_euclidean_x_vcf_jaccard_y_threshold={self._dist_matrix1._dataset._threshold}.csv', index=False)
 
         if self._show_captions:
             ax.set_xlabel(matrix1)
@@ -95,3 +126,4 @@ class RSAPlot:
             plt.savefig(filename)
         if self._show_results:
             plt.show()
+

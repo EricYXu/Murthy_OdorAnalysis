@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath(".."))
 from options.dataset_options import DatasetOptions
 from options.distmatrix_options import DMOptions
 from data.vcf_binary_dataset import VCFBinaryDataset
+from data.text_embedding_dataset import TextEmbeddingDataset
 from modules.jaccard_distmatrix import JaccardDM
 
 
@@ -23,15 +24,15 @@ vcf_dataset = VCFBinaryDataset(vcf_dataset_options)
 # ===== INSTANTIATE JACCARD DISTANCE MATRIX =====
 jaccard_dm_params = SimpleNamespace()
 jaccard_dm_params.output_path = "../new_figures/new_jaccard_dm"
-jaccard_dm_params.show_captions = False
+jaccard_dm_params.show_captions = True
 jaccard_dm_params.show_results = True
-jaccard_dm_params.store_results = False
+jaccard_dm_params.store_results = True
 
 jaccard_dm_options = DMOptions(param_namespace=jaccard_dm_params)
 jaccard_dm = JaccardDM(vcf_dataset, jaccard_dm_options)
 
 
 # ===== SAVES FIGURE TO OUTPUT FOLDER =====
-jaccard_dm.display_clusterwise_figure()
+jaccard_dm.display_itemwise_figure()
 
 

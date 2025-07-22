@@ -11,7 +11,7 @@ from modules.umap_cluster import UMAPCluster
 umap_dataset_params = SimpleNamespace()
 umap_dataset_params.input_path = "../datasets/VCF_CSV/Matrix.csv"
 umap_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
-umap_dataset_params.threshold = 10
+umap_dataset_params.threshold = 20
 
 umap_dataset_options = DatasetOptions(param_namespace=umap_dataset_params)
 umap_dataset = VCFBinaryDataset(umap_dataset_options)
@@ -20,9 +20,9 @@ umap_dataset = VCFBinaryDataset(umap_dataset_options)
 # ===== INSTANTIATE UMAP CLUSTER =====
 umap_cluster_params = SimpleNamespace()
 umap_cluster_params.output_path = "../new_figures/new_umap"
-umap_cluster_params.show_captions = False
+umap_cluster_params.show_captions = True
 umap_cluster_params.show_results = True
-umap_cluster_params.store_results = False
+umap_cluster_params.store_results = True
 
 umap_cluster_options = ClusterOptions(param_namespace=umap_cluster_params)
 umap_cluster = UMAPCluster(umap_dataset, umap_cluster_options)

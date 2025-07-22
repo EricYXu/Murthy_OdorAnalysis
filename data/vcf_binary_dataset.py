@@ -48,18 +48,18 @@ class VCFBinaryDataset():
     def get_indices(self):
         """Returns a list of indices of the VCF dataset given the specified threshold."""
 
-         # Returns list of indices for assigning colors.
+        # Returns list of indices for assigning colors.       
         with open(self._category_path, "r") as file:
             category_data = json.load(file) 
         indices = []
-        name_idx = 0
+        food_idx = 0
         for food_category in list(category_data.keys()):
-            for food in category_data[food_category]:
-                if len(category_data[food_category][food]) >= self._threshold:
-                    for _ in category_data[food_category][food]:
-                        indices.append(name_idx)
-                    name_idx += 1
-                    
+            for food_item in category_data[food_category]:
+                if len(category_data[food_category][food_item]) >= self._threshold:
+                    for _ in category_data[food_category][food_item]:
+                        indices.append(food_idx)
+                    food_idx += 1
+
         return indices
 
 

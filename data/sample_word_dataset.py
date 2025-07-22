@@ -23,7 +23,6 @@ class SampleWordDataset():
         with open(self._category_path, "r") as file:
             category_data = json.load(file) 
         valid_samples = []
-        food_idx = 0
         for food_category in list(category_data.keys()):
             for food_item in category_data[food_category]:
                 if len(category_data[food_category][food_item]) < self._threshold:
@@ -31,7 +30,6 @@ class SampleWordDataset():
                 else:
                     for food_sample in category_data[food_category][food_item]:
                         valid_samples.append(food_sample)
-                    food_idx += 1
         
         return text_embed_data[valid_samples]
 

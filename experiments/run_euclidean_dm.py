@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath(".."))
 from options.dataset_options import DatasetOptions
 from options.distmatrix_options import DMOptions
 from data.sample_word_dataset import SampleWordDataset
+from data.text_embedding_dataset import TextEmbeddingDataset
 from modules.euclidean_distmatrix import EuclideanDM
 
 
@@ -25,13 +26,13 @@ euclidean_dm_params = SimpleNamespace()
 euclidean_dm_params.output_path = "../new_figures/new_euclidean_dm"
 euclidean_dm_params.show_captions = True
 euclidean_dm_params.show_results = True
-euclidean_dm_params.store_results = False
+euclidean_dm_params.store_results = True
 
 euclidean_dm_options = DMOptions(param_namespace=euclidean_dm_params)
 euclidean_dm = EuclideanDM(text_dataset, euclidean_dm_options)
 
 
 # ===== SAVES FIGURE TO OUTPUT FOLDER =====
-euclidean_dm.display_clusterwise_figure()
+euclidean_dm.display_itemwise_figure()
 
 
