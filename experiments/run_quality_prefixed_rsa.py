@@ -17,7 +17,7 @@ from modules.rsa_plot import RSAPlot
 
 # ===== INSTANTIATE VCF AND TEXT DATASET =====
 text_dataset_params = SimpleNamespace()
-text_dataset_params.input_path = "../datasets/text_embeddings/sample_word_embeddings.csv"
+text_dataset_params.input_path = "../datasets/text_embeddings/smellof_word_embeddings.csv"
 text_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
 text_dataset_params.threshold = 20
 text_dataset_options = DatasetOptions(param_namespace=text_dataset_params)
@@ -51,10 +51,10 @@ jaccard_dm = JaccardDM(vcf_dataset, jaccard_dm_options)
 
 # ===== CREATE REPRESENTATIONAL SIMILARITY ANALYSIS OBJECT =====
 rsa_params = SimpleNamespace()
-rsa_params.output_path = "../new_figures/raw_word_rsa"
+rsa_params.output_path = "../new_figures/quality_prefixed_rsa"
 rsa_params.show_captions = True
 rsa_params.show_results = True
-rsa_params.store_results = True
+rsa_params.store_results = False
 rsa_options = RSAOptions(param_namespace=rsa_params)
 rsa = RSAPlot(euclidean_dm, jaccard_dm, rsa_options)
 
