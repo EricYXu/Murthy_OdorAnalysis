@@ -2,7 +2,6 @@ from types import SimpleNamespace
 import sys, os
 import warnings
 warnings.filterwarnings("ignore")
-
 sys.path.append(os.path.abspath(".."))
 from options.dataset_options import DatasetOptions
 from options.distmatrix_options import DMOptions
@@ -13,7 +12,7 @@ from modules.euclidean_distmatrix import EuclideanDM
 
 # ===== DATASET PARAMETERS AND INSTANTIATE TEXT DATASET =====
 text_dataset_params = SimpleNamespace()
-text_dataset_params.input_path = "../datasets/text_embeddings/sample_word_embeddings.csv"
+text_dataset_params.input_path = "../datasets/text_embeddings-gemini-text-embedding-004/sample_word_embeddings.csv"
 text_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
 text_dataset_params.threshold = 20
 
@@ -33,6 +32,6 @@ euclidean_dm = EuclideanDM(text_dataset, euclidean_dm_options)
 
 
 # ===== SAVES FIGURE TO OUTPUT FOLDER =====
-euclidean_dm.display_itemwise_figure()
+euclidean_dm.display_clusterwise_figure()
 
 

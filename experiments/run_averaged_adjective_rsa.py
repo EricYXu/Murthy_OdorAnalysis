@@ -1,5 +1,4 @@
 from types import SimpleNamespace
-import pandas as pd
 import sys, os
 import warnings
 warnings.filterwarnings("ignore")
@@ -7,26 +6,26 @@ sys.path.append(os.path.abspath(".."))
 from options.dataset_options import DatasetOptions
 from options.rsa_options import RSAOptions
 from options.distmatrix_options import DMOptions
-from data.sample_word_dataset import SampleWordDataset
-from data.text_embedding_dataset import TextEmbeddingDataset
+from data.ten_adjective_dataset import TenAdjectiveDataset
 from data.vcf_binary_dataset import VCFBinaryDataset
+from data.text_embedding_dataset import TextEmbeddingDataset
 from modules.euclidean_distmatrix import EuclideanDM
 from modules.jaccard_distmatrix import JaccardDM
 from modules.rsa_plot import RSAPlot
 
 
-# ===== INSTANTIATE VCF AND TEXT DATASET =====
+# ===== INSTANTIATE VCF AND TEN-ADJECTIVE DATASET =====
 text_dataset_params = SimpleNamespace()
-text_dataset_params.input_path = "../datasets/text_embeddings-gemini-text-embedding-004/sample_word_embeddings.csv"
+text_dataset_params.input_path = "../datasets/five_adjective_gemma3-27b/semantic_similarity_averaged_five_adjective_embeddings_Gemma3_27B_it.csv"
 text_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
-text_dataset_params.threshold = 20
+text_dataset_params.threshold = 15
 text_dataset_options = DatasetOptions(param_namespace=text_dataset_params)
-text_dataset = SampleWordDataset(text_dataset_options)
+text_dataset = TenAdjectiveDataset(text_dataset_options)
 
 vcf_dataset_params = SimpleNamespace()
 vcf_dataset_params.input_path = "../datasets/VCF_CSV/Matrix.csv"
 vcf_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
-vcf_dataset_params.threshold = 20
+vcf_dataset_params.threshold = 15
 vcf_dataset_options = DatasetOptions(param_namespace=vcf_dataset_params)
 vcf_dataset = VCFBinaryDataset(vcf_dataset_options)
 
@@ -51,10 +50,10 @@ jaccard_dm = JaccardDM(vcf_dataset, jaccard_dm_options)
 
 # ===== CREATE REPRESENTATIONAL SIMILARITY ANALYSIS OBJECT =====
 rsa_params = SimpleNamespace()
-rsa_params.output_path = "../new_figures/raw_word_rsa"
+rsa_params.output_path = "../new_figures/semantic_sim_rsa"
 rsa_params.show_captions = True
 rsa_params.show_results = True
-rsa_params.store_results = False
+rsa_params.store_results = True
 rsa_options = RSAOptions(param_namespace=rsa_params)
 rsa = RSAPlot(euclidean_dm, jaccard_dm, rsa_options)
 

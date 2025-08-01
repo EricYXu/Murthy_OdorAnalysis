@@ -15,7 +15,7 @@ from modules.jaccard_distmatrix import JaccardDM
 vcf_dataset_params = SimpleNamespace()
 vcf_dataset_params.input_path = "../datasets/VCF_CSV/Matrix.csv"
 vcf_dataset_params.category_path = "../datasets/VCF_JSON/edited_category_data.json"
-vcf_dataset_params.threshold = 5
+vcf_dataset_params.threshold = 1
 
 vcf_dataset_options = DatasetOptions(param_namespace=vcf_dataset_params)
 vcf_dataset = VCFBinaryDataset(vcf_dataset_options)
