@@ -78,5 +78,4 @@ class VCFBinaryDataset():
         return names
 
 
-    
         

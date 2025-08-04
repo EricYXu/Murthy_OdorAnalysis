@@ -29,7 +29,7 @@ class JaccardDM:
 
         # Obtains dataset.
         dataset = self._dataset
-        dataset_df = dataset.get_dataframe()
+        dataset_df = dataset.get_dataframe() 
         dataset_array = dataset_df.to_numpy()
 
         # Obtains the distance matrix. 

@@ -25,9 +25,7 @@ class SampleWordDataset():
         valid_samples = []
         for food_category in list(category_data.keys()):
             for food_item in category_data[food_category]:
-                if len(category_data[food_category][food_item]) < self._threshold:
-                    continue
-                else:
+                if len(category_data[food_category][food_item]) >= self._threshold:
                     for food_sample in category_data[food_category][food_item]:
                         valid_samples.append(food_sample)
         

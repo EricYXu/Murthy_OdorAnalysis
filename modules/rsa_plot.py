@@ -2,8 +2,8 @@ import textwrap
 import numpy as np
 import pandas as pd
 from scipy import stats
+from scipy.stats import permutation_test, pearsonr
 import matplotlib.pyplot as plt
-from sklearn.metrics import pairwise_distances
 from options.rsa_options import RSAOptions
 
 
@@ -13,12 +13,12 @@ class RSAPlot:
     It can be used to display and save RSA scatter plot figures.
     """
 
-    CLUSTER_LABELS = False
+    CLUSTER_LABELS = True
 
     def __init__(self, dist_matrix1, dist_matrix2, opt: RSAOptions):
         """Takes in a RSAOptions object to produce a RSAPlot object."""
-        self._dist_matrix1 = dist_matrix1 # this is a DM class
-        self._dist_matrix2 = dist_matrix2 # this is a DM class
+        self._dist_matrix1 = dist_matrix1 # this is a DistanceMatrix class
+        self._dist_matrix2 = dist_matrix2 # this is a DistanceMatrix class
         self._output_path = opt.output_path
         self._show_captions = opt.show_captions
         self._show_results = opt.show_results
@@ -40,8 +40,15 @@ class RSAPlot:
                 rep1_vals.append(dist_matrix1[x][y])
                 rep2_vals.append(dist_matrix2[x][y])
 
-        res = stats.pearsonr(rep1_vals, rep2_vals)
-        corr_text = f"{res}"
+        # Gets observed Pearson correlation and p-value for two sets of observations
+        result = permutation_test((rep1_vals, rep2_vals), 
+                                  statistic=lambda x, y: pearsonr(x, y).statistic, 
+                                  permutation_type='pairings', 
+                                  n_resamples=1000,
+                                  alternative='two-sided')
+        correlation = result.statistic
+        p_val = result.pvalue
+        corr_and_p_val_text = f"Correlation: {correlation}, p-value: {p_val}"
 
         # Generate plots. 
         matrix1 = "Text Representation Distances"
@@ -54,9 +61,9 @@ class RSAPlot:
         plt.title(title, fontsize=12)
 
         if self._show_captions:
-            ax.set_xlabel(matrix1, fontsize=12)
-            ax.set_ylabel(matrix2, fontsize=12)
-            plt.figtext(0.05, 0.05, corr_text, fontsize=6, bbox={"facecolor":"lightgray", "alpha":0.5})
+            ax.set_xlabel(matrix1, fontsize=8)
+            ax.set_ylabel(matrix2, fontsize=8)
+            plt.figtext(0.05, 0.05, corr_and_p_val_text, fontsize=8, bbox={"facecolor":"lightgray", "alpha":0.5})
         if self._store_results:
             plt.savefig(filename)
         if self._show_results:
@@ -78,8 +85,15 @@ class RSAPlot:
                 rep1_vals.append(dist_matrix1[x][y])
                 rep2_vals.append(dist_matrix2[x][y])
 
-        res = stats.pearsonr(rep1_vals, rep2_vals)
-        corr_text = f"{res}"
+        # Gets observed Pearson correlation and p-value for two sets of observations
+        result = permutation_test((rep1_vals, rep2_vals), 
+                                  statistic=lambda x, y: pearsonr(x, y).statistic, 
+                                  permutation_type='pairings', 
+                                  n_resamples=1000,
+                                  alternative='two-sided')
+        correlation = result.statistic
+        p_val = result.pvalue
+        corr_and_p_val_text = f"Correlation: {correlation}, p-value: {p_val}"
 
         # Generate plots. 
         matrix1 = "Text Representation Distances"
@@ -115,9 +129,9 @@ class RSAPlot:
             df.to_csv(f'{self._output_path}/ten_adjective_euclidean_x_vcf_jaccard_y_threshold={self._dist_matrix1._dataset._threshold}.csv', index=False)
 
         if self._show_captions:
-            ax.set_xlabel(matrix1, fontsize=12)
-            ax.set_ylabel(matrix2, fontsize=12)
-            plt.figtext(0.05, 0.05, corr_text, fontsize=12, bbox={"facecolor":"lightgray", "alpha":0.5})
+            ax.set_xlabel(matrix1, fontsize=8)
+            ax.set_ylabel(matrix2, fontsize=8)
+            plt.figtext(0.05, 0.05, corr_and_p_val_text, fontsize=8, bbox={"facecolor":"lightgray", "alpha":0.5})
         if self._store_results:
             plt.savefig(filename)
         if self._show_results:
