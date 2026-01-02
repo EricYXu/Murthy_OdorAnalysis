@@ -26,14 +26,14 @@ for threshold in THRESHOLDS:
 
     # Get distance matrices
     vcf_dm = vcf_distance_matrix.get_clusterwise_distance_matrix()
-    # rawword_dm = rawword_distance_matrix.get_clusterwise_distance_matrix()
+    rawword_dm = rawword_distance_matrix.get_clusterwise_distance_matrix()
     # adjective2_dm = adjective2_distance_matrix.get_clusterwise_distance_matrix()
     # adjective5_dm = adjective5_distance_matrix.get_clusterwise_distance_matrix()
-    adjective10_dm = adjective10_distance_matrix.get_clusterwise_distance_matrix()
+    # adjective10_dm = adjective10_distance_matrix.get_clusterwise_distance_matrix()
 
     # Display RSA
-    rsa = RSA(adjective10_dm, vcf_dm, "../new_figures/vcf_vs_llm_adjective_rsa_0802", threshold)
+    rsa = RSA(rawword_dm, vcf_dm, "../new_figures/vcf_vs_llm_adjective_rsa_0802", threshold)
     filename = f"llm10adjective_clusterwise_pearson_rsa_threshold={threshold}.png"
     title = f"Test"
 
-    rsa.display_clusterwise_figure(filename, title, "spearman", True, True, True, False, 0)
+    rsa.display_clusterwise_figure(filename, title, "spearman", True, True, False, True, rawword_dataset.get_names())

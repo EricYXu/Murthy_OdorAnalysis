@@ -99,7 +99,7 @@ class RSA:
         """Displays the clusterwise representational similarity plot."""
 
         # Increases resolution
-        plt.rcParams['figure.dpi'] = 400
+        # plt.rcParams['figure.dpi'] = 400
 
         # Getting the correlations between distance matrix entries.
         rep1_vals = []
